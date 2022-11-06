@@ -1,0 +1,954 @@
+.model Configurable_U50
+.inputs INST<15>
+.inputs INST<14>
+.inputs INST<13>
+.inputs INST<12>
+.inputs INST<11>
+.inputs INST<10>
+.inputs INST<9>
+.inputs INST<8>
+.inputs INST<7>
+.inputs INST<6>
+.inputs INST<5>
+.inputs INST<4>
+.inputs INST<3>
+.inputs INST<2>
+.inputs INST<1>
+.inputs INST<0>
+.inputs BUSA<7>
+.inputs BUSA<6>
+.inputs BUSA<5>
+.inputs BUSA<4>
+.inputs BUSA<3>
+.inputs BUSA<2>
+.inputs BUSA<1>
+.inputs BUSA<0>
+.inputs BUSB<7>
+.inputs BUSB<6>
+.inputs BUSB<5>
+.inputs BUSB<4>
+.inputs BUSB<3>
+.inputs BUSB<2>
+.inputs BUSB<1>
+.inputs BUSB<0>
+.inputs S<7>
+.inputs S<6>
+.inputs S<5>
+.inputs S<4>
+.inputs S<3>
+.inputs S<2>
+.inputs S<1>
+.inputs S<0>
+.inputs PC<4>
+.inputs PC<3>
+.inputs PC<2>
+.inputs PC<1>
+.inputs PC<0>
+.inputs DATA<7>
+.inputs DATA<6>
+.inputs DATA<5>
+.inputs DATA<4>
+.inputs DATA<3>
+.inputs DATA<2>
+.inputs DATA<1>
+.inputs DATA<0>
+.inputs TCK
+.inputs TMS
+.inputs TDI
+.inputs TRST
+.outputs TDO
+.names INST<15> RegisterInput_Value_Signal<15>
+1 1
+.names INST<14> RegisterInput_Value_Signal<14>
+1 1
+.names INST<13> RegisterInput_Value_Signal<13>
+1 1
+.names INST<12> RegisterInput_Value_Signal<12>
+1 1
+.names INST<11> RegisterInput_Value_Signal<11>
+1 1
+.names INST<10> RegisterInput_Value_Signal<10>
+1 1
+.names INST<9> RegisterInput_Value_Signal<9>
+1 1
+.names INST<8> RegisterInput_Value_Signal<8>
+1 1
+.names INST<7> RegisterInput_Value_Signal<7>
+1 1
+.names INST<6> RegisterInput_Value_Signal<6>
+1 1
+.names INST<5> RegisterInput_Value_Signal<5>
+1 1
+.names INST<4> RegisterInput_Value_Signal<4>
+1 1
+.names INST<3> RegisterInput_Value_Signal<3>
+1 1
+.names INST<2> RegisterInput_Value_Signal<2>
+1 1
+.names INST<1> RegisterInput_Value_Signal<1>
+1 1
+.names INST<0> RegisterInput_Value_Signal<0>
+1 1
+.names BUSA<7> RegisterInput_Value_Signal<23>
+1 1
+.names BUSA<6> RegisterInput_Value_Signal<22>
+1 1
+.names BUSA<5> RegisterInput_Value_Signal<21>
+1 1
+.names BUSA<4> RegisterInput_Value_Signal<20>
+1 1
+.names BUSA<3> RegisterInput_Value_Signal<19>
+1 1
+.names BUSA<2> RegisterInput_Value_Signal<18>
+1 1
+.names BUSA<1> RegisterInput_Value_Signal<17>
+1 1
+.names BUSA<0> RegisterInput_Value_Signal<16>
+1 1
+.names BUSB<7> RegisterInput_Value_Signal<31>
+1 1
+.names BUSB<6> RegisterInput_Value_Signal<30>
+1 1
+.names BUSB<5> RegisterInput_Value_Signal<29>
+1 1
+.names BUSB<4> RegisterInput_Value_Signal<28>
+1 1
+.names BUSB<3> RegisterInput_Value_Signal<27>
+1 1
+.names BUSB<2> RegisterInput_Value_Signal<26>
+1 1
+.names BUSB<1> RegisterInput_Value_Signal<25>
+1 1
+.names BUSB<0> RegisterInput_Value_Signal<24>
+1 1
+.names S<7> RegisterInput_Value_Signal<39>
+1 1
+.names S<6> RegisterInput_Value_Signal<38>
+1 1
+.names S<5> RegisterInput_Value_Signal<37>
+1 1
+.names S<4> RegisterInput_Value_Signal<36>
+1 1
+.names S<3> RegisterInput_Value_Signal<35>
+1 1
+.names S<2> RegisterInput_Value_Signal<34>
+1 1
+.names S<1> RegisterInput_Value_Signal<33>
+1 1
+.names S<0> RegisterInput_Value_Signal<32>
+1 1
+.names PC<4> RegisterInput_Value_Signal<44>
+1 1
+.names PC<3> RegisterInput_Value_Signal<43>
+1 1
+.names PC<2> RegisterInput_Value_Signal<42>
+1 1
+.names PC<1> RegisterInput_Value_Signal<41>
+1 1
+.names PC<0> RegisterInput_Value_Signal<40>
+1 1
+.names DATA<7> RegisterInput_Value_Signal<52>
+1 1
+.names DATA<6> RegisterInput_Value_Signal<51>
+1 1
+.names DATA<5> RegisterInput_Value_Signal<50>
+1 1
+.names DATA<4> RegisterInput_Value_Signal<49>
+1 1
+.names DATA<3> RegisterInput_Value_Signal<48>
+1 1
+.names DATA<2> RegisterInput_Value_Signal<47>
+1 1
+.names DATA<1> RegisterInput_Value_Signal<46>
+1 1
+.names DATA<0> RegisterInput_Value_Signal<45>
+1 1
+.names SignalGround32<0>
+.names SignalVCC
+1
+.names reduce_nor_215/n3 n610
+0 1
+.loc Configurable_U50.VHD 767
+.subckt Configurable_U50UNIVERSAL_DIGITAL_IO_TAPCONTROLLER TAP1 tck=-TAP1/tck tms=-TAP1/tms tdi=-TAP1/tdi drsin=-TAP1/drsin trst=-TAP1/trst tdo=+TDO reset=+$$COND0 State_TLR=+$$COND1 controlen=+Enable_Control updateir=+$$COND2 dataen=+Enable_Array<0> shiftdr=+Shift_Capture clockdr=+DR_Clock updatedr=+DR_Update exit1dr=+$$COND3 irout<3>=+$$COND4 irout<2>=+$$COND5 irout<1>=+$$COND6 irout<0>=+$$COND7 tapstate<3>=+$$COND8 tapstate<2>=+$$COND9 tapstate<1>=+$$COND10 tapstate<0>=+$$COND11 id_code_signal<31>=-TAP1/id_code_signal<31> id_code_signal<30>=-TAP1/id_code_signal<30> id_code_signal<29>=-TAP1/id_code_signal<29> id_code_signal<28>=-TAP1/id_code_signal<28> id_code_signal<27>=-TAP1/id_code_signal<27> id_code_signal<26>=-TAP1/id_code_signal<26> id_code_signal<25>=-TAP1/id_code_signal<25> id_code_signal<24>=-TAP1/id_code_signal<24> id_code_signal<23>=-TAP1/id_code_signal<23> id_code_signal<22>=-TAP1/id_code_signal<22> id_code_signal<21>=-TAP1/id_code_signal<21> id_code_signal<20>=-TAP1/id_code_signal<20> id_code_signal<19>=-TAP1/id_code_signal<19> id_code_signal<18>=-TAP1/id_code_signal<18> id_code_signal<17>=-TAP1/id_code_signal<17> id_code_signal<16>=-TAP1/id_code_signal<16> id_code_signal<15>=-TAP1/id_code_signal<15> id_code_signal<14>=-TAP1/id_code_signal<14> id_code_signal<13>=-TAP1/id_code_signal<13> id_code_signal<12>=-TAP1/id_code_signal<12> id_code_signal<11>=-TAP1/id_code_signal<11> id_code_signal<10>=-TAP1/id_code_signal<10> id_code_signal<9>=-TAP1/id_code_signal<9> id_code_signal<8>=-TAP1/id_code_signal<8> id_code_signal<7>=-TAP1/id_code_signal<7> id_code_signal<6>=-TAP1/id_code_signal<6> id_code_signal<5>=-TAP1/id_code_signal<5> id_code_signal<4>=-TAP1/id_code_signal<4> id_code_signal<3>=-TAP1/id_code_signal<3> id_code_signal<2>=-TAP1/id_code_signal<2> id_code_signal<1>=-TAP1/id_code_signal<1> id_code_signal<0>=-TAP1/id_code_signal<0>
+.names TCK TAP1/tck
+1 1
+.names TMS TAP1/tms
+1 1
+.names TDI TAP1/tdi
+1 1
+.names Main_SerialOut TAP1/drsin
+1 1
+.names TRST TAP1/trst
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<31>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<30>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<29>
+1 1
+.names SignalVCC TAP1/id_code_signal<28>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<27>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<26>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<25>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<24>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<23>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<22>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<21>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<20>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<19>
+1 1
+.names SignalVCC TAP1/id_code_signal<18>
+1 1
+.names SignalVCC TAP1/id_code_signal<17>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<16>
+1 1
+.names SignalVCC TAP1/id_code_signal<15>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<14>
+1 1
+.names SignalVCC TAP1/id_code_signal<13>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<12>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<11>
+1 1
+.names SignalVCC TAP1/id_code_signal<10>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<9>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<8>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<7>
+1 1
+.names SignalVCC TAP1/id_code_signal<6>
+1 1
+.names SignalVCC TAP1/id_code_signal<5>
+1 1
+.names SignalVCC TAP1/id_code_signal<4>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<3>
+1 1
+.names SignalGround32<0> TAP1/id_code_signal<2>
+1 1
+.names SignalVCC TAP1/id_code_signal<1>
+1 1
+.names SignalVCC TAP1/id_code_signal<0>
+1 1
+.loc Configurable_U50.VHD 789
+.subckt Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR_8_ control_register Rst=-control_register/Rst ResetValue<7>=-control_register/ResetValue<7> ResetValue<6>=-control_register/ResetValue<6> ResetValue<5>=-control_register/ResetValue<5> ResetValue<4>=-control_register/ResetValue<4> ResetValue<3>=-control_register/ResetValue<3> ResetValue<2>=-control_register/ResetValue<2> ResetValue<1>=-control_register/ResetValue<1> ResetValue<0>=-control_register/ResetValue<0> clk=-control_register/clk clken=-control_register/clken enable=-control_register/enable enable_write=-control_register/enable_write si=-control_register/si shift=-control_register/shift update=-control_register/update regin<7>=-control_register/regin<7> regin<6>=-control_register/regin<6> regin<5>=-control_register/regin<5> regin<4>=-control_register/regin<4> regin<3>=-control_register/regin<3> regin<2>=-control_register/regin<2> regin<1>=-control_register/regin<1> regin<0>=-control_register/regin<0> regout<7>=+Control_Out<7> regout<6>=+Control_Out<6> regout<5>=+Control_Out<5> regout<4>=+Control_Out<4> regout<3>=+Control_Out<3> regout<2>=+Control_Out<2> regout<1>=+Control_Out<1> regout<0>=+Control_Out<0> so=+Control_SerialOut
+.names SignalGround32<0> control_register/Rst
+1 1
+.names SignalGround32<0> control_register/ResetValue<7>
+1 1
+.names SignalGround32<0> control_register/ResetValue<6>
+1 1
+.names SignalGround32<0> control_register/ResetValue<5>
+1 1
+.names SignalGround32<0> control_register/ResetValue<4>
+1 1
+.names SignalGround32<0> control_register/ResetValue<3>
+1 1
+.names SignalGround32<0> control_register/ResetValue<2>
+1 1
+.names SignalGround32<0> control_register/ResetValue<1>
+1 1
+.names SignalGround32<0> control_register/ResetValue<0>
+1 1
+.names TCK control_register/clk
+1 1
+.names DR_Clock control_register/clken
+1 1
+.names Enable_Control control_register/enable
+1 1
+.names Enable_Control control_register/enable_write
+1 1
+.names TDI control_register/si
+1 1
+.names Shift_Capture control_register/shift
+1 1
+.names DR_Update control_register/update
+1 1
+.names Control_Out<7> control_register/regin<7>
+1 1
+.names Control_Out<6> control_register/regin<6>
+1 1
+.names Control_Out<5> control_register/regin<5>
+1 1
+.names Control_Out<4> control_register/regin<4>
+1 1
+.names Control_Out<3> control_register/regin<3>
+1 1
+.names Control_Out<2> control_register/regin<2>
+1 1
+.names Control_Out<1> control_register/regin<1>
+1 1
+.names Control_Out<0> control_register/regin<0>
+1 1
+.loc Configurable_U50.VHD 809
+.subckt Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR_16_ RegisterInput_Length Rst=-RegisterInput_Length/Rst ResetValue<15>=-RegisterInput_Length/ResetValue<15> ResetValue<14>=-RegisterInput_Length/ResetValue<14> ResetValue<13>=-RegisterInput_Length/ResetValue<13> ResetValue<12>=-RegisterInput_Length/ResetValue<12> ResetValue<11>=-RegisterInput_Length/ResetValue<11> ResetValue<10>=-RegisterInput_Length/ResetValue<10> ResetValue<9>=-RegisterInput_Length/ResetValue<9> ResetValue<8>=-RegisterInput_Length/ResetValue<8> ResetValue<7>=-RegisterInput_Length/ResetValue<7> ResetValue<6>=-RegisterInput_Length/ResetValue<6> ResetValue<5>=-RegisterInput_Length/ResetValue<5> ResetValue<4>=-RegisterInput_Length/ResetValue<4> ResetValue<3>=-RegisterInput_Length/ResetValue<3> ResetValue<2>=-RegisterInput_Length/ResetValue<2> ResetValue<1>=-RegisterInput_Length/ResetValue<1> ResetValue<0>=-RegisterInput_Length/ResetValue<0> clk=-RegisterInput_Length/clk clken=-RegisterInput_Length/clken enable=-RegisterInput_Length/enable enable_write=-RegisterInput_Length/enable_write si=-RegisterInput_Length/si shift=-RegisterInput_Length/shift update=-RegisterInput_Length/update regin<15>=-RegisterInput_Length/regin<15> regin<14>=-RegisterInput_Length/regin<14> regin<13>=-RegisterInput_Length/regin<13> regin<12>=-RegisterInput_Length/regin<12> regin<11>=-RegisterInput_Length/regin<11> regin<10>=-RegisterInput_Length/regin<10> regin<9>=-RegisterInput_Length/regin<9> regin<8>=-RegisterInput_Length/regin<8> regin<7>=-RegisterInput_Length/regin<7> regin<6>=-RegisterInput_Length/regin<6> regin<5>=-RegisterInput_Length/regin<5> regin<4>=-RegisterInput_Length/regin<4> regin<3>=-RegisterInput_Length/regin<3> regin<2>=-RegisterInput_Length/regin<2> regin<1>=-RegisterInput_Length/regin<1> regin<0>=-RegisterInput_Length/regin<0> regout<15>=+$$COND12 regout<14>=+$$COND13 regout<13>=+$$COND14 regout<12>=+$$COND15 regout<11>=+$$COND16 regout<10>=+$$COND17 regout<9>=+$$COND18 regout<8>=+$$COND19 regout<7>=+$$COND20 regout<6>=+$$COND21 regout<5>=+$$COND22 regout<4>=+$$COND23 regout<3>=+$$COND24 regout<2>=+$$COND25 regout<1>=+$$COND26 regout<0>=+$$COND27 so=+User_SerialOut<0>
+.names SignalGround32<0> RegisterInput_Length/Rst
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<15>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<14>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<13>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<12>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<11>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<10>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<9>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<8>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<7>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<6>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<5>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<4>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<3>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<2>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<1>
+1 1
+.names SignalGround32<0> RegisterInput_Length/ResetValue<0>
+1 1
+.names TCK RegisterInput_Length/clk
+1 1
+.names DR_Clock RegisterInput_Length/clken
+1 1
+.names User_Enable<0> RegisterInput_Length/enable
+1 1
+.names Enable_Write RegisterInput_Length/enable_write
+1 1
+.names TDI RegisterInput_Length/si
+1 1
+.names Shift_Capture RegisterInput_Length/shift
+1 1
+.names DR_Update RegisterInput_Length/update
+1 1
+.names SignalGround32<0> RegisterInput_Length/regin<15>
+1 1
+.names SignalGround32<0> RegisterInput_Length/regin<14>
+1 1
+.names SignalGround32<0> RegisterInput_Length/regin<13>
+1 1
+.names SignalGround32<0> RegisterInput_Length/regin<12>
+1 1
+.names SignalGround32<0> RegisterInput_Length/regin<11>
+1 1
+.names SignalGround32<0> RegisterInput_Length/regin<10>
+1 1
+.names SignalGround32<0> RegisterInput_Length/regin<9>
+1 1
+.names SignalGround32<0> RegisterInput_Length/regin<8>
+1 1
+.names SignalGround32<0> RegisterInput_Length/regin<7>
+1 1
+.names SignalGround32<0> RegisterInput_Length/regin<6>
+1 1
+.names SignalVCC RegisterInput_Length/regin<5>
+1 1
+.names SignalVCC RegisterInput_Length/regin<4>
+1 1
+.names SignalGround32<0> RegisterInput_Length/regin<3>
+1 1
+.names SignalVCC RegisterInput_Length/regin<2>
+1 1
+.names SignalGround32<0> RegisterInput_Length/regin<1>
+1 1
+.names SignalVCC RegisterInput_Length/regin<0>
+1 1
+.loc Configurable_U50.VHD 829
+.subckt Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR_53_ RegisterInput_Value Rst=-RegisterInput_Value/Rst ResetValue<52>=-RegisterInput_Value/ResetValue<52> ResetValue<51>=-RegisterInput_Value/ResetValue<51> ResetValue<50>=-RegisterInput_Value/ResetValue<50> ResetValue<49>=-RegisterInput_Value/ResetValue<49> ResetValue<48>=-RegisterInput_Value/ResetValue<48> ResetValue<47>=-RegisterInput_Value/ResetValue<47> ResetValue<46>=-RegisterInput_Value/ResetValue<46> ResetValue<45>=-RegisterInput_Value/ResetValue<45> ResetValue<44>=-RegisterInput_Value/ResetValue<44> ResetValue<43>=-RegisterInput_Value/ResetValue<43> ResetValue<42>=-RegisterInput_Value/ResetValue<42> ResetValue<41>=-RegisterInput_Value/ResetValue<41> ResetValue<40>=-RegisterInput_Value/ResetValue<40> ResetValue<39>=-RegisterInput_Value/ResetValue<39> ResetValue<38>=-RegisterInput_Value/ResetValue<38> ResetValue<37>=-RegisterInput_Value/ResetValue<37> ResetValue<36>=-RegisterInput_Value/ResetValue<36> ResetValue<35>=-RegisterInput_Value/ResetValue<35> ResetValue<34>=-RegisterInput_Value/ResetValue<34> ResetValue<33>=-RegisterInput_Value/ResetValue<33> ResetValue<32>=-RegisterInput_Value/ResetValue<32> ResetValue<31>=-RegisterInput_Value/ResetValue<31> ResetValue<30>=-RegisterInput_Value/ResetValue<30> ResetValue<29>=-RegisterInput_Value/ResetValue<29> ResetValue<28>=-RegisterInput_Value/ResetValue<28> ResetValue<27>=-RegisterInput_Value/ResetValue<27> ResetValue<26>=-RegisterInput_Value/ResetValue<26> ResetValue<25>=-RegisterInput_Value/ResetValue<25> ResetValue<24>=-RegisterInput_Value/ResetValue<24> ResetValue<23>=-RegisterInput_Value/ResetValue<23> ResetValue<22>=-RegisterInput_Value/ResetValue<22> ResetValue<21>=-RegisterInput_Value/ResetValue<21> ResetValue<20>=-RegisterInput_Value/ResetValue<20> ResetValue<19>=-RegisterInput_Value/ResetValue<19> ResetValue<18>=-RegisterInput_Value/ResetValue<18> ResetValue<17>=-RegisterInput_Value/ResetValue<17> ResetValue<16>=-RegisterInput_Value/ResetValue<16> ResetValue<15>=-RegisterInput_Value/ResetValue<15> ResetValue<14>=-RegisterInput_Value/ResetValue<14> ResetValue<13>=-RegisterInput_Value/ResetValue<13> ResetValue<12>=-RegisterInput_Value/ResetValue<12> ResetValue<11>=-RegisterInput_Value/ResetValue<11> ResetValue<10>=-RegisterInput_Value/ResetValue<10> ResetValue<9>=-RegisterInput_Value/ResetValue<9> ResetValue<8>=-RegisterInput_Value/ResetValue<8> ResetValue<7>=-RegisterInput_Value/ResetValue<7> ResetValue<6>=-RegisterInput_Value/ResetValue<6> ResetValue<5>=-RegisterInput_Value/ResetValue<5> ResetValue<4>=-RegisterInput_Value/ResetValue<4> ResetValue<3>=-RegisterInput_Value/ResetValue<3> ResetValue<2>=-RegisterInput_Value/ResetValue<2> ResetValue<1>=-RegisterInput_Value/ResetValue<1> ResetValue<0>=-RegisterInput_Value/ResetValue<0> clk=-RegisterInput_Value/clk clken=-RegisterInput_Value/clken enable=-RegisterInput_Value/enable enable_write=-RegisterInput_Value/enable_write si=-RegisterInput_Value/si shift=-RegisterInput_Value/shift update=-RegisterInput_Value/update regin<52>=-RegisterInput_Value/regin<52> regin<51>=-RegisterInput_Value/regin<51> regin<50>=-RegisterInput_Value/regin<50> regin<49>=-RegisterInput_Value/regin<49> regin<48>=-RegisterInput_Value/regin<48> regin<47>=-RegisterInput_Value/regin<47> regin<46>=-RegisterInput_Value/regin<46> regin<45>=-RegisterInput_Value/regin<45> regin<44>=-RegisterInput_Value/regin<44> regin<43>=-RegisterInput_Value/regin<43> regin<42>=-RegisterInput_Value/regin<42> regin<41>=-RegisterInput_Value/regin<41> regin<40>=-RegisterInput_Value/regin<40> regin<39>=-RegisterInput_Value/regin<39> regin<38>=-RegisterInput_Value/regin<38> regin<37>=-RegisterInput_Value/regin<37> regin<36>=-RegisterInput_Value/regin<36> regin<35>=-RegisterInput_Value/regin<35> regin<34>=-RegisterInput_Value/regin<34> regin<33>=-RegisterInput_Value/regin<33> regin<32>=-RegisterInput_Value/regin<32> regin<31>=-RegisterInput_Value/regin<31> regin<30>=-RegisterInput_Value/regin<30> regin<29>=-RegisterInput_Value/regin<29> regin<28>=-RegisterInput_Value/regin<28> regin<27>=-RegisterInput_Value/regin<27> regin<26>=-RegisterInput_Value/regin<26> regin<25>=-RegisterInput_Value/regin<25> regin<24>=-RegisterInput_Value/regin<24> regin<23>=-RegisterInput_Value/regin<23> regin<22>=-RegisterInput_Value/regin<22> regin<21>=-RegisterInput_Value/regin<21> regin<20>=-RegisterInput_Value/regin<20> regin<19>=-RegisterInput_Value/regin<19> regin<18>=-RegisterInput_Value/regin<18> regin<17>=-RegisterInput_Value/regin<17> regin<16>=-RegisterInput_Value/regin<16> regin<15>=-RegisterInput_Value/regin<15> regin<14>=-RegisterInput_Value/regin<14> regin<13>=-RegisterInput_Value/regin<13> regin<12>=-RegisterInput_Value/regin<12> regin<11>=-RegisterInput_Value/regin<11> regin<10>=-RegisterInput_Value/regin<10> regin<9>=-RegisterInput_Value/regin<9> regin<8>=-RegisterInput_Value/regin<8> regin<7>=-RegisterInput_Value/regin<7> regin<6>=-RegisterInput_Value/regin<6> regin<5>=-RegisterInput_Value/regin<5> regin<4>=-RegisterInput_Value/regin<4> regin<3>=-RegisterInput_Value/regin<3> regin<2>=-RegisterInput_Value/regin<2> regin<1>=-RegisterInput_Value/regin<1> regin<0>=-RegisterInput_Value/regin<0> regout<52>=+$$COND28 regout<51>=+$$COND29 regout<50>=+$$COND30 regout<49>=+$$COND31 regout<48>=+$$COND32 regout<47>=+$$COND33 regout<46>=+$$COND34 regout<45>=+$$COND35 regout<44>=+$$COND36 regout<43>=+$$COND37 regout<42>=+$$COND38 regout<41>=+$$COND39 regout<40>=+$$COND40 regout<39>=+$$COND41 regout<38>=+$$COND42 regout<37>=+$$COND43 regout<36>=+$$COND44 regout<35>=+$$COND45 regout<34>=+$$COND46 regout<33>=+$$COND47 regout<32>=+$$COND48 regout<31>=+$$COND49 regout<30>=+$$COND50 regout<29>=+$$COND51 regout<28>=+$$COND52 regout<27>=+$$COND53 regout<26>=+$$COND54 regout<25>=+$$COND55 regout<24>=+$$COND56 regout<23>=+$$COND57 regout<22>=+$$COND58 regout<21>=+$$COND59 regout<20>=+$$COND60 regout<19>=+$$COND61 regout<18>=+$$COND62 regout<17>=+$$COND63 regout<16>=+$$COND64 regout<15>=+$$COND65 regout<14>=+$$COND66 regout<13>=+$$COND67 regout<12>=+$$COND68 regout<11>=+$$COND69 regout<10>=+$$COND70 regout<9>=+$$COND71 regout<8>=+$$COND72 regout<7>=+$$COND73 regout<6>=+$$COND74 regout<5>=+$$COND75 regout<4>=+$$COND76 regout<3>=+$$COND77 regout<2>=+$$COND78 regout<1>=+$$COND79 regout<0>=+$$COND80 so=+User_SerialOut<1>
+.names SignalGround32<0> RegisterInput_Value/Rst
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<52>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<51>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<50>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<49>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<48>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<47>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<46>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<45>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<44>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<43>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<42>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<41>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<40>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<39>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<38>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<37>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<36>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<35>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<34>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<33>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<32>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<31>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<30>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<29>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<28>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<27>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<26>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<25>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<24>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<23>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<22>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<21>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<20>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<19>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<18>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<17>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<16>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<15>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<14>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<13>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<12>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<11>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<10>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<9>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<8>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<7>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<6>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<5>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<4>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<3>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<2>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<1>
+1 1
+.names SignalGround32<0> RegisterInput_Value/ResetValue<0>
+1 1
+.names TCK RegisterInput_Value/clk
+1 1
+.names DR_Clock RegisterInput_Value/clken
+1 1
+.names User_Enable<1> RegisterInput_Value/enable
+1 1
+.names Enable_Write RegisterInput_Value/enable_write
+1 1
+.names TDI RegisterInput_Value/si
+1 1
+.names Shift_Capture RegisterInput_Value/shift
+1 1
+.names DR_Update RegisterInput_Value/update
+1 1
+.names RegisterInput_Value_Signal<52> RegisterInput_Value/regin<52>
+1 1
+.names RegisterInput_Value_Signal<51> RegisterInput_Value/regin<51>
+1 1
+.names RegisterInput_Value_Signal<50> RegisterInput_Value/regin<50>
+1 1
+.names RegisterInput_Value_Signal<49> RegisterInput_Value/regin<49>
+1 1
+.names RegisterInput_Value_Signal<48> RegisterInput_Value/regin<48>
+1 1
+.names RegisterInput_Value_Signal<47> RegisterInput_Value/regin<47>
+1 1
+.names RegisterInput_Value_Signal<46> RegisterInput_Value/regin<46>
+1 1
+.names RegisterInput_Value_Signal<45> RegisterInput_Value/regin<45>
+1 1
+.names RegisterInput_Value_Signal<44> RegisterInput_Value/regin<44>
+1 1
+.names RegisterInput_Value_Signal<43> RegisterInput_Value/regin<43>
+1 1
+.names RegisterInput_Value_Signal<42> RegisterInput_Value/regin<42>
+1 1
+.names RegisterInput_Value_Signal<41> RegisterInput_Value/regin<41>
+1 1
+.names RegisterInput_Value_Signal<40> RegisterInput_Value/regin<40>
+1 1
+.names RegisterInput_Value_Signal<39> RegisterInput_Value/regin<39>
+1 1
+.names RegisterInput_Value_Signal<38> RegisterInput_Value/regin<38>
+1 1
+.names RegisterInput_Value_Signal<37> RegisterInput_Value/regin<37>
+1 1
+.names RegisterInput_Value_Signal<36> RegisterInput_Value/regin<36>
+1 1
+.names RegisterInput_Value_Signal<35> RegisterInput_Value/regin<35>
+1 1
+.names RegisterInput_Value_Signal<34> RegisterInput_Value/regin<34>
+1 1
+.names RegisterInput_Value_Signal<33> RegisterInput_Value/regin<33>
+1 1
+.names RegisterInput_Value_Signal<32> RegisterInput_Value/regin<32>
+1 1
+.names RegisterInput_Value_Signal<31> RegisterInput_Value/regin<31>
+1 1
+.names RegisterInput_Value_Signal<30> RegisterInput_Value/regin<30>
+1 1
+.names RegisterInput_Value_Signal<29> RegisterInput_Value/regin<29>
+1 1
+.names RegisterInput_Value_Signal<28> RegisterInput_Value/regin<28>
+1 1
+.names RegisterInput_Value_Signal<27> RegisterInput_Value/regin<27>
+1 1
+.names RegisterInput_Value_Signal<26> RegisterInput_Value/regin<26>
+1 1
+.names RegisterInput_Value_Signal<25> RegisterInput_Value/regin<25>
+1 1
+.names RegisterInput_Value_Signal<24> RegisterInput_Value/regin<24>
+1 1
+.names RegisterInput_Value_Signal<23> RegisterInput_Value/regin<23>
+1 1
+.names RegisterInput_Value_Signal<22> RegisterInput_Value/regin<22>
+1 1
+.names RegisterInput_Value_Signal<21> RegisterInput_Value/regin<21>
+1 1
+.names RegisterInput_Value_Signal<20> RegisterInput_Value/regin<20>
+1 1
+.names RegisterInput_Value_Signal<19> RegisterInput_Value/regin<19>
+1 1
+.names RegisterInput_Value_Signal<18> RegisterInput_Value/regin<18>
+1 1
+.names RegisterInput_Value_Signal<17> RegisterInput_Value/regin<17>
+1 1
+.names RegisterInput_Value_Signal<16> RegisterInput_Value/regin<16>
+1 1
+.names RegisterInput_Value_Signal<15> RegisterInput_Value/regin<15>
+1 1
+.names RegisterInput_Value_Signal<14> RegisterInput_Value/regin<14>
+1 1
+.names RegisterInput_Value_Signal<13> RegisterInput_Value/regin<13>
+1 1
+.names RegisterInput_Value_Signal<12> RegisterInput_Value/regin<12>
+1 1
+.names RegisterInput_Value_Signal<11> RegisterInput_Value/regin<11>
+1 1
+.names RegisterInput_Value_Signal<10> RegisterInput_Value/regin<10>
+1 1
+.names RegisterInput_Value_Signal<9> RegisterInput_Value/regin<9>
+1 1
+.names RegisterInput_Value_Signal<8> RegisterInput_Value/regin<8>
+1 1
+.names RegisterInput_Value_Signal<7> RegisterInput_Value/regin<7>
+1 1
+.names RegisterInput_Value_Signal<6> RegisterInput_Value/regin<6>
+1 1
+.names RegisterInput_Value_Signal<5> RegisterInput_Value/regin<5>
+1 1
+.names RegisterInput_Value_Signal<4> RegisterInput_Value/regin<4>
+1 1
+.names RegisterInput_Value_Signal<3> RegisterInput_Value/regin<3>
+1 1
+.names RegisterInput_Value_Signal<2> RegisterInput_Value/regin<2>
+1 1
+.names RegisterInput_Value_Signal<1> RegisterInput_Value/regin<1>
+1 1
+.names RegisterInput_Value_Signal<0> RegisterInput_Value/regin<0>
+1 1
+.loc Configurable_U50.VHD 849
+.subckt Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR_16_ RegisterOutput_Length Rst=-RegisterOutput_Length/Rst ResetValue<15>=-RegisterOutput_Length/ResetValue<15> ResetValue<14>=-RegisterOutput_Length/ResetValue<14> ResetValue<13>=-RegisterOutput_Length/ResetValue<13> ResetValue<12>=-RegisterOutput_Length/ResetValue<12> ResetValue<11>=-RegisterOutput_Length/ResetValue<11> ResetValue<10>=-RegisterOutput_Length/ResetValue<10> ResetValue<9>=-RegisterOutput_Length/ResetValue<9> ResetValue<8>=-RegisterOutput_Length/ResetValue<8> ResetValue<7>=-RegisterOutput_Length/ResetValue<7> ResetValue<6>=-RegisterOutput_Length/ResetValue<6> ResetValue<5>=-RegisterOutput_Length/ResetValue<5> ResetValue<4>=-RegisterOutput_Length/ResetValue<4> ResetValue<3>=-RegisterOutput_Length/ResetValue<3> ResetValue<2>=-RegisterOutput_Length/ResetValue<2> ResetValue<1>=-RegisterOutput_Length/ResetValue<1> ResetValue<0>=-RegisterOutput_Length/ResetValue<0> clk=-RegisterOutput_Length/clk clken=-RegisterOutput_Length/clken enable=-RegisterOutput_Length/enable enable_write=-RegisterOutput_Length/enable_write si=-RegisterOutput_Length/si shift=-RegisterOutput_Length/shift update=-RegisterOutput_Length/update regin<15>=-RegisterOutput_Length/regin<15> regin<14>=-RegisterOutput_Length/regin<14> regin<13>=-RegisterOutput_Length/regin<13> regin<12>=-RegisterOutput_Length/regin<12> regin<11>=-RegisterOutput_Length/regin<11> regin<10>=-RegisterOutput_Length/regin<10> regin<9>=-RegisterOutput_Length/regin<9> regin<8>=-RegisterOutput_Length/regin<8> regin<7>=-RegisterOutput_Length/regin<7> regin<6>=-RegisterOutput_Length/regin<6> regin<5>=-RegisterOutput_Length/regin<5> regin<4>=-RegisterOutput_Length/regin<4> regin<3>=-RegisterOutput_Length/regin<3> regin<2>=-RegisterOutput_Length/regin<2> regin<1>=-RegisterOutput_Length/regin<1> regin<0>=-RegisterOutput_Length/regin<0> regout<15>=+$$COND81 regout<14>=+$$COND82 regout<13>=+$$COND83 regout<12>=+$$COND84 regout<11>=+$$COND85 regout<10>=+$$COND86 regout<9>=+$$COND87 regout<8>=+$$COND88 regout<7>=+$$COND89 regout<6>=+$$COND90 regout<5>=+$$COND91 regout<4>=+$$COND92 regout<3>=+$$COND93 regout<2>=+$$COND94 regout<1>=+$$COND95 regout<0>=+$$COND96 so=+User_SerialOut<2>
+.names SignalGround32<0> RegisterOutput_Length/Rst
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<15>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<14>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<13>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<12>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<11>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<10>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<9>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<8>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<7>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<6>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<5>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<4>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<3>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<2>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<1>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/ResetValue<0>
+1 1
+.names TCK RegisterOutput_Length/clk
+1 1
+.names DR_Clock RegisterOutput_Length/clken
+1 1
+.names User_Enable<2> RegisterOutput_Length/enable
+1 1
+.names Enable_Write RegisterOutput_Length/enable_write
+1 1
+.names TDI RegisterOutput_Length/si
+1 1
+.names Shift_Capture RegisterOutput_Length/shift
+1 1
+.names DR_Update RegisterOutput_Length/update
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<15>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<14>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<13>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<12>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<11>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<10>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<9>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<8>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<7>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<6>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<5>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<4>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<3>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<2>
+1 1
+.names SignalGround32<0> RegisterOutput_Length/regin<1>
+1 1
+.names SignalVCC RegisterOutput_Length/regin<0>
+1 1
+.loc Configurable_U50.VHD 869
+.subckt Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR_1_ RegisterOutput_Value Rst=-RegisterOutput_Value/Rst ResetValue<0>=-RegisterOutput_Value/ResetValue<0> clk=-RegisterOutput_Value/clk clken=-RegisterOutput_Value/clken enable=-RegisterOutput_Value/enable enable_write=-RegisterOutput_Value/enable_write si=-RegisterOutput_Value/si shift=-RegisterOutput_Value/shift update=-RegisterOutput_Value/update regin<0>=-RegisterOutput_Value/regin<0> regout<0>=+RegisterOutput_Value_Signal<0> so=+User_SerialOut<3>
+.names DefaultEnable RegisterOutput_Value/Rst
+1 1
+.names SignalGround32<0> RegisterOutput_Value/ResetValue<0>
+1 1
+.names TCK RegisterOutput_Value/clk
+1 1
+.names DR_Clock RegisterOutput_Value/clken
+1 1
+.names User_Enable<3> RegisterOutput_Value/enable
+1 1
+.names Enable_Write RegisterOutput_Value/enable_write
+1 1
+.names TDI RegisterOutput_Value/si
+1 1
+.names Shift_Capture RegisterOutput_Value/shift
+1 1
+.names DR_Update RegisterOutput_Value/update
+1 1
+.names RegisterOutput_Value_Signal<0> RegisterOutput_Value/regin<0>
+1 1
+.loc Configurable_U50.VHD 889
+.subckt Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR_32_ RegisterConfiguration Rst=-RegisterConfiguration/Rst ResetValue<31>=-RegisterConfiguration/ResetValue<31> ResetValue<30>=-RegisterConfiguration/ResetValue<30> ResetValue<29>=-RegisterConfiguration/ResetValue<29> ResetValue<28>=-RegisterConfiguration/ResetValue<28> ResetValue<27>=-RegisterConfiguration/ResetValue<27> ResetValue<26>=-RegisterConfiguration/ResetValue<26> ResetValue<25>=-RegisterConfiguration/ResetValue<25> ResetValue<24>=-RegisterConfiguration/ResetValue<24> ResetValue<23>=-RegisterConfiguration/ResetValue<23> ResetValue<22>=-RegisterConfiguration/ResetValue<22> ResetValue<21>=-RegisterConfiguration/ResetValue<21> ResetValue<20>=-RegisterConfiguration/ResetValue<20> ResetValue<19>=-RegisterConfiguration/ResetValue<19> ResetValue<18>=-RegisterConfiguration/ResetValue<18> ResetValue<17>=-RegisterConfiguration/ResetValue<17> ResetValue<16>=-RegisterConfiguration/ResetValue<16> ResetValue<15>=-RegisterConfiguration/ResetValue<15> ResetValue<14>=-RegisterConfiguration/ResetValue<14> ResetValue<13>=-RegisterConfiguration/ResetValue<13> ResetValue<12>=-RegisterConfiguration/ResetValue<12> ResetValue<11>=-RegisterConfiguration/ResetValue<11> ResetValue<10>=-RegisterConfiguration/ResetValue<10> ResetValue<9>=-RegisterConfiguration/ResetValue<9> ResetValue<8>=-RegisterConfiguration/ResetValue<8> ResetValue<7>=-RegisterConfiguration/ResetValue<7> ResetValue<6>=-RegisterConfiguration/ResetValue<6> ResetValue<5>=-RegisterConfiguration/ResetValue<5> ResetValue<4>=-RegisterConfiguration/ResetValue<4> ResetValue<3>=-RegisterConfiguration/ResetValue<3> ResetValue<2>=-RegisterConfiguration/ResetValue<2> ResetValue<1>=-RegisterConfiguration/ResetValue<1> ResetValue<0>=-RegisterConfiguration/ResetValue<0> clk=-RegisterConfiguration/clk clken=-RegisterConfiguration/clken enable=-RegisterConfiguration/enable enable_write=-RegisterConfiguration/enable_write si=-RegisterConfiguration/si shift=-RegisterConfiguration/shift update=-RegisterConfiguration/update regin<31>=-RegisterConfiguration/regin<31> regin<30>=-RegisterConfiguration/regin<30> regin<29>=-RegisterConfiguration/regin<29> regin<28>=-RegisterConfiguration/regin<28> regin<27>=-RegisterConfiguration/regin<27> regin<26>=-RegisterConfiguration/regin<26> regin<25>=-RegisterConfiguration/regin<25> regin<24>=-RegisterConfiguration/regin<24> regin<23>=-RegisterConfiguration/regin<23> regin<22>=-RegisterConfiguration/regin<22> regin<21>=-RegisterConfiguration/regin<21> regin<20>=-RegisterConfiguration/regin<20> regin<19>=-RegisterConfiguration/regin<19> regin<18>=-RegisterConfiguration/regin<18> regin<17>=-RegisterConfiguration/regin<17> regin<16>=-RegisterConfiguration/regin<16> regin<15>=-RegisterConfiguration/regin<15> regin<14>=-RegisterConfiguration/regin<14> regin<13>=-RegisterConfiguration/regin<13> regin<12>=-RegisterConfiguration/regin<12> regin<11>=-RegisterConfiguration/regin<11> regin<10>=-RegisterConfiguration/regin<10> regin<9>=-RegisterConfiguration/regin<9> regin<8>=-RegisterConfiguration/regin<8> regin<7>=-RegisterConfiguration/regin<7> regin<6>=-RegisterConfiguration/regin<6> regin<5>=-RegisterConfiguration/regin<5> regin<4>=-RegisterConfiguration/regin<4> regin<3>=-RegisterConfiguration/regin<3> regin<2>=-RegisterConfiguration/regin<2> regin<1>=-RegisterConfiguration/regin<1> regin<0>=-RegisterConfiguration/regin<0> regout<31>=+$$COND97 regout<30>=+$$COND98 regout<29>=+$$COND99 regout<28>=+$$COND100 regout<27>=+$$COND101 regout<26>=+$$COND102 regout<25>=+$$COND103 regout<24>=+$$COND104 regout<23>=+$$COND105 regout<22>=+$$COND106 regout<21>=+$$COND107 regout<20>=+$$COND108 regout<19>=+$$COND109 regout<18>=+$$COND110 regout<17>=+$$COND111 regout<16>=+$$COND112 regout<15>=+$$COND113 regout<14>=+$$COND114 regout<13>=+$$COND115 regout<12>=+$$COND116 regout<11>=+$$COND117 regout<10>=+$$COND118 regout<9>=+$$COND119 regout<8>=+$$COND120 regout<7>=+$$COND121 regout<6>=+$$COND122 regout<5>=+$$COND123 regout<4>=+$$COND124 regout<3>=+$$COND125 regout<2>=+$$COND126 regout<1>=+$$COND127 regout<0>=+$$COND128 so=+User_SerialOut<4>
+.names SignalGround32<0> RegisterConfiguration/Rst
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<31>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<30>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<29>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<28>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<27>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<26>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<25>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<24>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<23>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<22>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<21>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<20>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<19>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<18>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<17>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<16>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<15>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<14>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<13>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<12>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<11>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<10>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<9>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<8>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<7>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<6>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<5>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<4>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<3>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<2>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<1>
+1 1
+.names SignalGround32<0> RegisterConfiguration/ResetValue<0>
+1 1
+.names TCK RegisterConfiguration/clk
+1 1
+.names DR_Clock RegisterConfiguration/clken
+1 1
+.names User_Enable<4> RegisterConfiguration/enable
+1 1
+.names Enable_Write RegisterConfiguration/enable_write
+1 1
+.names TDI RegisterConfiguration/si
+1 1
+.names Shift_Capture RegisterConfiguration/shift
+1 1
+.names DR_Update RegisterConfiguration/update
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<31>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<30>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<29>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<28>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<27>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<26>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<25>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<24>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<23>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<22>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<21>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<20>
+1 1
+.names SignalVCC RegisterConfiguration/regin<19>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<18>
+1 1
+.names SignalVCC RegisterConfiguration/regin<17>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<16>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<15>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<14>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<13>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<12>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<11>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<10>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<9>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<8>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<7>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<6>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<5>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<4>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<3>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<2>
+1 1
+.names SignalVCC RegisterConfiguration/regin<1>
+1 1
+.names SignalGround32<0> RegisterConfiguration/regin<0>
+1 1
+.names TRST n602
+0 1
+.loc Configurable_U50.VHD 939 StartUpCounter<3>
+.latch n614 StartUpCounter<3> re TCK 4 n602 reduce_nor_215/n3
+.names StartUpCounter<0> n606
+0 1
+.names StartUpCounter<1> n607
+0 1
+.names StartUpCounter<2> n608
+0 1
+.names StartUpCounter<3> n609
+0 1
+.names n663 n664
+0 1
+.loc syn_unsi.vhd 118
+.subckt XORCY i282 CI=-i282/CI LI=-i282/LI O=+n614
+.names add_218/n4 i282/CI
+1 1
+.names StartUpCounter<3> i282/LI
+1 1
+.loc syn_unsi.vhd 118
+.subckt XORCY i280 CI=-i280/CI LI=-i280/LI O=+n616
+.names StartUpCounter<0> i280/CI
+1 1
+.names StartUpCounter<1> i280/LI
+1 1
+.loc syn_unsi.vhd 118
+.subckt MUXCY i279 CI=-i279/CI DI=-i279/DI S=-i279/S O=+add_218/n2
+.names StartUpCounter<0> i279/CI
+1 1
+.names StartUpCounter<1> i279/DI
+1 1
+.names StartUpCounter<1> i279/S
+1 1
+.loc syn_unsi.vhd 118
+.subckt XORCY i277 CI=-i277/CI LI=-i277/LI O=+n615
+.names add_218/n2 i277/CI
+1 1
+.names StartUpCounter<2> i277/LI
+1 1
+.names n610 n662 n663
+11 1
+.names User_Enable<3> n662
+0 1
+.loc Configurable_U50.VHD 939 DefaultEnable
+.latch reduce_nor_215/n3 DefaultEnable re TCK 5 n602 n664
+.loc Configurable_U50.VHD 939 StartUpCounter<0>
+.latch n606 StartUpCounter<0> re TCK 4 n602 reduce_nor_215/n3
+.loc Configurable_U50.VHD 939 StartUpCounter<1>
+.latch n616 StartUpCounter<1> re TCK 4 n602 reduce_nor_215/n3
+.loc Configurable_U50.VHD 939 StartUpCounter<2>
+.latch n615 StartUpCounter<2> re TCK 4 n602 reduce_nor_215/n3
+.names Control_Out<0> Enable_Array<0> User_Enable<0>
+11 1
+.names Control_Out<1> Enable_Array<0> User_Enable<1>
+11 1
+.names Control_Out<2> Enable_Array<0> User_Enable<2>
+11 1
+.names Control_Out<3> Enable_Array<0> User_Enable<3>
+11 1
+.names Control_Out<4> Enable_Array<0> User_Enable<4>
+11 1
+.names reduce_nor_215/n1 reduce_nor_215/n2 reduce_nor_215/n3
+1- 1
+-1 1
+.names n608 n609 reduce_nor_215/n2
+1- 1
+-1 1
+.names Control_Out<7> Enable_Array<0> Enable_Write
+11 1
+.names User_SerialOut<3> User_Enable<3> Control_SerialOut n642
+11- 1
+-01 1
+.names User_SerialOut<2> User_Enable<2> n642 n643
+11- 1
+-01 1
+.names User_SerialOut<1> User_Enable<1> n643 n644
+11- 1
+-01 1
+.names User_SerialOut<0> User_Enable<0> n644 n645
+11- 1
+-01 1
+.names User_SerialOut<4> User_Enable<4> n645 Main_SerialOut
+11- 1
+-01 1
+.names n606 n607 reduce_nor_215/n1
+1- 1
+-1 1
+.loc syn_unsi.vhd 118
+.subckt MUXCY i276 CI=-i276/CI DI=-i276/DI S=-i276/S O=+add_218/n4
+.names add_218/n2 i276/CI
+1 1
+.names StartUpCounter<2> i276/DI
+1 1
+.names StartUpCounter<2> i276/S
+1 1

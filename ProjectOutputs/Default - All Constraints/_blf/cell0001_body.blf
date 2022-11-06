@@ -1,0 +1,508 @@
+.model FPGA_PDUA_V1
+.inputs JTAG_NEXUS_TCK
+.inputs JTAG_NEXUS_TDI
+.outputs JTAG_NEXUS_TDO
+.inputs JTAG_NEXUS_TMS
+.inputs TEST_BUTTON
+.names PowerSignal_GND
+.names NamedSignal_JTAG_NEXUS_TRST
+1
+.loc TOP_PDUA_V1.VHD 243
+.subckt ROM U_rom CS=-U_rom/CS RD=-U_rom/RD DIR<4>=-U_rom/DIR<4> DIR<3>=-U_rom/DIR<3> DIR<2>=-U_rom/DIR<2> DIR<1>=-U_rom/DIR<1> DIR<0>=-U_rom/DIR<0> INST<15>=+PinSignal_U_rom_INST<15> INST<14>=+PinSignal_U_rom_INST<14> INST<13>=+PinSignal_U_rom_INST<13> INST<12>=+PinSignal_U_rom_INST<12> INST<11>=+PinSignal_U_rom_INST<11> INST<10>=+PinSignal_U_rom_INST<10> INST<9>=+PinSignal_U_rom_INST<9> INST<8>=+PinSignal_U_rom_INST<8> INST<7>=+PinSignal_U_rom_INST<7> INST<6>=+PinSignal_U_rom_INST<6> INST<5>=+PinSignal_U_rom_INST<5> INST<4>=+PinSignal_U_rom_INST<4> INST<3>=+PinSignal_U_rom_INST<3> INST<2>=+PinSignal_U_rom_INST<2> INST<1>=+PinSignal_U_rom_INST<1> INST<0>=+PinSignal_U_rom_INST<0>
+.names PinSignal_U2_CS U_rom/CS
+1 1
+.names PinSignal_U2_RD U_rom/RD
+1 1
+.names PinSignal_U_mar_BUS_DIR<4> U_rom/DIR<4>
+1 1
+.names PinSignal_U_mar_BUS_DIR<3> U_rom/DIR<3>
+1 1
+.names PinSignal_U_mar_BUS_DIR<2> U_rom/DIR<2>
+1 1
+.names PinSignal_U_mar_BUS_DIR<1> U_rom/DIR<1>
+1 1
+.names PinSignal_U_mar_BUS_DIR<0> U_rom/DIR<0>
+1 1
+.loc TOP_PDUA_V1.VHD 252
+.subckt RAM U_ram CS=-U_ram/CS RW=-U_ram/RW CLK=-U_ram/CLK DIR<2>=-U_ram/DIR<2> DIR<1>=-U_ram/DIR<1> DIR<0>=-U_ram/DIR<0> DATA_IN<7>=-U_ram/DATA_IN<7> DATA_IN<6>=-U_ram/DATA_IN<6> DATA_IN<5>=-U_ram/DATA_IN<5> DATA_IN<4>=-U_ram/DATA_IN<4> DATA_IN<3>=-U_ram/DATA_IN<3> DATA_IN<2>=-U_ram/DATA_IN<2> DATA_IN<1>=-U_ram/DATA_IN<1> DATA_IN<0>=-U_ram/DATA_IN<0> DATA_OUT<7>=+PinSignal_U_ram_DATA_OUT<7> DATA_OUT<6>=+PinSignal_U_ram_DATA_OUT<6> DATA_OUT<5>=+PinSignal_U_ram_DATA_OUT<5> DATA_OUT<4>=+PinSignal_U_ram_DATA_OUT<4> DATA_OUT<3>=+PinSignal_U_ram_DATA_OUT<3> DATA_OUT<2>=+PinSignal_U_ram_DATA_OUT<2> DATA_OUT<1>=+PinSignal_U_ram_DATA_OUT<1> DATA_OUT<0>=+PinSignal_U_ram_DATA_OUT<0>
+.names NamedSignal_UI<15> U_ram/CS
+1 1
+.names NamedSignal_UI<14> U_ram/RW
+1 1
+.names PinSignal_U2_CLK U_ram/CLK
+1 1
+.names NamedSignal_S<2> U_ram/DIR<2>
+1 1
+.names NamedSignal_S<1> U_ram/DIR<1>
+1 1
+.names NamedSignal_S<0> U_ram/DIR<0>
+1 1
+.names PinSignal_U_banco_BUSA<7> U_ram/DATA_IN<7>
+1 1
+.names PinSignal_U_banco_BUSA<6> U_ram/DATA_IN<6>
+1 1
+.names PinSignal_U_banco_BUSA<5> U_ram/DATA_IN<5>
+1 1
+.names PinSignal_U_banco_BUSA<4> U_ram/DATA_IN<4>
+1 1
+.names PinSignal_U_banco_BUSA<3> U_ram/DATA_IN<3>
+1 1
+.names PinSignal_U_banco_BUSA<2> U_ram/DATA_IN<2>
+1 1
+.names PinSignal_U_banco_BUSA<1> U_ram/DATA_IN<1>
+1 1
+.names PinSignal_U_banco_BUSA<0> U_ram/DATA_IN<0>
+1 1
+.loc TOP_PDUA_V1.VHD 263
+.subckt MAR U_mar CLK=-U_mar/CLK RESET=-U_mar/RESET BUS_DIR<4>=+PinSignal_U_mar_BUS_DIR<4> BUS_DIR<3>=+PinSignal_U_mar_BUS_DIR<3> BUS_DIR<2>=+PinSignal_U_mar_BUS_DIR<2> BUS_DIR<1>=+PinSignal_U_mar_BUS_DIR<1> BUS_DIR<0>=+PinSignal_U_mar_BUS_DIR<0> BUS_C<4>=-U_mar/BUS_C<4> BUS_C<3>=-U_mar/BUS_C<3> BUS_C<2>=-U_mar/BUS_C<2> BUS_C<1>=-U_mar/BUS_C<1> BUS_C<0>=-U_mar/BUS_C<0>
+.names PinSignal_U2_CLK U_mar/CLK
+1 1
+.names TEST_BUTTON U_mar/RESET
+1 1
+.names PinSignal_U4_Y<4> U_mar/BUS_C<4>
+1 1
+.names PinSignal_U4_Y<3> U_mar/BUS_C<3>
+1 1
+.names PinSignal_U4_Y<2> U_mar/BUS_C<2>
+1 1
+.names PinSignal_U4_Y<1> U_mar/BUS_C<1>
+1 1
+.names PinSignal_U4_Y<0> U_mar/BUS_C<0>
+1 1
+.loc TOP_PDUA_V1.VHD 272
+.subckt CTRL U_ctrl RESET=-U_ctrl/RESET INST<15>=-U_ctrl/INST<15> INST<14>=-U_ctrl/INST<14> INST<13>=-U_ctrl/INST<13> INST<12>=-U_ctrl/INST<12> INST<11>=-U_ctrl/INST<11> INST<10>=-U_ctrl/INST<10> INST<9>=-U_ctrl/INST<9> INST<8>=-U_ctrl/INST<8> INST<7>=-U_ctrl/INST<7> INST<6>=-U_ctrl/INST<6> INST<5>=-U_ctrl/INST<5> INST<4>=-U_ctrl/INST<4> INST<3>=-U_ctrl/INST<3> INST<2>=-U_ctrl/INST<2> INST<1>=-U_ctrl/INST<1> INST<0>=-U_ctrl/INST<0> HR=+PinSignal_U_ctrl_HR SD=+PinSignal_U_ctrl_SD UI<15>=+NamedSignal_UI<15> UI<14>=+NamedSignal_UI<14> UI<13>=+PinSignal_U_banco_SC<2> UI<12>=+PinSignal_U_banco_SC<1> UI<11>=+PinSignal_U_banco_SC<0> UI<10>=+PinSignal_U_banco_SB<2> UI<9>=+PinSignal_U_banco_SB<1> UI<8>=+PinSignal_U_banco_SB<0> UI<7>=+PinSignal_U_alu_SELOP<2> UI<6>=+PinSignal_U_alu_SELOP<1> UI<5>=+PinSignal_U_alu_SELOP<0> UI<4>=+PinSignal_U_alu_DESP<1> UI<3>=+PinSignal_U_alu_DESP<0> UI<2>=+NamedSignal_UI<2> UI<1>=+NamedSignal_UI<1> UI<0>=+NamedSignal_UI<0> DATA<7>=+PinSignal_U_ctrl_DATA<7> DATA<6>=+PinSignal_U_ctrl_DATA<6> DATA<5>=+PinSignal_U_ctrl_DATA<5> DATA<4>=+PinSignal_U_ctrl_DATA<4> DATA<3>=+PinSignal_U_ctrl_DATA<3> DATA<2>=+PinSignal_U_ctrl_DATA<2> DATA<1>=+PinSignal_U_ctrl_DATA<1> DATA<0>=+PinSignal_U_ctrl_DATA<0>
+.names TEST_BUTTON U_ctrl/RESET
+1 1
+.names PinSignal_U_rom_INST<15> U_ctrl/INST<15>
+1 1
+.names PinSignal_U_rom_INST<14> U_ctrl/INST<14>
+1 1
+.names PinSignal_U_rom_INST<13> U_ctrl/INST<13>
+1 1
+.names PinSignal_U_rom_INST<12> U_ctrl/INST<12>
+1 1
+.names PinSignal_U_rom_INST<11> U_ctrl/INST<11>
+1 1
+.names PinSignal_U_rom_INST<10> U_ctrl/INST<10>
+1 1
+.names PinSignal_U_rom_INST<9> U_ctrl/INST<9>
+1 1
+.names PinSignal_U_rom_INST<8> U_ctrl/INST<8>
+1 1
+.names PinSignal_U_rom_INST<7> U_ctrl/INST<7>
+1 1
+.names PinSignal_U_rom_INST<6> U_ctrl/INST<6>
+1 1
+.names PinSignal_U_rom_INST<5> U_ctrl/INST<5>
+1 1
+.names PinSignal_U_rom_INST<4> U_ctrl/INST<4>
+1 1
+.names PinSignal_U_rom_INST<3> U_ctrl/INST<3>
+1 1
+.names PinSignal_U_rom_INST<2> U_ctrl/INST<2>
+1 1
+.names PinSignal_U_rom_INST<1> U_ctrl/INST<1>
+1 1
+.names PinSignal_U_rom_INST<0> U_ctrl/INST<0>
+1 1
+.loc TOP_PDUA_V1.VHD 283
+.subckt banco U_banco RESET=-U_banco/RESET HR=-U_banco/HR CLK=-U_banco/CLK SC<2>=-U_banco/SC<2> SC<1>=-U_banco/SC<1> SC<0>=-U_banco/SC<0> SB<2>=-U_banco/SB<2> SB<1>=-U_banco/SB<1> SB<0>=-U_banco/SB<0> BUSC<7>=-U_banco/BUSC<7> BUSC<6>=-U_banco/BUSC<6> BUSC<5>=-U_banco/BUSC<5> BUSC<4>=-U_banco/BUSC<4> BUSC<3>=-U_banco/BUSC<3> BUSC<2>=-U_banco/BUSC<2> BUSC<1>=-U_banco/BUSC<1> BUSC<0>=-U_banco/BUSC<0> BUSA<7>=+PinSignal_U_banco_BUSA<7> BUSA<6>=+PinSignal_U_banco_BUSA<6> BUSA<5>=+PinSignal_U_banco_BUSA<5> BUSA<4>=+PinSignal_U_banco_BUSA<4> BUSA<3>=+PinSignal_U_banco_BUSA<3> BUSA<2>=+PinSignal_U_banco_BUSA<2> BUSA<1>=+PinSignal_U_banco_BUSA<1> BUSA<0>=+PinSignal_U_banco_BUSA<0> BUSB<7>=+PinSignal_U_banco_BUSB<7> BUSB<6>=+PinSignal_U_banco_BUSB<6> BUSB<5>=+PinSignal_U_banco_BUSB<5> BUSB<4>=+PinSignal_U_banco_BUSB<4> BUSB<3>=+PinSignal_U_banco_BUSB<3> BUSB<2>=+PinSignal_U_banco_BUSB<2> BUSB<1>=+PinSignal_U_banco_BUSB<1> BUSB<0>=+PinSignal_U_banco_BUSB<0>
+.names TEST_BUTTON U_banco/RESET
+1 1
+.names PinSignal_U_ctrl_HR U_banco/HR
+1 1
+.names PinSignal_U2_CLK U_banco/CLK
+1 1
+.names PinSignal_U_banco_SC<2> U_banco/SC<2>
+1 1
+.names PinSignal_U_banco_SC<1> U_banco/SC<1>
+1 1
+.names PinSignal_U_banco_SC<0> U_banco/SC<0>
+1 1
+.names PinSignal_U_banco_SB<2> U_banco/SB<2>
+1 1
+.names PinSignal_U_banco_SB<1> U_banco/SB<1>
+1 1
+.names PinSignal_U_banco_SB<0> U_banco/SB<0>
+1 1
+.names PinSignal_U7_Y<7> U_banco/BUSC<7>
+1 1
+.names PinSignal_U7_Y<6> U_banco/BUSC<6>
+1 1
+.names PinSignal_U7_Y<5> U_banco/BUSC<5>
+1 1
+.names PinSignal_U7_Y<4> U_banco/BUSC<4>
+1 1
+.names PinSignal_U7_Y<3> U_banco/BUSC<3>
+1 1
+.names PinSignal_U7_Y<2> U_banco/BUSC<2>
+1 1
+.names PinSignal_U7_Y<1> U_banco/BUSC<1>
+1 1
+.names PinSignal_U7_Y<0> U_banco/BUSC<0>
+1 1
+.loc TOP_PDUA_V1.VHD 296
+.subckt ALU U_alu CLK=-U_alu/CLK HF=-U_alu/HF A<7>=-U_alu/A<7> A<6>=-U_alu/A<6> A<5>=-U_alu/A<5> A<4>=-U_alu/A<4> A<3>=-U_alu/A<3> A<2>=-U_alu/A<2> A<1>=-U_alu/A<1> A<0>=-U_alu/A<0> B<7>=-U_alu/B<7> B<6>=-U_alu/B<6> B<5>=-U_alu/B<5> B<4>=-U_alu/B<4> B<3>=-U_alu/B<3> B<2>=-U_alu/B<2> B<1>=-U_alu/B<1> B<0>=-U_alu/B<0> SELOP<2>=-U_alu/SELOP<2> SELOP<1>=-U_alu/SELOP<1> SELOP<0>=-U_alu/SELOP<0> DESP<1>=-U_alu/DESP<1> DESP<0>=-U_alu/DESP<0> S<7>=+NamedSignal_S<7> S<6>=+NamedSignal_S<6> S<5>=+NamedSignal_S<5> S<4>=+NamedSignal_S<4> S<3>=+NamedSignal_S<3> S<2>=+NamedSignal_S<2> S<1>=+NamedSignal_S<1> S<0>=+NamedSignal_S<0> C=+PinSignal_U_alu_C N=+PinSignal_U_alu_N Z=+PinSignal_U_alu_Z P=+PinSignal_U_alu_P
+.names PinSignal_U2_CLK U_alu/CLK
+1 1
+.names NamedSignal_JTAG_NEXUS_TRST U_alu/HF
+1 1
+.names PinSignal_U_banco_BUSA<7> U_alu/A<7>
+1 1
+.names PinSignal_U_banco_BUSA<6> U_alu/A<6>
+1 1
+.names PinSignal_U_banco_BUSA<5> U_alu/A<5>
+1 1
+.names PinSignal_U_banco_BUSA<4> U_alu/A<4>
+1 1
+.names PinSignal_U_banco_BUSA<3> U_alu/A<3>
+1 1
+.names PinSignal_U_banco_BUSA<2> U_alu/A<2>
+1 1
+.names PinSignal_U_banco_BUSA<1> U_alu/A<1>
+1 1
+.names PinSignal_U_banco_BUSA<0> U_alu/A<0>
+1 1
+.names PinSignal_U8_Y<7> U_alu/B<7>
+1 1
+.names PinSignal_U8_Y<6> U_alu/B<6>
+1 1
+.names PinSignal_U8_Y<5> U_alu/B<5>
+1 1
+.names PinSignal_U8_Y<4> U_alu/B<4>
+1 1
+.names PinSignal_U8_Y<3> U_alu/B<3>
+1 1
+.names PinSignal_U8_Y<2> U_alu/B<2>
+1 1
+.names PinSignal_U8_Y<1> U_alu/B<1>
+1 1
+.names PinSignal_U8_Y<0> U_alu/B<0>
+1 1
+.names PinSignal_U_alu_SELOP<2> U_alu/SELOP<2>
+1 1
+.names PinSignal_U_alu_SELOP<1> U_alu/SELOP<1>
+1 1
+.names PinSignal_U_alu_SELOP<0> U_alu/SELOP<0>
+1 1
+.names PinSignal_U_alu_DESP<1> U_alu/DESP<1>
+1 1
+.names PinSignal_U_alu_DESP<0> U_alu/DESP<0>
+1 1
+.loc TOP_PDUA_V1.VHD 312
+.subckt Configurable_U50 U50 INST<15>=-U50/INST<15> INST<14>=-U50/INST<14> INST<13>=-U50/INST<13> INST<12>=-U50/INST<12> INST<11>=-U50/INST<11> INST<10>=-U50/INST<10> INST<9>=-U50/INST<9> INST<8>=-U50/INST<8> INST<7>=-U50/INST<7> INST<6>=-U50/INST<6> INST<5>=-U50/INST<5> INST<4>=-U50/INST<4> INST<3>=-U50/INST<3> INST<2>=-U50/INST<2> INST<1>=-U50/INST<1> INST<0>=-U50/INST<0> BUSA<7>=-U50/BUSA<7> BUSA<6>=-U50/BUSA<6> BUSA<5>=-U50/BUSA<5> BUSA<4>=-U50/BUSA<4> BUSA<3>=-U50/BUSA<3> BUSA<2>=-U50/BUSA<2> BUSA<1>=-U50/BUSA<1> BUSA<0>=-U50/BUSA<0> BUSB<7>=-U50/BUSB<7> BUSB<6>=-U50/BUSB<6> BUSB<5>=-U50/BUSB<5> BUSB<4>=-U50/BUSB<4> BUSB<3>=-U50/BUSB<3> BUSB<2>=-U50/BUSB<2> BUSB<1>=-U50/BUSB<1> BUSB<0>=-U50/BUSB<0> S<7>=-U50/S<7> S<6>=-U50/S<6> S<5>=-U50/S<5> S<4>=-U50/S<4> S<3>=-U50/S<3> S<2>=-U50/S<2> S<1>=-U50/S<1> S<0>=-U50/S<0> PC<4>=-U50/PC<4> PC<3>=-U50/PC<3> PC<2>=-U50/PC<2> PC<1>=-U50/PC<1> PC<0>=-U50/PC<0> DATA<7>=-U50/DATA<7> DATA<6>=-U50/DATA<6> DATA<5>=-U50/DATA<5> DATA<4>=-U50/DATA<4> DATA<3>=-U50/DATA<3> DATA<2>=-U50/DATA<2> DATA<1>=-U50/DATA<1> DATA<0>=-U50/DATA<0> TCK=-U50/TCK TMS=-U50/TMS TDI=-U50/TDI TRST=-U50/TRST TDO=+JTAG_NEXUS_TDO
+.names NamedSignal_UI<15> U50/INST<15>
+1 1
+.names NamedSignal_UI<14> U50/INST<14>
+1 1
+.names PinSignal_U_banco_SC<2> U50/INST<13>
+1 1
+.names PinSignal_U_banco_SC<1> U50/INST<12>
+1 1
+.names PinSignal_U_banco_SC<0> U50/INST<11>
+1 1
+.names PinSignal_U_banco_SB<2> U50/INST<10>
+1 1
+.names PinSignal_U_banco_SB<1> U50/INST<9>
+1 1
+.names PinSignal_U_banco_SB<0> U50/INST<8>
+1 1
+.names PinSignal_U_alu_SELOP<2> U50/INST<7>
+1 1
+.names PinSignal_U_alu_SELOP<1> U50/INST<6>
+1 1
+.names PinSignal_U_alu_SELOP<0> U50/INST<5>
+1 1
+.names PinSignal_U_alu_DESP<1> U50/INST<4>
+1 1
+.names PinSignal_U_alu_DESP<0> U50/INST<3>
+1 1
+.names NamedSignal_UI<2> U50/INST<2>
+1 1
+.names NamedSignal_UI<1> U50/INST<1>
+1 1
+.names NamedSignal_UI<0> U50/INST<0>
+1 1
+.names PinSignal_U_banco_BUSA<7> U50/BUSA<7>
+1 1
+.names PinSignal_U_banco_BUSA<6> U50/BUSA<6>
+1 1
+.names PinSignal_U_banco_BUSA<5> U50/BUSA<5>
+1 1
+.names PinSignal_U_banco_BUSA<4> U50/BUSA<4>
+1 1
+.names PinSignal_U_banco_BUSA<3> U50/BUSA<3>
+1 1
+.names PinSignal_U_banco_BUSA<2> U50/BUSA<2>
+1 1
+.names PinSignal_U_banco_BUSA<1> U50/BUSA<1>
+1 1
+.names PinSignal_U_banco_BUSA<0> U50/BUSA<0>
+1 1
+.names PinSignal_U_banco_BUSB<7> U50/BUSB<7>
+1 1
+.names PinSignal_U_banco_BUSB<6> U50/BUSB<6>
+1 1
+.names PinSignal_U_banco_BUSB<5> U50/BUSB<5>
+1 1
+.names PinSignal_U_banco_BUSB<4> U50/BUSB<4>
+1 1
+.names PinSignal_U_banco_BUSB<3> U50/BUSB<3>
+1 1
+.names PinSignal_U_banco_BUSB<2> U50/BUSB<2>
+1 1
+.names PinSignal_U_banco_BUSB<1> U50/BUSB<1>
+1 1
+.names PinSignal_U_banco_BUSB<0> U50/BUSB<0>
+1 1
+.names PinSignal_U7_Y<7> U50/S<7>
+1 1
+.names PinSignal_U7_Y<6> U50/S<6>
+1 1
+.names PinSignal_U7_Y<5> U50/S<5>
+1 1
+.names PinSignal_U7_Y<4> U50/S<4>
+1 1
+.names PinSignal_U7_Y<3> U50/S<3>
+1 1
+.names PinSignal_U7_Y<2> U50/S<2>
+1 1
+.names PinSignal_U7_Y<1> U50/S<1>
+1 1
+.names PinSignal_U7_Y<0> U50/S<0>
+1 1
+.names PinSignal_U4_Y<4> U50/PC<4>
+1 1
+.names PinSignal_U4_Y<3> U50/PC<3>
+1 1
+.names PinSignal_U4_Y<2> U50/PC<2>
+1 1
+.names PinSignal_U4_Y<1> U50/PC<1>
+1 1
+.names PinSignal_U4_Y<0> U50/PC<0>
+1 1
+.names PinSignal_U_ctrl_DATA<7> U50/DATA<7>
+1 1
+.names PinSignal_U_ctrl_DATA<6> U50/DATA<6>
+1 1
+.names PinSignal_U_ctrl_DATA<5> U50/DATA<5>
+1 1
+.names PinSignal_U_ctrl_DATA<4> U50/DATA<4>
+1 1
+.names PinSignal_U_ctrl_DATA<3> U50/DATA<3>
+1 1
+.names PinSignal_U_ctrl_DATA<2> U50/DATA<2>
+1 1
+.names PinSignal_U_ctrl_DATA<1> U50/DATA<1>
+1 1
+.names PinSignal_U_ctrl_DATA<0> U50/DATA<0>
+1 1
+.names JTAG_NEXUS_TCK U50/TCK
+1 1
+.names JTAG_NEXUS_TMS U50/TMS
+1 1
+.names PinSignal_U2_TDO U50/TDI
+1 1
+.names NamedSignal_JTAG_NEXUS_TRST U50/TRST
+1 1
+.names NamedSignal_UI<15> U7/n4
+0 1
+.names NamedSignal_UI<2> NamedSignal_UI<1> NamedSignal_UI<0> PinSignal_U_alu_C U6/Mux_3/muxtemp0
+1001 1
+.names NamedSignal_UI<2> NamedSignal_UI<1> NamedSignal_UI<0> PinSignal_U_alu_N U6/Mux_3/muxtemp1
+0111 1
+.names NamedSignal_UI<2> NamedSignal_UI<1> NamedSignal_UI<0> PinSignal_U_alu_P U6/Mux_3/muxtemp2
+1011 1
+.names NamedSignal_UI<2> NamedSignal_UI<1> NamedSignal_UI<0> PinSignal_U_alu_Z U6/Mux_3/muxtemp3
+0101 1
+.names NamedSignal_UI<2> NamedSignal_UI<1> NamedSignal_UI<0> U6/Mux_3/muxtemp4
+001 1
+.names U6/Mux_3/muxtemp0 U6/Mux_3/muxtemp1 U6/Mux_3/muxtemp2 U6/Mux_3/muxtemp3 U6/Mux_3/muxtemp4 PinSignal_U6_Y
+1---- 1
+-1--- 1
+--1-- 1
+---1- 1
+----1 1
+.names PinSignal_U6_Y U4/n4
+0 1
+.loc TOP_PDUA_V1.VHD 378
+.subckt Configurable_U2 U2 INST<15>=-U2/INST<15> INST<14>=-U2/INST<14> INST<13>=-U2/INST<13> INST<12>=-U2/INST<12> INST<11>=-U2/INST<11> INST<10>=-U2/INST<10> INST<9>=-U2/INST<9> INST<8>=-U2/INST<8> INST<7>=-U2/INST<7> INST<6>=-U2/INST<6> INST<5>=-U2/INST<5> INST<4>=-U2/INST<4> INST<3>=-U2/INST<3> INST<2>=-U2/INST<2> INST<1>=-U2/INST<1> INST<0>=-U2/INST<0> BUS_DIR<4>=-U2/BUS_DIR<4> BUS_DIR<3>=-U2/BUS_DIR<3> BUS_DIR<2>=-U2/BUS_DIR<2> BUS_DIR<1>=-U2/BUS_DIR<1> BUS_DIR<0>=-U2/BUS_DIR<0> RD=+PinSignal_U2_RD CS=+PinSignal_U2_CS CLK=+PinSignal_U2_CLK TCK=-U2/TCK TMS=-U2/TMS TDI=-U2/TDI TRST=-U2/TRST TDO=+PinSignal_U2_TDO
+.names PinSignal_U_rom_INST<15> U2/INST<15>
+1 1
+.names PinSignal_U_rom_INST<14> U2/INST<14>
+1 1
+.names PinSignal_U_rom_INST<13> U2/INST<13>
+1 1
+.names PinSignal_U_rom_INST<12> U2/INST<12>
+1 1
+.names PinSignal_U_rom_INST<11> U2/INST<11>
+1 1
+.names PinSignal_U_rom_INST<10> U2/INST<10>
+1 1
+.names PinSignal_U_rom_INST<9> U2/INST<9>
+1 1
+.names PinSignal_U_rom_INST<8> U2/INST<8>
+1 1
+.names PinSignal_U_rom_INST<7> U2/INST<7>
+1 1
+.names PinSignal_U_rom_INST<6> U2/INST<6>
+1 1
+.names PinSignal_U_rom_INST<5> U2/INST<5>
+1 1
+.names PinSignal_U_rom_INST<4> U2/INST<4>
+1 1
+.names PinSignal_U_rom_INST<3> U2/INST<3>
+1 1
+.names PinSignal_U_rom_INST<2> U2/INST<2>
+1 1
+.names PinSignal_U_rom_INST<1> U2/INST<1>
+1 1
+.names PinSignal_U_rom_INST<0> U2/INST<0>
+1 1
+.names PinSignal_U_mar_BUS_DIR<4> U2/BUS_DIR<4>
+1 1
+.names PinSignal_U_mar_BUS_DIR<3> U2/BUS_DIR<3>
+1 1
+.names PinSignal_U_mar_BUS_DIR<2> U2/BUS_DIR<2>
+1 1
+.names PinSignal_U_mar_BUS_DIR<1> U2/BUS_DIR<1>
+1 1
+.names PinSignal_U_mar_BUS_DIR<0> U2/BUS_DIR<0>
+1 1
+.names JTAG_NEXUS_TCK U2/TCK
+1 1
+.names JTAG_NEXUS_TMS U2/TMS
+1 1
+.names PinSignal_U1_TDO U2/TDI
+1 1
+.names NamedSignal_JTAG_NEXUS_TRST U2/TRST
+1 1
+.loc TOP_PDUA_V1.VHD 393
+.subckt Configurable_U1 U1 TCK=-U1/TCK TMS=-U1/TMS TDI=-U1/TDI TRST=-U1/TRST TDO=+PinSignal_U1_TDO
+.names JTAG_NEXUS_TCK U1/TCK
+1 1
+.names JTAG_NEXUS_TMS U1/TMS
+1 1
+.names JTAG_NEXUS_TDI U1/TDI
+1 1
+.names NamedSignal_JTAG_NEXUS_TRST U1/TRST
+1 1
+.names PinSignal_U_mar_BUS_DIR<0> PinSignal_U3_S<0>
+0 1
+.loc syn_arit.vhd 838
+.subckt XORCY i61 CI=-i61/CI LI=-i61/LI O=+PinSignal_U3_S<1>
+.names U3/add_15/n2 i61/CI
+1 1
+.names PinSignal_U_mar_BUS_DIR<1> i61/LI
+1 1
+.loc syn_arit.vhd 838
+.subckt MUXCY i60 CI=-i60/CI DI=-i60/DI S=-i60/S O=+U3/add_15/n4
+.names U3/add_15/n2 i60/CI
+1 1
+.names PinSignal_U_mar_BUS_DIR<1> i60/DI
+1 1
+.names PinSignal_U_mar_BUS_DIR<1> i60/S
+1 1
+.loc syn_arit.vhd 838
+.subckt XORCY i58 CI=-i58/CI LI=-i58/LI O=+PinSignal_U3_S<2>
+.names U3/add_15/n4 i58/CI
+1 1
+.names PinSignal_U_mar_BUS_DIR<2> i58/LI
+1 1
+.loc syn_arit.vhd 838
+.subckt MUXCY i57 CI=-i57/CI DI=-i57/DI S=-i57/S O=+U3/add_15/n6
+.names U3/add_15/n4 i57/CI
+1 1
+.names PinSignal_U_mar_BUS_DIR<2> i57/DI
+1 1
+.names PinSignal_U_mar_BUS_DIR<2> i57/S
+1 1
+.loc syn_arit.vhd 838
+.subckt XORCY i55 CI=-i55/CI LI=-i55/LI O=+PinSignal_U3_S<3>
+.names U3/add_15/n6 i55/CI
+1 1
+.names PinSignal_U_mar_BUS_DIR<3> i55/LI
+1 1
+.loc syn_arit.vhd 838
+.subckt MUXCY i54 CI=-i54/CI DI=-i54/DI S=-i54/S O=+U3/add_15/n8
+.names U3/add_15/n6 i54/CI
+1 1
+.names PinSignal_U_mar_BUS_DIR<3> i54/DI
+1 1
+.names PinSignal_U_mar_BUS_DIR<3> i54/S
+1 1
+.loc syn_arit.vhd 838
+.subckt XORCY i52 CI=-i52/CI LI=-i52/LI O=+PinSignal_U3_S<4>
+.names U3/add_15/n8 i52/CI
+1 1
+.names PinSignal_U_mar_BUS_DIR<4> i52/LI
+1 1
+.names PinSignal_U_mar_BUS_DIR<0> n409 U3/add_15/n2
+11 1
+.names PinSignal_U3_S<0> n409
+0 1
+.names PinSignal_U3_S<0> U4/n4 NamedSignal_S<0> PinSignal_U4_Y<0>
+11- 1
+-01 1
+.names PinSignal_U3_S<1> U4/n4 NamedSignal_S<1> PinSignal_U4_Y<1>
+11- 1
+-01 1
+.names PinSignal_U3_S<2> U4/n4 NamedSignal_S<2> PinSignal_U4_Y<2>
+11- 1
+-01 1
+.names PinSignal_U3_S<3> U4/n4 NamedSignal_S<3> PinSignal_U4_Y<3>
+11- 1
+-01 1
+.names PinSignal_U3_S<4> U4/n4 NamedSignal_S<4> PinSignal_U4_Y<4>
+11- 1
+-01 1
+.names NamedSignal_S<0> U7/n4 PinSignal_U_ram_DATA_OUT<0> PinSignal_U7_Y<0>
+11- 1
+-01 1
+.names NamedSignal_S<1> U7/n4 PinSignal_U_ram_DATA_OUT<1> PinSignal_U7_Y<1>
+11- 1
+-01 1
+.names NamedSignal_S<2> U7/n4 PinSignal_U_ram_DATA_OUT<2> PinSignal_U7_Y<2>
+11- 1
+-01 1
+.names NamedSignal_S<3> U7/n4 PinSignal_U_ram_DATA_OUT<3> PinSignal_U7_Y<3>
+11- 1
+-01 1
+.names NamedSignal_S<4> U7/n4 PinSignal_U_ram_DATA_OUT<4> PinSignal_U7_Y<4>
+11- 1
+-01 1
+.names NamedSignal_S<5> U7/n4 PinSignal_U_ram_DATA_OUT<5> PinSignal_U7_Y<5>
+11- 1
+-01 1
+.names NamedSignal_S<6> U7/n4 PinSignal_U_ram_DATA_OUT<6> PinSignal_U7_Y<6>
+11- 1
+-01 1
+.names NamedSignal_S<7> U7/n4 PinSignal_U_ram_DATA_OUT<7> PinSignal_U7_Y<7>
+11- 1
+-01 1
+.names PinSignal_U_banco_BUSB<0> U8/n4 PinSignal_U_ctrl_DATA<0> PinSignal_U8_Y<0>
+11- 1
+-01 1
+.names PinSignal_U_banco_BUSB<1> U8/n4 PinSignal_U_ctrl_DATA<1> PinSignal_U8_Y<1>
+11- 1
+-01 1
+.names PinSignal_U_banco_BUSB<2> U8/n4 PinSignal_U_ctrl_DATA<2> PinSignal_U8_Y<2>
+11- 1
+-01 1
+.names PinSignal_U_banco_BUSB<3> U8/n4 PinSignal_U_ctrl_DATA<3> PinSignal_U8_Y<3>
+11- 1
+-01 1
+.names PinSignal_U_banco_BUSB<4> U8/n4 PinSignal_U_ctrl_DATA<4> PinSignal_U8_Y<4>
+11- 1
+-01 1
+.names PinSignal_U_banco_BUSB<5> U8/n4 PinSignal_U_ctrl_DATA<5> PinSignal_U8_Y<5>
+11- 1
+-01 1
+.names PinSignal_U_banco_BUSB<6> U8/n4 PinSignal_U_ctrl_DATA<6> PinSignal_U8_Y<6>
+11- 1
+-01 1
+.names PinSignal_U_banco_BUSB<7> U8/n4 PinSignal_U_ctrl_DATA<7> PinSignal_U8_Y<7>
+11- 1
+-01 1
+.names PinSignal_U_ctrl_SD U8/n4
+0 1

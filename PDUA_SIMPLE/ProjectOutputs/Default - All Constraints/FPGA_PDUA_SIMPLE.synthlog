@@ -1,0 +1,165 @@
+###############################################################################
+### Altium HDL Synthesizer 1.1.0.1
+### Copyright (C) 2005-2009, Altium Limited. All Rights Reserved
+###############################################################################
+### Timestamp: 28/05/2014 11:52:26 p.m.
+###############################################################################
+### Commandline: AltiumSynthesizer.exe "-o" "FPGA_PDUA_SIMPLE.mof" "-p" "FPGA_PDUA_SIMPLE.mpf"
+###
+### Options:
+###
+### Synthesizing FPGA_PDUA_SIMPLE for Spartan3AN
+### Entity                  : FPGA_PDUA_SIMPLE
+### VerilogMode             : 1 (0=Verilog95, 1=Verilog2001, 2=VerilogSystem, 3=Ams)
+### VHDL87                  : False
+### Insert Toplevel Buffers : True
+### Combinational Logic Opt : 3 (1=Low, 3=Normal, 5=High)
+###############################################################################
+### Compilation Report
+###############################################################################
+
+analyzing entity configurable_u1
+analyzing architecture structure
+analyzing entity configurable_u2
+analyzing architecture structure
+analyzing entity configurable_u3
+analyzing architecture structure
+analyzing entity configurable_u4
+analyzing architecture structure
+analyzing entity configurable_u5
+analyzing architecture structure
+analyzing entity configurable_u6
+analyzing architecture structure
+analyzing entity alu_bit
+analyzing architecture behavioral
+analyzing entity banco
+analyzing architecture behavioral
+analyzing entity ctrl
+analyzing architecture behavioral
+analyzing entity rom
+analyzing architecture behavioral
+analyzing entity mar
+analyzing architecture behavioral
+analyzing entity alu
+analyzing architecture bit_slice
+analyzing entity ram
+analyzing architecture behavioral
+analyzing entity fpga_pdua_simple
+analyzing architecture structure
+###############################################################################
+### Elaboration Report
+###############################################################################
+
+executing Configurable_U1(structure)
+##I|syn_arit.vhd|838|-- found Adder: 6+6
+executing Configurable_U2(structure)
+##N|Configurable_U2.VHD|31|others clause is never selected
+##I|Configurable_U2.VHD|31|-- possible Selector: 2-1 for y
+executing Configurable_U3(structure)
+##N|Configurable_U3.VHD|47|others clause is never selected
+##I|Configurable_U3.VHD|47|-- possible Multiplexer: 8-1 for y
+executing Configurable_U4(structure)
+##N|Configurable_U4.VHD|29|others clause is never selected
+##I|Configurable_U4.VHD|29|-- possible Selector: 2-1 for y
+executing Configurable_U5(structure)
+##N|Configurable_U5.VHD|29|others clause is never selected
+##I|Configurable_U5.VHD|29|-- possible Selector: 2-1 for y
+executing Configurable_U6(structure)
+executing ALU_BIT(Behavioral)
+##N|ALU_BIT.vhdl|58|others clause is never selected
+##I|ALU_BIT.vhdl|58|-- possible Multiplexer: 8-1 for r
+executing banco(Behavioral)
+##I|banco.vhdl|68|-- possible Multiplexer: 8-1 for pc
+##N|banco.vhdl|85|others clause is never selected
+##I|banco.vhdl|85|-- possible Multiplexer: 8-1 for busb
+executing CTRL(Behavioral)
+##N|CTRL.vhdl|83|others clause is never selected
+##I|CTRL.vhdl|83|-- possible Multiplexer: 16-1 for ui
+executing ROM(Behavioral)
+##N|ROM.vhdl|72|others clause is never selected
+##I|ROM.vhdl|72|-- possible Multiplexer: 32-1 for inst
+executing MAR(Behavioral)
+executing ALU(Bit_Slice)
+##I|ALU.vhdl|93|-- possible Multiplexer: 4-1 for s
+executing RAM(Behavioral)
+##I|RAM.vhdl|34|-- found RAM: 3 by 8
+executing FPGA_PDUA_SIMPLE(structure)
+
+###############################################################################
+### Synthesis Report
+###############################################################################
+
+##O|ALU.vhdl|62|Dissolving instance Slices:7:BITN:BN(ALU_BIT)
+##O|ALU.vhdl|58|Dissolving instance Slices:0:BIT0:B0(ALU_BIT)
+##O|TOP_PDUA_SIMPLE.VHD|271|Dissolving instance U6(Configurable_U6)
+##O|TOP_PDUA_SIMPLE.VHD|278|Dissolving instance U5(Configurable_U5)
+##O|TOP_PDUA_SIMPLE.VHD|287|Dissolving instance U4(Configurable_U4)
+##O|TOP_PDUA_SIMPLE.VHD|296|Dissolving instance U3(Configurable_U3)
+##O|TOP_PDUA_SIMPLE.VHD|321|Dissolving instance U1(Configurable_U1)
+##I|RAM.vhdl|34|Found single port block RAM: address_size : 3, data_size 8
+##W|CTRL.vhdl|85|Found latch for signal hr1.  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal flag1.  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal insts[3].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal insts[2].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal insts[1].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal insts[0].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal data_s[7].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal data_s[6].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal data_s[5].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal data_s[4].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal data_s[3].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal data_s[2].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal data_s[1].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal data_s[0].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|85|Found latch for signal hs.  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+###############################################################################
+### Optimization Report
+###  command: mmHDLtoEDIF -f xilinx -n spartan3an -p spartan3 -z 3 -o "C:\Users\Daares1\Documents\Dropbox\Pro_Arquitecturas\PDUA_SIMPLE\ProjectOutputs\Default - All Constraints\FPGA_PDUA_SIMPLE.edf" -b "C:\Users\Daares1\Documents\Dropbox\Pro_Arquitecturas\PDUA_SIMPLE\ProjectOutputs\Default - All Constraints\FPGA_PDUA_SIMPLE.bfl" -e FPGA_PDUA_SIMPLE -L "C:\Users\Public\Documents\Altium\AD14\Library/" 
+
+INFO LibDir:  "C:\Users\Public\Documents\Altium\AD14\Library/"
+
+INFO ConstraintsMap:  "C:\Users\Public\Documents\Altium\AD14\Library/vhdl_lib/VendorConstraints.map"
+
+optimizing "_blf/cell0001"
+optimizing "_blf/cell0002"
+optimizing "_blf/cell0003"
+optimizing "_blf/cell0004"
+optimizing "_blf/cell0005"
+optimizing "_blf/cell0006"
+optimizing "_blf/cell0007"
+optimizing "_blf/cell0008"
+ 
+###############################################################################
+### Design Statistics
+###############################################################################
+ 
+Tristates                                                  : 24
+                                                           
+Flipflops:                                                 : 71
+    Flipflops with RESET                    (Asynchronous) : 5
+    Flipflops                                              : 6
+    Flipflops with RESET and ENABLE         (Synchronous)  : 47
+    Flipflops with PRESET and ENABLE        (Synchronous)  : 9
+    Flipflops with ENABLE                                  : 4
+                                                           
+Latches:                                                   : 15
+    Latches                                                : 15
+                                                           
+MacroCells:                                                
+    XORCY                                                  : 4
+    RAMS_3_8                                               : 1
+    MUXF5                                                  : 32
+    MUXF6                                                  : 16
+    MUXCY                                                  : 3
+                                                           
+Area Estimates:                                            
+    Area Estimate (2 Input Gate Count)                     : 508
+    Area Estimate (LUT Count)                              : 271
+ 
+###############################################################################
+ 
+formating EDIF....                            
+
+###############################################################################
+Synthesis successful
+###############################################################################

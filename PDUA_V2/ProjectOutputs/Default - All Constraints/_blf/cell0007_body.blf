@@ -1,0 +1,166 @@
+.model EX_REG
+.inputs RESET
+.inputs CLK
+.inputs Z_I
+.inputs N_I
+.inputs C_I
+.inputs P_I
+.inputs HR_I
+.inputs SC_I<2>
+.inputs SC_I<1>
+.inputs SC_I<0>
+.inputs BUSA_I<7>
+.inputs BUSA_I<6>
+.inputs BUSA_I<5>
+.inputs BUSA_I<4>
+.inputs BUSA_I<3>
+.inputs BUSA_I<2>
+.inputs BUSA_I<1>
+.inputs BUSA_I<0>
+.inputs S_I<7>
+.inputs S_I<6>
+.inputs S_I<5>
+.inputs S_I<4>
+.inputs S_I<3>
+.inputs S_I<2>
+.inputs S_I<1>
+.inputs S_I<0>
+.inputs UI_I<15>
+.inputs UI_I<14>
+.inputs UI_I<13>
+.inputs UI_I<12>
+.inputs UI_I<11>
+.inputs UI_I<10>
+.inputs UI_I<9>
+.inputs UI_I<8>
+.inputs UI_I<7>
+.inputs UI_I<6>
+.inputs UI_I<5>
+.inputs UI_I<4>
+.inputs UI_I<3>
+.inputs UI_I<2>
+.inputs UI_I<1>
+.inputs UI_I<0>
+.outputs Z_O
+.outputs N_O
+.outputs C_O
+.outputs P_O
+.outputs HR_O
+.outputs SC_O<2>
+.outputs SC_O<1>
+.outputs SC_O<0>
+.outputs BUSA_O<7>
+.outputs BUSA_O<6>
+.outputs BUSA_O<5>
+.outputs BUSA_O<4>
+.outputs BUSA_O<3>
+.outputs BUSA_O<2>
+.outputs BUSA_O<1>
+.outputs BUSA_O<0>
+.outputs S_O<7>
+.outputs S_O<6>
+.outputs S_O<5>
+.outputs S_O<4>
+.outputs S_O<3>
+.outputs S_O<2>
+.outputs S_O<1>
+.outputs S_O<0>
+.outputs UI_O<15>
+.outputs UI_O<14>
+.outputs UI_O<13>
+.outputs UI_O<12>
+.outputs UI_O<11>
+.outputs UI_O<10>
+.outputs UI_O<9>
+.outputs UI_O<8>
+.outputs UI_O<7>
+.outputs UI_O<6>
+.outputs UI_O<5>
+.outputs UI_O<4>
+.outputs UI_O<3>
+.outputs UI_O<2>
+.outputs UI_O<1>
+.outputs UI_O<0>
+.names n1
+.names RESET n127
+0 1
+.loc EX_REG.vhd 66 Z_O
+.latch Z_I Z_O re CLK 0 RESET
+.loc EX_REG.vhd 66 N_O
+.latch N_I N_O re CLK 0 RESET
+.loc EX_REG.vhd 66 C_O
+.latch C_I C_O re CLK 0 RESET
+.loc EX_REG.vhd 66 P_O
+.latch P_I P_O re CLK 0 RESET
+.loc EX_REG.vhd 66 HR_O
+.latch HR_I HR_O re CLK 0 RESET
+.loc EX_REG.vhd 66 SC_O<2>
+.latch SC_I<2> SC_O<2> re CLK 0 RESET
+.loc EX_REG.vhd 66 SC_O<1>
+.latch SC_I<1> SC_O<1> re CLK 0 RESET
+.loc EX_REG.vhd 66 SC_O<0>
+.latch SC_I<0> SC_O<0> re CLK 0 RESET
+.loc EX_REG.vhd 66 BUSA_O<7>
+.latch BUSA_I<7> BUSA_O<7> re CLK 0 RESET
+.loc EX_REG.vhd 66 BUSA_O<6>
+.latch BUSA_I<6> BUSA_O<6> re CLK 0 RESET
+.loc EX_REG.vhd 66 BUSA_O<5>
+.latch BUSA_I<5> BUSA_O<5> re CLK 0 RESET
+.loc EX_REG.vhd 66 BUSA_O<4>
+.latch BUSA_I<4> BUSA_O<4> re CLK 0 RESET
+.loc EX_REG.vhd 66 BUSA_O<3>
+.latch BUSA_I<3> BUSA_O<3> re CLK 0 RESET
+.loc EX_REG.vhd 66 BUSA_O<2>
+.latch BUSA_I<2> BUSA_O<2> re CLK 0 RESET
+.loc EX_REG.vhd 66 BUSA_O<1>
+.latch BUSA_I<1> BUSA_O<1> re CLK 0 RESET
+.loc EX_REG.vhd 66 BUSA_O<0>
+.latch BUSA_I<0> BUSA_O<0> re CLK 0 RESET
+.loc EX_REG.vhd 66 S_O<7>
+.latch S_I<7> S_O<7> re CLK 0 RESET
+.loc EX_REG.vhd 66 S_O<6>
+.latch S_I<6> S_O<6> re CLK 0 RESET
+.loc EX_REG.vhd 66 S_O<5>
+.latch S_I<5> S_O<5> re CLK 0 RESET
+.loc EX_REG.vhd 66 S_O<4>
+.latch S_I<4> S_O<4> re CLK 0 RESET
+.loc EX_REG.vhd 66 S_O<3>
+.latch S_I<3> S_O<3> re CLK 0 RESET
+.loc EX_REG.vhd 66 S_O<2>
+.latch S_I<2> S_O<2> re CLK 0 RESET
+.loc EX_REG.vhd 66 S_O<1>
+.latch S_I<1> S_O<1> re CLK 0 RESET
+.loc EX_REG.vhd 66 S_O<0>
+.latch S_I<0> S_O<0> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<15>
+.latch UI_I<15> UI_O<15> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<14>
+.latch UI_I<14> UI_O<14> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<13>
+.latch UI_I<13> UI_O<13> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<12>
+.latch UI_I<12> UI_O<12> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<11>
+.latch UI_I<11> UI_O<11> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<10>
+.latch UI_I<10> UI_O<10> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<9>
+.latch UI_I<9> UI_O<9> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<8>
+.latch UI_I<8> UI_O<8> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<7>
+.latch UI_I<7> UI_O<7> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<6>
+.latch UI_I<6> UI_O<6> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<5>
+.latch UI_I<5> UI_O<5> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<4>
+.latch UI_I<4> UI_O<4> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<3>
+.latch UI_I<3> UI_O<3> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<2>
+.latch UI_I<2> UI_O<2> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<1>
+.latch UI_I<1> UI_O<1> re CLK 0 RESET
+.loc EX_REG.vhd 66 UI_O<0>
+.latch UI_I<0> UI_O<0> re CLK 0 RESET

@@ -1,0 +1,17 @@
+.model Configurable_U2
+.inputs BUS_DIR<4>
+.inputs BUS_DIR<3>
+.inputs BUS_DIR<2>
+.inputs BUS_DIR<1>
+.inputs BUS_DIR<0>
+.inputs PC<4>
+.inputs PC<3>
+.inputs PC<2>
+.inputs PC<1>
+.inputs PC<0>
+.outputs CLK
+.inputs TCK
+.inputs TMS
+.inputs TDI
+.inputs TRST
+.outputs TDO

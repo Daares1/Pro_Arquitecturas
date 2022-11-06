@@ -1,0 +1,192 @@
+.model CTRL
+.inputs RESET
+.outputs FLAG
+.inputs INST<15>
+.inputs INST<14>
+.inputs INST<13>
+.inputs INST<12>
+.inputs INST<11>
+.inputs INST<10>
+.inputs INST<9>
+.inputs INST<8>
+.inputs INST<7>
+.inputs INST<6>
+.inputs INST<5>
+.inputs INST<4>
+.inputs INST<3>
+.inputs INST<2>
+.inputs INST<1>
+.inputs INST<0>
+.outputs HR
+.outputs SD
+.outputs UI<15>
+.outputs UI<14>
+.outputs UI<13>
+.outputs UI<12>
+.outputs UI<11>
+.outputs UI<10>
+.outputs UI<9>
+.outputs UI<8>
+.outputs UI<7>
+.outputs UI<6>
+.outputs UI<5>
+.outputs UI<4>
+.outputs UI<3>
+.outputs UI<2>
+.outputs UI<1>
+.outputs UI<0>
+.outputs DATA<7>
+.outputs DATA<6>
+.outputs DATA<5>
+.outputs DATA<4>
+.outputs DATA<3>
+.outputs DATA<2>
+.outputs DATA<1>
+.outputs DATA<0>
+.names UI<3> UI<4>
+1 1
+.names UI<3>
+.names n2
+1
+.names n3
+.names insts<3> insts<2> insts<0> Mux_3/muxtemp0
+010 1
+.names Mux_3/muxtemp0 n4
+1 1
+.names insts<3> insts<2> insts<1> insts<0> Mux_4/muxtemp0
+0110 1
+.names Mux_4/muxtemp0 n5
+1 1
+.names insts<3> insts<2> insts<1> insts<0> Mux_5/muxtemp0
+1111 1
+1110 1
+1001 1
+1000 1
+0111 1
+0110 1
+0100 1
+0011 1
+0001 1
+0000 1
+.names Mux_5/muxtemp0 n6
+1 1
+.names insts<3> insts<2> insts<1> Mux_6/muxtemp0
+111 1
+100 1
+011 1
+010 1
+001 1
+000 1
+.names Mux_6/muxtemp0 n7
+1 1
+.names insts<3> insts<2> insts<1> insts<0> Mux_7/muxtemp0
+1001 1
+1000 1
+0111 1
+0100 1
+0011 1
+0010 1
+0001 1
+.names Mux_7/muxtemp0 n8
+1 1
+.names insts<3> insts<2> insts<0> Mux_8/muxtemp0
+111 1
+110 1
+011 1
+000 1
+.names Mux_8/muxtemp0 n9
+1 1
+.names insts<3> insts<2> insts<1> insts<0> Mux_9/muxtemp0
+1001 1
+1000 1
+0111 1
+0101 1
+0010 1
+0001 1
+.names Mux_9/muxtemp0 n10
+1 1
+.names insts<3> insts<2> insts<1> insts<0> Mux_10/muxtemp0
+1001 1
+.names Mux_10/muxtemp0 n11
+1 1
+.names insts<3> insts<2> insts<1> insts<0> Mux_11/muxtemp0
+1000 1
+.names Mux_11/muxtemp0 n12
+1 1
+.names insts<3> insts<2> insts<1> insts<0> Mux_12/muxtemp0
+1001 1
+0111 1
+.names Mux_12/muxtemp0 n13
+1 1
+.names insts<3> insts<2> insts<0> Mux_13/muxtemp0
+111 1
+.names Mux_13/muxtemp0 n14
+1 1
+.names insts<3> insts<2> insts<1> insts<0> Mux_14/muxtemp0
+1100 1
+1011 1
+.names Mux_14/muxtemp0 n15
+1 1
+.names insts<3> insts<2> insts<1> insts<0> Mux_15/muxtemp0
+1100 1
+1010 1
+.names Mux_15/muxtemp0 n16
+1 1
+.names n4 UI<9> UI<15>
+11 1
+.names n16 UI<9> UI<0>
+11 1
+.loc CTRL.vhdl 69 HR
+.latch INST<10> HR ah UI<9> 2
+.loc CTRL.vhdl 69 FLAG
+.latch INST<8> FLAG ah UI<9> 2
+.names RESET UI<9>
+0 1
+.loc CTRL.vhdl 69 insts<3>
+.latch INST<14> insts<3> ah UI<9> 2
+.names n7 UI<9> UI<12>
+11 1
+.loc CTRL.vhdl 69 insts<2>
+.latch INST<13> insts<2> ah UI<9> 2
+.names n6 UI<9> UI<13>
+11 1
+.loc CTRL.vhdl 69 insts<1>
+.latch INST<12> insts<1> ah UI<9> 2
+.names n5 UI<9> UI<14>
+11 1
+.loc CTRL.vhdl 69 insts<0>
+.latch INST<11> insts<0> ah UI<9> 2
+.loc CTRL.vhdl 69 DATA<7>
+.latch INST<7> DATA<7> ah UI<9> 2
+.names n15 UI<9> UI<1>
+11 1
+.loc CTRL.vhdl 69 DATA<6>
+.latch INST<6> DATA<6> ah UI<9> 2
+.names n14 UI<9> UI<2>
+11 1
+.loc CTRL.vhdl 69 DATA<5>
+.latch INST<5> DATA<5> ah UI<9> 2
+.names n13 UI<9> UI<5>
+11 1
+.loc CTRL.vhdl 69 DATA<4>
+.latch INST<4> DATA<4> ah UI<9> 2
+.names n12 UI<9> UI<6>
+11 1
+.loc CTRL.vhdl 69 DATA<3>
+.latch INST<3> DATA<3> ah UI<9> 2
+.names n11 UI<9> UI<7>
+11 1
+.loc CTRL.vhdl 69 DATA<2>
+.latch INST<2> DATA<2> ah UI<9> 2
+.names n10 UI<9> UI<8>
+11 1
+.loc CTRL.vhdl 69 DATA<1>
+.latch INST<1> DATA<1> ah UI<9> 2
+.names n9 UI<9> UI<10>
+11 1
+.loc CTRL.vhdl 69 DATA<0>
+.latch INST<0> DATA<0> ah UI<9> 2
+.names n8 UI<9> UI<11>
+11 1
+.loc CTRL.vhdl 69 SD
+.latch INST<15> SD ah UI<9> 2

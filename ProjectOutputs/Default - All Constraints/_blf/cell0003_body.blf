@@ -1,0 +1,87 @@
+.model RAM
+.inputs CS
+.inputs RW
+.inputs CLK
+.inputs DIR<2>
+.inputs DIR<1>
+.inputs DIR<0>
+.inputs DATA_IN<7>
+.inputs DATA_IN<6>
+.inputs DATA_IN<5>
+.inputs DATA_IN<4>
+.inputs DATA_IN<3>
+.inputs DATA_IN<2>
+.inputs DATA_IN<1>
+.inputs DATA_IN<0>
+.outputs DATA_OUT<7>
+.outputs DATA_OUT<6>
+.outputs DATA_OUT<5>
+.outputs DATA_OUT<4>
+.outputs DATA_OUT<3>
+.outputs DATA_OUT<2>
+.outputs DATA_OUT<1>
+.outputs DATA_OUT<0>
+.names n1
+.names CS RW n23
+11 1
+.names RW n39
+0 1
+.names CS n39 n40
+11 1
+.loc RAM.vhdl 56 n64
+.latch n40 n64 re CLK 2
+.latch n49 DATA_OUT<7> th _N16 2
+.names n64 _N16
+0 1
+.latch n50 DATA_OUT<6> th _N17 2
+.names n64 _N17
+0 1
+.latch n51 DATA_OUT<5> th _N18 2
+.names n64 _N18
+0 1
+.latch n52 DATA_OUT<4> th _N19 2
+.names n64 _N19
+0 1
+.latch n53 DATA_OUT<3> th _N20 2
+.names n64 _N20
+0 1
+.subckt RAMS_3_8 ram_151 CLK=-ram_151/CLK WE=-ram_151/WE EN=-ram_151/EN ADDR<2>=-ram_151/ADDR<2> ADDR<1>=-ram_151/ADDR<1> ADDR<0>=-ram_151/ADDR<0> DIN<7>=-ram_151/DIN<7> DIN<6>=-ram_151/DIN<6> DIN<5>=-ram_151/DIN<5> DIN<4>=-ram_151/DIN<4> DIN<3>=-ram_151/DIN<3> DIN<2>=-ram_151/DIN<2> DIN<1>=-ram_151/DIN<1> DIN<0>=-ram_151/DIN<0> DOUT<7>=+n49 DOUT<6>=+n50 DOUT<5>=+n51 DOUT<4>=+n52 DOUT<3>=+n53 DOUT<2>=+n54 DOUT<1>=+n55 DOUT<0>=+n56
+.names CLK ram_151/CLK
+1 1
+.names n23 ram_151/WE
+1 1
+.names n144 ram_151/EN
+1 1
+.names DIR<2> ram_151/ADDR<2>
+1 1
+.names DIR<1> ram_151/ADDR<1>
+1 1
+.names DIR<0> ram_151/ADDR<0>
+1 1
+.names DATA_IN<7> ram_151/DIN<7>
+1 1
+.names DATA_IN<6> ram_151/DIN<6>
+1 1
+.names DATA_IN<5> ram_151/DIN<5>
+1 1
+.names DATA_IN<4> ram_151/DIN<4>
+1 1
+.names DATA_IN<3> ram_151/DIN<3>
+1 1
+.names DATA_IN<2> ram_151/DIN<2>
+1 1
+.names DATA_IN<1> ram_151/DIN<1>
+1 1
+.names DATA_IN<0> ram_151/DIN<0>
+1 1
+.latch n54 DATA_OUT<2> th _N21 2
+.names n64 _N21
+0 1
+.latch n55 DATA_OUT<1> th _N22 2
+.names n64 _N22
+0 1
+.latch n56 DATA_OUT<0> th _N23 2
+.names n64 _N23
+0 1
+.names n144
+1

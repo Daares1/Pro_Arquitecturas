@@ -1,0 +1,738 @@
+.model ALU
+.inputs CLK
+.inputs HF
+.inputs A<7>
+.inputs A<6>
+.inputs A<5>
+.inputs A<4>
+.inputs A<3>
+.inputs A<2>
+.inputs A<1>
+.inputs A<0>
+.inputs B<7>
+.inputs B<6>
+.inputs B<5>
+.inputs B<4>
+.inputs B<3>
+.inputs B<2>
+.inputs B<1>
+.inputs B<0>
+.inputs SELOP<2>
+.inputs SELOP<1>
+.inputs SELOP<0>
+.inputs DESP<1>
+.inputs DESP<0>
+.outputs S<7>
+.outputs S<6>
+.outputs S<5>
+.outputs S<4>
+.outputs S<3>
+.outputs S<2>
+.outputs S<1>
+.outputs S<0>
+.outputs C
+.outputs N
+.outputs Z
+.outputs P
+.names n1
+.names reduce_nor_5/n3 reduce_nor_5/n6 reduce_nor_5/n7
+1- 1
+-1 1
+.names n3
+.names Slices/7/BITN/BN/n24 Cr<6> Slices/7/BITN/BN/n25
+01 1
+10 1
+.names reduce_nor_5/n7 n71
+0 1
+.names Slices/6/BITN/BN/n33 SELOP<0> Slices/6/BITN/BN/n30 n119
+11- 1
+-01 1
+.names Slices/6/BITN/BN/n25 SELOP<0> Slices/6/BITN/BN/n24 n118
+11- 1
+-01 1
+.names Slices/6/BITN/BN/n27 SELOP<0> Slices/6/BITN/BN/n26 n117
+11- 1
+-01 1
+.subckt MUXF6 i55 I0=-i55/I0 I1=-i55/I1 S=-i55/S O=+RES<7>
+.names n113 i55/I0
+1 1
+.names n114 i55/I1
+1 1
+.names SELOP<2> i55/S
+1 1
+.subckt MUXF5 i54 I0=-i54/I0 I1=-i54/I1 S=-i54/S O=+n114
+.names n111 i54/I0
+1 1
+.names n112 i54/I1
+1 1
+.names SELOP<1> i54/S
+1 1
+.subckt MUXF5 i53 I0=-i53/I0 I1=-i53/I1 S=-i53/S O=+n113
+.names n109 i53/I0
+1 1
+.names n110 i53/I1
+1 1
+.names SELOP<1> i53/S
+1 1
+.names B<6> SELOP<0> n116
+01 1
+10 1
+.names SELOP<2> SELOP<1> Cm1
+11 1
+.names CLK n69
+0 1
+.names Slices/7/BITN/BN/n33 SELOP<0> Slices/7/BITN/BN/n30 n112
+11- 1
+-01 1
+.names A<7> B<7> Slices/7/BITN/BN/n24
+01 1
+10 1
+.names RES<7> RES<6> n72
+01 1
+10 1
+.names n72 RES<5> n73
+01 1
+10 1
+.names n73 RES<4> n74
+01 1
+10 1
+.names n74 RES<3> n75
+01 1
+10 1
+.names n75 RES<2> n76
+01 1
+10 1
+.names n76 RES<1> n77
+01 1
+10 1
+.names n77 RES<0> n78
+01 1
+10 1
+.names n78 n79
+0 1
+.names RES<6> RES<7> reduce_nor_5/n5
+1- 1
+-1 1
+.names reduce_nor_5/n1 reduce_nor_5/n2 reduce_nor_5/n3
+1- 1
+-1 1
+.names RES<0> RES<1> reduce_nor_5/n1
+1- 1
+-1 1
+.names Slices/7/BITN/BN/n27 SELOP<0> Slices/7/BITN/BN/n26 n110
+11- 1
+-01 1
+.names RES<2> RES<3> reduce_nor_5/n2
+1- 1
+-1 1
+.names Slices/7/BITN/BN/n25 SELOP<0> Slices/7/BITN/BN/n24 n111
+11- 1
+-01 1
+.names reduce_nor_5/n4 reduce_nor_5/n5 reduce_nor_5/n6
+1- 1
+-1 1
+.names A<7> B<7> Slices/7/BITN/BN/n26
+11 1
+.names DESP<1> DESP<0> RES<6> Mux_23/muxtemp0
+101 1
+.names DESP<1> DESP<0> RES<7> Mux_23/muxtemp1
+001 1
+.names Mux_23/muxtemp0 Mux_23/muxtemp1 S<7>
+1- 1
+-1 1
+.names DESP<1> DESP<0> RES<5> Mux_24/muxtemp0
+101 1
+.names DESP<1> DESP<0> RES<6> Mux_24/muxtemp1
+001 1
+.names DESP<1> DESP<0> RES<7> Mux_24/muxtemp2
+011 1
+.names Mux_24/muxtemp0 Mux_24/muxtemp1 Mux_24/muxtemp2 S<6>
+1-- 1
+-1- 1
+--1 1
+.names DESP<1> DESP<0> RES<4> Mux_25/muxtemp0
+101 1
+.names DESP<1> DESP<0> RES<5> Mux_25/muxtemp1
+001 1
+.names DESP<1> DESP<0> RES<6> Mux_25/muxtemp2
+011 1
+.names Mux_25/muxtemp0 Mux_25/muxtemp1 Mux_25/muxtemp2 S<5>
+1-- 1
+-1- 1
+--1 1
+.names DESP<1> DESP<0> RES<3> Mux_26/muxtemp0
+101 1
+.names DESP<1> DESP<0> RES<4> Mux_26/muxtemp1
+001 1
+.names DESP<1> DESP<0> RES<5> Mux_26/muxtemp2
+011 1
+.names Mux_26/muxtemp0 Mux_26/muxtemp1 Mux_26/muxtemp2 S<4>
+1-- 1
+-1- 1
+--1 1
+.names DESP<1> DESP<0> RES<2> Mux_27/muxtemp0
+101 1
+.names DESP<1> DESP<0> RES<3> Mux_27/muxtemp1
+001 1
+.names DESP<1> DESP<0> RES<4> Mux_27/muxtemp2
+011 1
+.names Mux_27/muxtemp0 Mux_27/muxtemp1 Mux_27/muxtemp2 S<3>
+1-- 1
+-1- 1
+--1 1
+.names DESP<1> DESP<0> RES<1> Mux_28/muxtemp0
+101 1
+.names DESP<1> DESP<0> RES<2> Mux_28/muxtemp1
+001 1
+.names DESP<1> DESP<0> RES<3> Mux_28/muxtemp2
+011 1
+.names Mux_28/muxtemp0 Mux_28/muxtemp1 Mux_28/muxtemp2 S<2>
+1-- 1
+-1- 1
+--1 1
+.names DESP<1> DESP<0> RES<0> Mux_29/muxtemp0
+101 1
+.names DESP<1> DESP<0> RES<1> Mux_29/muxtemp1
+001 1
+.names DESP<1> DESP<0> RES<2> Mux_29/muxtemp2
+011 1
+.names Mux_29/muxtemp0 Mux_29/muxtemp1 Mux_29/muxtemp2 S<1>
+1-- 1
+-1- 1
+--1 1
+.names DESP<1> DESP<0> RES<0> Mux_30/muxtemp0
+001 1
+.names DESP<1> DESP<0> RES<1> Mux_30/muxtemp1
+011 1
+.names Mux_30/muxtemp0 Mux_30/muxtemp1 S<0>
+1- 1
+-1 1
+.subckt MUXF5 i60 I0=-i60/I0 I1=-i60/I1 S=-i60/S O=+n120
+.names n116 i60/I0
+1 1
+.names n117 i60/I1
+1 1
+.names SELOP<1> i60/S
+1 1
+.names A<7> B<7> Slices/7/BITN/BN/n27
+1- 1
+-1 1
+.names Cr<6> Slices/7/BITN/BN/n27 Slices/7/BITN/BN/n28
+11 1
+.names Slices/7/BITN/BN/n26 Slices/7/BITN/BN/n28 Slices/7/BITN/BN/n29
+1- 1
+-1 1
+.names B<7> Cr<6> Slices/7/BITN/BN/n30
+01 1
+10 1
+.names B<7> Cr<6> Slices/7/BITN/BN/n31
+11 1
+.names Slices/7/BITN/BN/n34 Cr<6> Slices/7/BITN/BN/n33
+01 1
+10 1
+.names B<7> Slices/7/BITN/BN/n34
+0 1
+.names Slices/7/BITN/BN/n34 Cr<6> Slices/7/BITN/BN/n35
+11 1
+.names B<5> SELOP<0> n123
+01 1
+10 1
+.names SELOP<1> SELOP<0> Slices/7/BITN/BN/n29 Slices:7:BITN:BN/Mux_36/muxtemp0
+011 1
+.names SELOP<1> SELOP<0> Slices/7/BITN/BN/n31 Slices:7:BITN:BN/Mux_36/muxtemp1
+101 1
+.names SELOP<1> SELOP<0> Slices/7/BITN/BN/n35 Slices:7:BITN:BN/Mux_36/muxtemp2
+111 1
+.names Slices:7:BITN:BN/Mux_36/muxtemp0 Slices:7:BITN:BN/Mux_36/muxtemp1 Slices:7:BITN:BN/Mux_36/muxtemp2 Cr<7>
+1-- 1
+-1- 1
+--1 1
+.names A<6> B<6> Slices/6/BITN/BN/n24
+01 1
+10 1
+.names Slices/6/BITN/BN/n24 Cr<5> Slices/6/BITN/BN/n25
+01 1
+10 1
+.names A<6> B<6> Slices/6/BITN/BN/n26
+11 1
+.names A<6> B<6> Slices/6/BITN/BN/n27
+1- 1
+-1 1
+.names Cr<5> Slices/6/BITN/BN/n27 Slices/6/BITN/BN/n28
+11 1
+.names Slices/6/BITN/BN/n26 Slices/6/BITN/BN/n28 Slices/6/BITN/BN/n29
+1- 1
+-1 1
+.names B<6> Cr<5> Slices/6/BITN/BN/n30
+01 1
+10 1
+.names B<6> Cr<5> Slices/6/BITN/BN/n31
+11 1
+.names Slices/6/BITN/BN/n34 Cr<5> Slices/6/BITN/BN/n33
+01 1
+10 1
+.names B<6> Slices/6/BITN/BN/n34
+0 1
+.names Slices/6/BITN/BN/n34 Cr<5> Slices/6/BITN/BN/n35
+11 1
+.names B<4> SELOP<0> n130
+01 1
+10 1
+.names SELOP<1> SELOP<0> Slices/6/BITN/BN/n29 Slices:6:BITN:BN/Mux_36/muxtemp0
+011 1
+.names SELOP<1> SELOP<0> Slices/6/BITN/BN/n31 Slices:6:BITN:BN/Mux_36/muxtemp1
+101 1
+.names SELOP<1> SELOP<0> Slices/6/BITN/BN/n35 Slices:6:BITN:BN/Mux_36/muxtemp2
+111 1
+.names Slices:6:BITN:BN/Mux_36/muxtemp0 Slices:6:BITN:BN/Mux_36/muxtemp1 Slices:6:BITN:BN/Mux_36/muxtemp2 Cr<6>
+1-- 1
+-1- 1
+--1 1
+.names A<5> B<5> Slices/5/BITN/BN/n24
+01 1
+10 1
+.names Slices/5/BITN/BN/n24 Cr<4> Slices/5/BITN/BN/n25
+01 1
+10 1
+.names A<5> B<5> Slices/5/BITN/BN/n26
+11 1
+.names A<5> B<5> Slices/5/BITN/BN/n27
+1- 1
+-1 1
+.names Cr<4> Slices/5/BITN/BN/n27 Slices/5/BITN/BN/n28
+11 1
+.names Slices/5/BITN/BN/n26 Slices/5/BITN/BN/n28 Slices/5/BITN/BN/n29
+1- 1
+-1 1
+.names B<5> Cr<4> Slices/5/BITN/BN/n30
+01 1
+10 1
+.names B<5> Cr<4> Slices/5/BITN/BN/n31
+11 1
+.names Slices/5/BITN/BN/n34 Cr<4> Slices/5/BITN/BN/n33
+01 1
+10 1
+.names B<5> Slices/5/BITN/BN/n34
+0 1
+.names Slices/5/BITN/BN/n34 Cr<4> Slices/5/BITN/BN/n35
+11 1
+.names B<3> SELOP<0> n137
+01 1
+10 1
+.names SELOP<1> SELOP<0> Slices/5/BITN/BN/n29 Slices:5:BITN:BN/Mux_36/muxtemp0
+011 1
+.names SELOP<1> SELOP<0> Slices/5/BITN/BN/n31 Slices:5:BITN:BN/Mux_36/muxtemp1
+101 1
+.names SELOP<1> SELOP<0> Slices/5/BITN/BN/n35 Slices:5:BITN:BN/Mux_36/muxtemp2
+111 1
+.names Slices:5:BITN:BN/Mux_36/muxtemp0 Slices:5:BITN:BN/Mux_36/muxtemp1 Slices:5:BITN:BN/Mux_36/muxtemp2 Cr<5>
+1-- 1
+-1- 1
+--1 1
+.names A<4> B<4> Slices/4/BITN/BN/n24
+01 1
+10 1
+.names Slices/4/BITN/BN/n24 Cr<3> Slices/4/BITN/BN/n25
+01 1
+10 1
+.names A<4> B<4> Slices/4/BITN/BN/n26
+11 1
+.names A<4> B<4> Slices/4/BITN/BN/n27
+1- 1
+-1 1
+.names Cr<3> Slices/4/BITN/BN/n27 Slices/4/BITN/BN/n28
+11 1
+.names Slices/4/BITN/BN/n26 Slices/4/BITN/BN/n28 Slices/4/BITN/BN/n29
+1- 1
+-1 1
+.names B<4> Cr<3> Slices/4/BITN/BN/n30
+01 1
+10 1
+.names B<4> Cr<3> Slices/4/BITN/BN/n31
+11 1
+.names Slices/4/BITN/BN/n34 Cr<3> Slices/4/BITN/BN/n33
+01 1
+10 1
+.names B<4> Slices/4/BITN/BN/n34
+0 1
+.names Slices/4/BITN/BN/n34 Cr<3> Slices/4/BITN/BN/n35
+11 1
+.names B<2> SELOP<0> n144
+01 1
+10 1
+.names SELOP<1> SELOP<0> Slices/4/BITN/BN/n29 Slices:4:BITN:BN/Mux_36/muxtemp0
+011 1
+.names SELOP<1> SELOP<0> Slices/4/BITN/BN/n31 Slices:4:BITN:BN/Mux_36/muxtemp1
+101 1
+.names SELOP<1> SELOP<0> Slices/4/BITN/BN/n35 Slices:4:BITN:BN/Mux_36/muxtemp2
+111 1
+.names Slices:4:BITN:BN/Mux_36/muxtemp0 Slices:4:BITN:BN/Mux_36/muxtemp1 Slices:4:BITN:BN/Mux_36/muxtemp2 Cr<4>
+1-- 1
+-1- 1
+--1 1
+.names A<3> B<3> Slices/3/BITN/BN/n24
+01 1
+10 1
+.names Slices/3/BITN/BN/n24 Cr<2> Slices/3/BITN/BN/n25
+01 1
+10 1
+.names A<3> B<3> Slices/3/BITN/BN/n26
+11 1
+.names A<3> B<3> Slices/3/BITN/BN/n27
+1- 1
+-1 1
+.names Cr<2> Slices/3/BITN/BN/n27 Slices/3/BITN/BN/n28
+11 1
+.names Slices/3/BITN/BN/n26 Slices/3/BITN/BN/n28 Slices/3/BITN/BN/n29
+1- 1
+-1 1
+.names B<3> Cr<2> Slices/3/BITN/BN/n30
+01 1
+10 1
+.names B<3> Cr<2> Slices/3/BITN/BN/n31
+11 1
+.names Slices/3/BITN/BN/n34 Cr<2> Slices/3/BITN/BN/n33
+01 1
+10 1
+.names B<3> Slices/3/BITN/BN/n34
+0 1
+.names Slices/3/BITN/BN/n34 Cr<2> Slices/3/BITN/BN/n35
+11 1
+.names B<1> SELOP<0> n151
+01 1
+10 1
+.names SELOP<1> SELOP<0> Slices/3/BITN/BN/n29 Slices:3:BITN:BN/Mux_36/muxtemp0
+011 1
+.names SELOP<1> SELOP<0> Slices/3/BITN/BN/n31 Slices:3:BITN:BN/Mux_36/muxtemp1
+101 1
+.names SELOP<1> SELOP<0> Slices/3/BITN/BN/n35 Slices:3:BITN:BN/Mux_36/muxtemp2
+111 1
+.names Slices:3:BITN:BN/Mux_36/muxtemp0 Slices:3:BITN:BN/Mux_36/muxtemp1 Slices:3:BITN:BN/Mux_36/muxtemp2 Cr<3>
+1-- 1
+-1- 1
+--1 1
+.names A<2> B<2> Slices/2/BITN/BN/n24
+01 1
+10 1
+.names Slices/2/BITN/BN/n24 Cr<1> Slices/2/BITN/BN/n25
+01 1
+10 1
+.names A<2> B<2> Slices/2/BITN/BN/n26
+11 1
+.names A<2> B<2> Slices/2/BITN/BN/n27
+1- 1
+-1 1
+.names Cr<1> Slices/2/BITN/BN/n27 Slices/2/BITN/BN/n28
+11 1
+.names Slices/2/BITN/BN/n26 Slices/2/BITN/BN/n28 Slices/2/BITN/BN/n29
+1- 1
+-1 1
+.names B<2> Cr<1> Slices/2/BITN/BN/n30
+01 1
+10 1
+.names B<2> Cr<1> Slices/2/BITN/BN/n31
+11 1
+.names Slices/2/BITN/BN/n34 Cr<1> Slices/2/BITN/BN/n33
+01 1
+10 1
+.names B<2> Slices/2/BITN/BN/n34
+0 1
+.names Slices/2/BITN/BN/n34 Cr<1> Slices/2/BITN/BN/n35
+11 1
+.names B<0> SELOP<0> n158
+01 1
+10 1
+.names SELOP<1> SELOP<0> Slices/2/BITN/BN/n29 Slices:2:BITN:BN/Mux_36/muxtemp0
+011 1
+.names SELOP<1> SELOP<0> Slices/2/BITN/BN/n31 Slices:2:BITN:BN/Mux_36/muxtemp1
+101 1
+.names SELOP<1> SELOP<0> Slices/2/BITN/BN/n35 Slices:2:BITN:BN/Mux_36/muxtemp2
+111 1
+.names Slices:2:BITN:BN/Mux_36/muxtemp0 Slices:2:BITN:BN/Mux_36/muxtemp1 Slices:2:BITN:BN/Mux_36/muxtemp2 Cr<2>
+1-- 1
+-1- 1
+--1 1
+.names A<1> B<1> Slices/1/BITN/BN/n24
+01 1
+10 1
+.names Slices/1/BITN/BN/n24 Cr<0> Slices/1/BITN/BN/n25
+01 1
+10 1
+.names A<1> B<1> Slices/1/BITN/BN/n26
+11 1
+.names A<1> B<1> Slices/1/BITN/BN/n27
+1- 1
+-1 1
+.names Cr<0> Slices/1/BITN/BN/n27 Slices/1/BITN/BN/n28
+11 1
+.names Slices/1/BITN/BN/n26 Slices/1/BITN/BN/n28 Slices/1/BITN/BN/n29
+1- 1
+-1 1
+.names B<1> Cr<0> Slices/1/BITN/BN/n30
+01 1
+10 1
+.names B<1> Cr<0> Slices/1/BITN/BN/n31
+11 1
+.names Slices/1/BITN/BN/n34 Cr<0> Slices/1/BITN/BN/n33
+01 1
+10 1
+.names B<1> Slices/1/BITN/BN/n34
+0 1
+.names Slices/1/BITN/BN/n34 Cr<0> Slices/1/BITN/BN/n35
+11 1
+.names SELOP<1> SELOP<0> Slices/1/BITN/BN/n29 Slices:1:BITN:BN/Mux_36/muxtemp0
+011 1
+.names SELOP<1> SELOP<0> Slices/1/BITN/BN/n31 Slices:1:BITN:BN/Mux_36/muxtemp1
+101 1
+.names SELOP<1> SELOP<0> Slices/1/BITN/BN/n35 Slices:1:BITN:BN/Mux_36/muxtemp2
+111 1
+.names Slices:1:BITN:BN/Mux_36/muxtemp0 Slices:1:BITN:BN/Mux_36/muxtemp1 Slices:1:BITN:BN/Mux_36/muxtemp2 Cr<1>
+1-- 1
+-1- 1
+--1 1
+.names A<0> B<0> Slices/0/BIT0/B0/n24
+01 1
+10 1
+.names Slices/0/BIT0/B0/n24 Cm1 Slices/0/BIT0/B0/n25
+01 1
+10 1
+.names A<0> B<0> Slices/0/BIT0/B0/n26
+11 1
+.names A<0> B<0> Slices/0/BIT0/B0/n27
+1- 1
+-1 1
+.names Cm1 Slices/0/BIT0/B0/n27 Slices/0/BIT0/B0/n28
+11 1
+.names Slices/0/BIT0/B0/n26 Slices/0/BIT0/B0/n28 Slices/0/BIT0/B0/n29
+1- 1
+-1 1
+.names B<0> Cm1 Slices/0/BIT0/B0/n30
+01 1
+10 1
+.names B<0> Cm1 Slices/0/BIT0/B0/n31
+11 1
+.names Slices/0/BIT0/B0/n34 Cm1 Slices/0/BIT0/B0/n33
+01 1
+10 1
+.names B<0> Slices/0/BIT0/B0/n34
+0 1
+.names Slices/0/BIT0/B0/n34 Cm1 Slices/0/BIT0/B0/n35
+11 1
+.names B<7> SELOP<0> n109
+01 1
+10 1
+.names SELOP<1> SELOP<0> Slices/0/BIT0/B0/n29 Slices:0:BIT0:B0/Mux_36/muxtemp0
+011 1
+.names SELOP<1> SELOP<0> Slices/0/BIT0/B0/n31 Slices:0:BIT0:B0/Mux_36/muxtemp1
+101 1
+.names SELOP<1> SELOP<0> Slices/0/BIT0/B0/n35 Slices:0:BIT0:B0/Mux_36/muxtemp2
+111 1
+.names Slices:0:BIT0:B0/Mux_36/muxtemp0 Slices:0:BIT0:B0/Mux_36/muxtemp1 Slices:0:BIT0:B0/Mux_36/muxtemp2 Cr<0>
+1-- 1
+-1- 1
+--1 1
+.names RES<4> RES<5> reduce_nor_5/n4
+1- 1
+-1 1
+.loc ALU.vhdl 82 Z
+.latch n71 Z re n69 2 HF
+.loc ALU.vhdl 82 P
+.latch n79 P re n69 2 HF
+.loc ALU.vhdl 82 C
+.latch Cr<7> C re n69 2 HF
+.loc ALU.vhdl 82 N
+.latch RES<7> N re n69 2 HF
+.subckt MUXF5 i61 I0=-i61/I0 I1=-i61/I1 S=-i61/S O=+n121
+.names n118 i61/I0
+1 1
+.names n119 i61/I1
+1 1
+.names SELOP<1> i61/S
+1 1
+.subckt MUXF6 i62 I0=-i62/I0 I1=-i62/I1 S=-i62/S O=+RES<6>
+.names n120 i62/I0
+1 1
+.names n121 i62/I1
+1 1
+.names SELOP<2> i62/S
+1 1
+.names Slices/5/BITN/BN/n27 SELOP<0> Slices/5/BITN/BN/n26 n124
+11- 1
+-01 1
+.names Slices/5/BITN/BN/n25 SELOP<0> Slices/5/BITN/BN/n24 n125
+11- 1
+-01 1
+.names Slices/5/BITN/BN/n33 SELOP<0> Slices/5/BITN/BN/n30 n126
+11- 1
+-01 1
+.subckt MUXF5 i67 I0=-i67/I0 I1=-i67/I1 S=-i67/S O=+n127
+.names n123 i67/I0
+1 1
+.names n124 i67/I1
+1 1
+.names SELOP<1> i67/S
+1 1
+.subckt MUXF5 i68 I0=-i68/I0 I1=-i68/I1 S=-i68/S O=+n128
+.names n125 i68/I0
+1 1
+.names n126 i68/I1
+1 1
+.names SELOP<1> i68/S
+1 1
+.subckt MUXF6 i69 I0=-i69/I0 I1=-i69/I1 S=-i69/S O=+RES<5>
+.names n127 i69/I0
+1 1
+.names n128 i69/I1
+1 1
+.names SELOP<2> i69/S
+1 1
+.names Slices/4/BITN/BN/n27 SELOP<0> Slices/4/BITN/BN/n26 n131
+11- 1
+-01 1
+.names Slices/4/BITN/BN/n25 SELOP<0> Slices/4/BITN/BN/n24 n132
+11- 1
+-01 1
+.names Slices/4/BITN/BN/n33 SELOP<0> Slices/4/BITN/BN/n30 n133
+11- 1
+-01 1
+.subckt MUXF5 i74 I0=-i74/I0 I1=-i74/I1 S=-i74/S O=+n134
+.names n130 i74/I0
+1 1
+.names n131 i74/I1
+1 1
+.names SELOP<1> i74/S
+1 1
+.subckt MUXF5 i75 I0=-i75/I0 I1=-i75/I1 S=-i75/S O=+n135
+.names n132 i75/I0
+1 1
+.names n133 i75/I1
+1 1
+.names SELOP<1> i75/S
+1 1
+.subckt MUXF6 i76 I0=-i76/I0 I1=-i76/I1 S=-i76/S O=+RES<4>
+.names n134 i76/I0
+1 1
+.names n135 i76/I1
+1 1
+.names SELOP<2> i76/S
+1 1
+.names Slices/3/BITN/BN/n27 SELOP<0> Slices/3/BITN/BN/n26 n138
+11- 1
+-01 1
+.names Slices/3/BITN/BN/n25 SELOP<0> Slices/3/BITN/BN/n24 n139
+11- 1
+-01 1
+.names Slices/3/BITN/BN/n33 SELOP<0> Slices/3/BITN/BN/n30 n140
+11- 1
+-01 1
+.subckt MUXF5 i81 I0=-i81/I0 I1=-i81/I1 S=-i81/S O=+n141
+.names n137 i81/I0
+1 1
+.names n138 i81/I1
+1 1
+.names SELOP<1> i81/S
+1 1
+.subckt MUXF5 i82 I0=-i82/I0 I1=-i82/I1 S=-i82/S O=+n142
+.names n139 i82/I0
+1 1
+.names n140 i82/I1
+1 1
+.names SELOP<1> i82/S
+1 1
+.subckt MUXF6 i83 I0=-i83/I0 I1=-i83/I1 S=-i83/S O=+RES<3>
+.names n141 i83/I0
+1 1
+.names n142 i83/I1
+1 1
+.names SELOP<2> i83/S
+1 1
+.names Slices/2/BITN/BN/n27 SELOP<0> Slices/2/BITN/BN/n26 n145
+11- 1
+-01 1
+.names Slices/2/BITN/BN/n25 SELOP<0> Slices/2/BITN/BN/n24 n146
+11- 1
+-01 1
+.names Slices/2/BITN/BN/n33 SELOP<0> Slices/2/BITN/BN/n30 n147
+11- 1
+-01 1
+.subckt MUXF5 i88 I0=-i88/I0 I1=-i88/I1 S=-i88/S O=+n148
+.names n144 i88/I0
+1 1
+.names n145 i88/I1
+1 1
+.names SELOP<1> i88/S
+1 1
+.subckt MUXF5 i89 I0=-i89/I0 I1=-i89/I1 S=-i89/S O=+n149
+.names n146 i89/I0
+1 1
+.names n147 i89/I1
+1 1
+.names SELOP<1> i89/S
+1 1
+.subckt MUXF6 i90 I0=-i90/I0 I1=-i90/I1 S=-i90/S O=+RES<2>
+.names n148 i90/I0
+1 1
+.names n149 i90/I1
+1 1
+.names SELOP<2> i90/S
+1 1
+.names Slices/1/BITN/BN/n27 SELOP<0> Slices/1/BITN/BN/n26 n152
+11- 1
+-01 1
+.names Slices/1/BITN/BN/n25 SELOP<0> Slices/1/BITN/BN/n24 n153
+11- 1
+-01 1
+.names Slices/1/BITN/BN/n33 SELOP<0> Slices/1/BITN/BN/n30 n154
+11- 1
+-01 1
+.subckt MUXF5 i95 I0=-i95/I0 I1=-i95/I1 S=-i95/S O=+n155
+.names n151 i95/I0
+1 1
+.names n152 i95/I1
+1 1
+.names SELOP<1> i95/S
+1 1
+.subckt MUXF5 i96 I0=-i96/I0 I1=-i96/I1 S=-i96/S O=+n156
+.names n153 i96/I0
+1 1
+.names n154 i96/I1
+1 1
+.names SELOP<1> i96/S
+1 1
+.subckt MUXF6 i97 I0=-i97/I0 I1=-i97/I1 S=-i97/S O=+RES<1>
+.names n155 i97/I0
+1 1
+.names n156 i97/I1
+1 1
+.names SELOP<2> i97/S
+1 1
+.names Slices/0/BIT0/B0/n27 SELOP<0> Slices/0/BIT0/B0/n26 n159
+11- 1
+-01 1
+.names Slices/0/BIT0/B0/n25 SELOP<0> Slices/0/BIT0/B0/n24 n160
+11- 1
+-01 1
+.names Slices/0/BIT0/B0/n33 SELOP<0> Slices/0/BIT0/B0/n30 n161
+11- 1
+-01 1
+.subckt MUXF5 i102 I0=-i102/I0 I1=-i102/I1 S=-i102/S O=+n162
+.names n158 i102/I0
+1 1
+.names n159 i102/I1
+1 1
+.names SELOP<1> i102/S
+1 1
+.subckt MUXF5 i103 I0=-i103/I0 I1=-i103/I1 S=-i103/S O=+n163
+.names n160 i103/I0
+1 1
+.names n161 i103/I1
+1 1
+.names SELOP<1> i103/S
+1 1
+.subckt MUXF6 i104 I0=-i104/I0 I1=-i104/I1 S=-i104/S O=+RES<0>
+.names n162 i104/I0
+1 1
+.names n163 i104/I1
+1 1
+.names SELOP<2> i104/S
+1 1

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_7.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_ram_DATA_OUT_7</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_6.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_ram_DATA_OUT_6</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_5.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_ram_DATA_OUT_5</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_4.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_ram_DATA_OUT_4</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_3.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_ram_DATA_OUT_3</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_2.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_ram_DATA_OUT_2</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_1.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_ram_DATA_OUT_1</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_0.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_ram_DATA_OUT_0</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_15.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_15</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_14.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_14</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_13.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_13</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_12.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_12</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_11.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_11</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_10.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_10</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_9.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_9</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_8.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_8</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_7.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_7</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_6.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_6</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_5.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_5</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_4.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_4</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_3.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_3</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_2.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_2</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_1.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_1</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="928" delta="old" >A pullup &apos;<arg fmt="%s" index="1">PinSignal_U_rom_INST_0.PULLUP</arg>&apos; was added to net &apos;<arg fmt="%s" index="2">PinSignal_U_rom_INST_0</arg>&apos;
+</msg>
+
+</messages>
+

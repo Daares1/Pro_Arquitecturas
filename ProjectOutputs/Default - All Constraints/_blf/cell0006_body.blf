@@ -1,0 +1,1113 @@
+.model banco
+.inputs RESET
+.inputs HR
+.inputs CLK
+.inputs SC<2>
+.inputs SC<1>
+.inputs SC<0>
+.inputs SB<2>
+.inputs SB<1>
+.inputs SB<0>
+.inputs BUSC<7>
+.inputs BUSC<6>
+.inputs BUSC<5>
+.inputs BUSC<4>
+.inputs BUSC<3>
+.inputs BUSC<2>
+.inputs BUSC<1>
+.inputs BUSC<0>
+.outputs BUSA<7>
+.outputs BUSA<6>
+.outputs BUSA<5>
+.outputs BUSA<4>
+.outputs BUSA<3>
+.outputs BUSA<2>
+.outputs BUSA<1>
+.outputs BUSA<0>
+.outputs BUSB<7>
+.outputs BUSB<6>
+.outputs BUSB<5>
+.outputs BUSB<4>
+.outputs BUSB<3>
+.outputs BUSB<2>
+.outputs BUSB<1>
+.outputs BUSB<0>
+.names n1
+.names n2
+1
+.loc banco.vhdl 70 SP<5>
+.latch n18 SP<5> re CLK 0 n487 HR
+.loc banco.vhdl 70 SP<6>
+.latch n17 SP<6> re CLK 0 n487 HR
+.loc banco.vhdl 70 SP<7>
+.latch n16 SP<7> re CLK 1 n487 HR
+.loc banco.vhdl 70 PC<0>
+.latch n15 PC<0> re CLK 0 n487 HR
+.names RESET n487
+0 1
+.names SC<2> SC<1> SC<0> BUSC<7> Mux_7/muxtemp0
+0001 1
+.names SC<2> SC<1> SC<0> PC<7> Mux_7/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+.names Mux_7/muxtemp0 Mux_7/muxtemp1 n8
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<6> Mux_8/muxtemp0
+0001 1
+.names SC<2> SC<1> SC<0> PC<6> Mux_8/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+.names Mux_8/muxtemp0 Mux_8/muxtemp1 n9
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<5> Mux_9/muxtemp0
+0001 1
+.names SC<2> SC<1> SC<0> PC<5> Mux_9/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+.names Mux_9/muxtemp0 Mux_9/muxtemp1 n10
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<4> Mux_10/muxtemp0
+0001 1
+.names SC<2> SC<1> SC<0> PC<4> Mux_10/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+.names Mux_10/muxtemp0 Mux_10/muxtemp1 n11
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<3> Mux_11/muxtemp0
+0001 1
+.names SC<2> SC<1> SC<0> PC<3> Mux_11/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+.names Mux_11/muxtemp0 Mux_11/muxtemp1 n12
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<2> Mux_12/muxtemp0
+0001 1
+.names SC<2> SC<1> SC<0> PC<2> Mux_12/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+.names Mux_12/muxtemp0 Mux_12/muxtemp1 n13
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<1> Mux_13/muxtemp0
+0001 1
+.names SC<2> SC<1> SC<0> PC<1> Mux_13/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+.names Mux_13/muxtemp0 Mux_13/muxtemp1 n14
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<0> Mux_14/muxtemp0
+0001 1
+.names SC<2> SC<1> SC<0> PC<0> Mux_14/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+.names Mux_14/muxtemp0 Mux_14/muxtemp1 n15
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<7> Mux_15/muxtemp0
+0011 1
+.names SC<2> SC<1> SC<0> SP<7> Mux_15/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0001 1
+.names Mux_15/muxtemp0 Mux_15/muxtemp1 n16
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<6> Mux_16/muxtemp0
+0011 1
+.names SC<2> SC<1> SC<0> SP<6> Mux_16/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0001 1
+.names Mux_16/muxtemp0 Mux_16/muxtemp1 n17
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<5> Mux_17/muxtemp0
+0011 1
+.names SC<2> SC<1> SC<0> SP<5> Mux_17/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0001 1
+.names Mux_17/muxtemp0 Mux_17/muxtemp1 n18
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<4> Mux_18/muxtemp0
+0011 1
+.names SC<2> SC<1> SC<0> SP<4> Mux_18/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0001 1
+.names Mux_18/muxtemp0 Mux_18/muxtemp1 n19
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<3> Mux_19/muxtemp0
+0011 1
+.names SC<2> SC<1> SC<0> SP<3> Mux_19/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0001 1
+.names Mux_19/muxtemp0 Mux_19/muxtemp1 n20
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<2> Mux_20/muxtemp0
+0011 1
+.names SC<2> SC<1> SC<0> SP<2> Mux_20/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0001 1
+.names Mux_20/muxtemp0 Mux_20/muxtemp1 n21
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<1> Mux_21/muxtemp0
+0011 1
+.names SC<2> SC<1> SC<0> SP<1> Mux_21/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0001 1
+.names Mux_21/muxtemp0 Mux_21/muxtemp1 n22
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<0> Mux_22/muxtemp0
+0011 1
+.names SC<2> SC<1> SC<0> SP<0> Mux_22/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0001 1
+.names Mux_22/muxtemp0 Mux_22/muxtemp1 n23
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<7> Mux_23/muxtemp0
+0101 1
+.names SC<2> SC<1> SC<0> DPTR<7> Mux_23/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0011 1
+0001 1
+.names Mux_23/muxtemp0 Mux_23/muxtemp1 n24
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<6> Mux_24/muxtemp0
+0101 1
+.names SC<2> SC<1> SC<0> DPTR<6> Mux_24/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0011 1
+0001 1
+.names Mux_24/muxtemp0 Mux_24/muxtemp1 n25
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<5> Mux_25/muxtemp0
+0101 1
+.names SC<2> SC<1> SC<0> DPTR<5> Mux_25/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0011 1
+0001 1
+.names Mux_25/muxtemp0 Mux_25/muxtemp1 n26
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<4> Mux_26/muxtemp0
+0101 1
+.names SC<2> SC<1> SC<0> DPTR<4> Mux_26/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0011 1
+0001 1
+.names Mux_26/muxtemp0 Mux_26/muxtemp1 n27
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<3> Mux_27/muxtemp0
+0101 1
+.names SC<2> SC<1> SC<0> DPTR<3> Mux_27/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0011 1
+0001 1
+.names Mux_27/muxtemp0 Mux_27/muxtemp1 n28
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<2> Mux_28/muxtemp0
+0101 1
+.names SC<2> SC<1> SC<0> DPTR<2> Mux_28/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0011 1
+0001 1
+.names Mux_28/muxtemp0 Mux_28/muxtemp1 n29
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<1> Mux_29/muxtemp0
+0101 1
+.names SC<2> SC<1> SC<0> DPTR<1> Mux_29/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0011 1
+0001 1
+.names Mux_29/muxtemp0 Mux_29/muxtemp1 n30
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<0> Mux_30/muxtemp0
+0101 1
+.names SC<2> SC<1> SC<0> DPTR<0> Mux_30/muxtemp1
+1111 1
+1101 1
+1011 1
+1001 1
+0111 1
+0011 1
+0001 1
+.names Mux_30/muxtemp0 Mux_30/muxtemp1 n31
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> A<7> Mux_31/muxtemp0
+1111 1
+1101 1
+1011 1
+1001 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<7> Mux_31/muxtemp1
+0111 1
+.names Mux_31/muxtemp0 Mux_31/muxtemp1 n32
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> A<6> Mux_32/muxtemp0
+1111 1
+1101 1
+1011 1
+1001 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<6> Mux_32/muxtemp1
+0111 1
+.names Mux_32/muxtemp0 Mux_32/muxtemp1 n33
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> A<5> Mux_33/muxtemp0
+1111 1
+1101 1
+1011 1
+1001 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<5> Mux_33/muxtemp1
+0111 1
+.names Mux_33/muxtemp0 Mux_33/muxtemp1 n34
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> A<4> Mux_34/muxtemp0
+1111 1
+1101 1
+1011 1
+1001 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<4> Mux_34/muxtemp1
+0111 1
+.names Mux_34/muxtemp0 Mux_34/muxtemp1 n35
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> A<3> Mux_35/muxtemp0
+1111 1
+1101 1
+1011 1
+1001 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<3> Mux_35/muxtemp1
+0111 1
+.names Mux_35/muxtemp0 Mux_35/muxtemp1 n36
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> A<2> Mux_36/muxtemp0
+1111 1
+1101 1
+1011 1
+1001 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<2> Mux_36/muxtemp1
+0111 1
+.names Mux_36/muxtemp0 Mux_36/muxtemp1 n37
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> A<1> Mux_37/muxtemp0
+1111 1
+1101 1
+1011 1
+1001 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<1> Mux_37/muxtemp1
+0111 1
+.names Mux_37/muxtemp0 Mux_37/muxtemp1 n38
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> A<0> Mux_38/muxtemp0
+1111 1
+1101 1
+1011 1
+1001 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<0> Mux_38/muxtemp1
+0111 1
+.names Mux_38/muxtemp0 Mux_38/muxtemp1 n39
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<7> Mux_39/muxtemp0
+1011 1
+.names SC<2> SC<1> SC<0> TEMP<7> Mux_39/muxtemp1
+1111 1
+1101 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names Mux_39/muxtemp0 Mux_39/muxtemp1 n40
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<6> Mux_40/muxtemp0
+1011 1
+.names SC<2> SC<1> SC<0> TEMP<6> Mux_40/muxtemp1
+1111 1
+1101 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names Mux_40/muxtemp0 Mux_40/muxtemp1 n41
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<5> Mux_41/muxtemp0
+1011 1
+.names SC<2> SC<1> SC<0> TEMP<5> Mux_41/muxtemp1
+1111 1
+1101 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names Mux_41/muxtemp0 Mux_41/muxtemp1 n42
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<4> Mux_42/muxtemp0
+1011 1
+.names SC<2> SC<1> SC<0> TEMP<4> Mux_42/muxtemp1
+1111 1
+1101 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names Mux_42/muxtemp0 Mux_42/muxtemp1 n43
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<3> Mux_43/muxtemp0
+1011 1
+.names SC<2> SC<1> SC<0> TEMP<3> Mux_43/muxtemp1
+1111 1
+1101 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names Mux_43/muxtemp0 Mux_43/muxtemp1 n44
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<2> Mux_44/muxtemp0
+1011 1
+.names SC<2> SC<1> SC<0> TEMP<2> Mux_44/muxtemp1
+1111 1
+1101 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names Mux_44/muxtemp0 Mux_44/muxtemp1 n45
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<1> Mux_45/muxtemp0
+1011 1
+.names SC<2> SC<1> SC<0> TEMP<1> Mux_45/muxtemp1
+1111 1
+1101 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names Mux_45/muxtemp0 Mux_45/muxtemp1 n46
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSC<0> Mux_46/muxtemp0
+1011 1
+.names SC<2> SC<1> SC<0> TEMP<0> Mux_46/muxtemp1
+1111 1
+1101 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names Mux_46/muxtemp0 Mux_46/muxtemp1 n47
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSA<7> Mux_47/muxtemp0
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<7> Mux_47/muxtemp1
+1111 1
+.names Mux_47/muxtemp0 Mux_47/muxtemp1 n48
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSA<6> Mux_48/muxtemp0
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<6> Mux_48/muxtemp1
+1111 1
+.names Mux_48/muxtemp0 Mux_48/muxtemp1 n49
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSA<5> Mux_49/muxtemp0
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<5> Mux_49/muxtemp1
+1111 1
+.names Mux_49/muxtemp0 Mux_49/muxtemp1 n50
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSA<4> Mux_50/muxtemp0
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<4> Mux_50/muxtemp1
+1111 1
+.names Mux_50/muxtemp0 Mux_50/muxtemp1 n51
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSA<3> Mux_51/muxtemp0
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<3> Mux_51/muxtemp1
+1111 1
+.names Mux_51/muxtemp0 Mux_51/muxtemp1 n52
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSA<2> Mux_52/muxtemp0
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<2> Mux_52/muxtemp1
+1111 1
+.names Mux_52/muxtemp0 Mux_52/muxtemp1 n53
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSA<1> Mux_53/muxtemp0
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<1> Mux_53/muxtemp1
+1111 1
+.names Mux_53/muxtemp0 Mux_53/muxtemp1 n54
+1- 1
+-1 1
+.names SC<2> SC<1> SC<0> BUSA<0> Mux_54/muxtemp0
+1101 1
+1011 1
+1001 1
+0111 1
+0101 1
+0011 1
+0001 1
+.names SC<2> SC<1> SC<0> BUSC<0> Mux_54/muxtemp1
+1111 1
+.names Mux_54/muxtemp0 Mux_54/muxtemp1 n55
+1- 1
+-1 1
+.names SC<2> SC<0> CTE1<7> Mux_55/muxtemp0
+111 1
+011 1
+001 1
+.names SC<2> SC<0> Mux_55/muxtemp1
+10 1
+.names Mux_55/muxtemp0 Mux_55/muxtemp1 n56
+1- 1
+-1 1
+.names SC<2> SC<0> CTE1<6> Mux_56/muxtemp0
+111 1
+011 1
+001 1
+.names SC<2> SC<0> Mux_56/muxtemp1
+10 1
+.names Mux_56/muxtemp0 Mux_56/muxtemp1 n57
+1- 1
+-1 1
+.names SC<2> SC<0> CTE1<5> Mux_57/muxtemp0
+111 1
+011 1
+001 1
+.names SC<2> SC<0> Mux_57/muxtemp1
+10 1
+.names Mux_57/muxtemp0 Mux_57/muxtemp1 n58
+1- 1
+-1 1
+.names SC<2> SC<0> CTE1<4> Mux_58/muxtemp0
+111 1
+011 1
+001 1
+.names SC<2> SC<0> Mux_58/muxtemp1
+10 1
+.names Mux_58/muxtemp0 Mux_58/muxtemp1 n59
+1- 1
+-1 1
+.names SC<2> SC<0> CTE1<3> Mux_59/muxtemp0
+111 1
+011 1
+001 1
+.names SC<2> SC<0> Mux_59/muxtemp1
+10 1
+.names Mux_59/muxtemp0 Mux_59/muxtemp1 n60
+1- 1
+-1 1
+.names SC<2> SC<0> CTE1<2> Mux_60/muxtemp0
+111 1
+011 1
+001 1
+.names SC<2> SC<0> Mux_60/muxtemp1
+10 1
+.names Mux_60/muxtemp0 Mux_60/muxtemp1 n61
+1- 1
+-1 1
+.names SC<2> SC<0> CTE1<1> Mux_61/muxtemp0
+111 1
+011 1
+001 1
+.names SC<2> SC<0> Mux_61/muxtemp1
+10 1
+.names Mux_61/muxtemp0 Mux_61/muxtemp1 n62
+1- 1
+-1 1
+.names SC<2> SC<0> CTE1<0> Mux_62/muxtemp0
+111 1
+011 1
+001 1
+.names SC<2> SC<0> Mux_62/muxtemp1
+10 1
+.names Mux_62/muxtemp0 Mux_62/muxtemp1 n63
+1- 1
+-1 1
+.subckt MUXF6 i633 I0=-i633/I0 I1=-i633/I1 S=-i633/S O=+BUSB<0>
+.names n567 i633/I0
+1 1
+.names n568 i633/I1
+1 1
+.names SB<2> i633/S
+1 1
+.names BUSA<3> SB<0> CTE1<3> n545
+11- 1
+-01 1
+.subckt MUXF6 i584 I0=-i584/I0 I1=-i584/I1 S=-i584/S O=+BUSB<7>
+.names n518 i584/I0
+1 1
+.names n519 i584/I1
+1 1
+.names SB<2> i584/S
+1 1
+.names A<7> SB<0> DPTR<7> n515
+11- 1
+-01 1
+.subckt MUXF5 i610 I0=-i610/I0 I1=-i610/I1 S=-i610/S O=+n546
+.names n542 i610/I0
+1 1
+.names n543 i610/I1
+1 1
+.names SB<1> i610/S
+1 1
+.names A<6> SB<0> DPTR<6> n522
+11- 1
+-01 1
+.subckt MUXF6 i612 I0=-i612/I0 I1=-i612/I1 S=-i612/S O=+BUSB<3>
+.names n546 i612/I0
+1 1
+.names n547 i612/I1
+1 1
+.names SB<2> i612/S
+1 1
+.names BUSA<6> SB<0> CTE1<6> n524
+11- 1
+-01 1
+.names A<2> SB<0> DPTR<2> n550
+11- 1
+-01 1
+.subckt MUXF5 i589 I0=-i589/I0 I1=-i589/I1 S=-i589/S O=+n525
+.names n521 i589/I0
+1 1
+.names n522 i589/I1
+1 1
+.names SB<1> i589/S
+1 1
+.names BUSA<2> SB<0> CTE1<2> n552
+11- 1
+-01 1
+.subckt MUXF6 i591 I0=-i591/I0 I1=-i591/I1 S=-i591/S O=+BUSB<6>
+.names n525 i591/I0
+1 1
+.names n526 i591/I1
+1 1
+.names SB<2> i591/S
+1 1
+.subckt MUXF5 i617 I0=-i617/I0 I1=-i617/I1 S=-i617/S O=+n553
+.names n549 i617/I0
+1 1
+.names n550 i617/I1
+1 1
+.names SB<1> i617/S
+1 1
+.names A<5> SB<0> DPTR<5> n529
+11- 1
+-01 1
+.subckt MUXF6 i619 I0=-i619/I0 I1=-i619/I1 S=-i619/S O=+BUSB<2>
+.names n553 i619/I0
+1 1
+.names n554 i619/I1
+1 1
+.names SB<2> i619/S
+1 1
+.names BUSA<5> SB<0> CTE1<5> n531
+11- 1
+-01 1
+.names A<1> SB<0> DPTR<1> n557
+11- 1
+-01 1
+.subckt MUXF5 i596 I0=-i596/I0 I1=-i596/I1 S=-i596/S O=+n532
+.names n528 i596/I0
+1 1
+.names n529 i596/I1
+1 1
+.names SB<1> i596/S
+1 1
+.names SP<7> SB<0> PC<7> n514
+11- 1
+-01 1
+.subckt MUXF5 i624 I0=-i624/I0 I1=-i624/I1 S=-i624/S O=+n560
+.names n556 i624/I0
+1 1
+.names n557 i624/I1
+1 1
+.names SB<1> i624/S
+1 1
+.names A<4> SB<0> DPTR<4> n536
+11- 1
+-01 1
+.subckt MUXF6 i626 I0=-i626/I0 I1=-i626/I1 S=-i626/S O=+BUSB<1>
+.names n560 i626/I0
+1 1
+.names n561 i626/I1
+1 1
+.names SB<2> i626/S
+1 1
+.names BUSA<4> SB<0> CTE1<4> n538
+11- 1
+-01 1
+.names A<0> SB<0> DPTR<0> n564
+11- 1
+-01 1
+.subckt MUXF5 i603 I0=-i603/I0 I1=-i603/I1 S=-i603/S O=+n539
+.names n535 i603/I0
+1 1
+.names n536 i603/I1
+1 1
+.names SB<1> i603/S
+1 1
+.names BUSA<0> SB<0> CTE1<0> n566
+11- 1
+-01 1
+.subckt MUXF6 i605 I0=-i605/I0 I1=-i605/I1 S=-i605/S O=+BUSB<4>
+.names n539 i605/I0
+1 1
+.names n540 i605/I1
+1 1
+.names SB<2> i605/S
+1 1
+.subckt MUXF5 i631 I0=-i631/I0 I1=-i631/I1 S=-i631/S O=+n567
+.names n563 i631/I0
+1 1
+.names n564 i631/I1
+1 1
+.names SB<1> i631/S
+1 1
+.names A<3> SB<0> DPTR<3> n543
+11- 1
+-01 1
+.names TEMP<7> SB<0> AVI<7> n516
+11- 1
+-01 1
+.subckt MUXF5 i583 I0=-i583/I0 I1=-i583/I1 S=-i583/S O=+n519
+.names n516 i583/I0
+1 1
+.names n517 i583/I1
+1 1
+.names SB<1> i583/S
+1 1
+.subckt MUXF5 i611 I0=-i611/I0 I1=-i611/I1 S=-i611/S O=+n547
+.names n544 i611/I0
+1 1
+.names n545 i611/I1
+1 1
+.names SB<1> i611/S
+1 1
+.names TEMP<6> SB<0> AVI<7> n523
+11- 1
+-01 1
+.names TEMP<2> SB<0> AVI<7> n551
+11- 1
+-01 1
+.subckt MUXF5 i590 I0=-i590/I0 I1=-i590/I1 S=-i590/S O=+n526
+.names n523 i590/I0
+1 1
+.names n524 i590/I1
+1 1
+.names SB<1> i590/S
+1 1
+.subckt MUXF5 i618 I0=-i618/I0 I1=-i618/I1 S=-i618/S O=+n554
+.names n551 i618/I0
+1 1
+.names n552 i618/I1
+1 1
+.names SB<1> i618/S
+1 1
+.names TEMP<5> SB<0> AVI<7> n530
+11- 1
+-01 1
+.names TEMP<1> SB<0> AVI<7> n558
+11- 1
+-01 1
+.subckt MUXF5 i597 I0=-i597/I0 I1=-i597/I1 S=-i597/S O=+n533
+.names n530 i597/I0
+1 1
+.names n531 i597/I1
+1 1
+.names SB<1> i597/S
+1 1
+.subckt MUXF5 i582 I0=-i582/I0 I1=-i582/I1 S=-i582/S O=+n518
+.names n514 i582/I0
+1 1
+.names n515 i582/I1
+1 1
+.names SB<1> i582/S
+1 1
+.subckt MUXF5 i625 I0=-i625/I0 I1=-i625/I1 S=-i625/S O=+n561
+.names n558 i625/I0
+1 1
+.names n559 i625/I1
+1 1
+.names SB<1> i625/S
+1 1
+.names TEMP<4> SB<0> AVI<7> n537
+11- 1
+-01 1
+.names TEMP<0> SB<0> AVI<7> n565
+11- 1
+-01 1
+.subckt MUXF5 i604 I0=-i604/I0 I1=-i604/I1 S=-i604/S O=+n540
+.names n537 i604/I0
+1 1
+.names n538 i604/I1
+1 1
+.names SB<1> i604/S
+1 1
+.subckt MUXF5 i632 I0=-i632/I0 I1=-i632/I1 S=-i632/S O=+n568
+.names n565 i632/I0
+1 1
+.names n566 i632/I1
+1 1
+.names SB<1> i632/S
+1 1
+.names TEMP<3> SB<0> AVI<7> n544
+11- 1
+-01 1
+.names BUSA<7> SB<0> CTE1<7> n517
+11- 1
+-01 1
+.loc banco.vhdl 70 SP<4>
+.latch n19 SP<4> re CLK 0 n487 HR
+.names SP<6> SB<0> PC<6> n521
+11- 1
+-01 1
+.names SP<5> SB<0> PC<5> n528
+11- 1
+-01 1
+.names SP<4> SB<0> PC<4> n535
+11- 1
+-01 1
+.names SP<3> SB<0> PC<3> n542
+11- 1
+-01 1
+.names SP<2> SB<0> PC<2> n549
+11- 1
+-01 1
+.names SP<1> SB<0> PC<1> n556
+11- 1
+-01 1
+.names SP<0> SB<0> PC<0> n563
+11- 1
+-01 1
+.loc banco.vhdl 70 PC<1>
+.latch n14 PC<1> re CLK 0 n487 HR
+.loc banco.vhdl 70 PC<2>
+.latch n13 PC<2> re CLK 0 n487 HR
+.loc banco.vhdl 70 PC<3>
+.latch n12 PC<3> re CLK 0 n487 HR
+.loc banco.vhdl 70 PC<4>
+.latch n11 PC<4> re CLK 0 n487 HR
+.loc banco.vhdl 70 PC<5>
+.latch n10 PC<5> re CLK 0 n487 HR
+.loc banco.vhdl 70 PC<6>
+.latch n9 PC<6> re CLK 0 n487 HR
+.loc banco.vhdl 70 SP<3>
+.latch n20 SP<3> re CLK 0 n487 HR
+.loc banco.vhdl 70 SP<2>
+.latch n21 SP<2> re CLK 0 n487 HR
+.loc banco.vhdl 70 SP<1>
+.latch n22 SP<1> re CLK 0 n487 HR
+.loc banco.vhdl 70 SP<0>
+.latch n23 SP<0> re CLK 0 n487 HR
+.loc banco.vhdl 70 DPTR<7>
+.latch n24 DPTR<7> re CLK 0 n487 HR
+.loc banco.vhdl 70 DPTR<6>
+.latch n25 DPTR<6> re CLK 0 n487 HR
+.loc banco.vhdl 70 DPTR<5>
+.latch n26 DPTR<5> re CLK 0 n487 HR
+.loc banco.vhdl 70 DPTR<4>
+.latch n27 DPTR<4> re CLK 0 n487 HR
+.loc banco.vhdl 70 DPTR<3>
+.latch n28 DPTR<3> re CLK 0 n487 HR
+.loc banco.vhdl 70 DPTR<2>
+.latch n29 DPTR<2> re CLK 0 n487 HR
+.loc banco.vhdl 70 DPTR<1>
+.latch n30 DPTR<1> re CLK 0 n487 HR
+.loc banco.vhdl 70 DPTR<0>
+.latch n31 DPTR<0> re CLK 0 n487 HR
+.loc banco.vhdl 70 A<7>
+.latch n32 A<7> re CLK 0 n487 HR
+.loc banco.vhdl 70 A<6>
+.latch n33 A<6> re CLK 0 n487 HR
+.loc banco.vhdl 70 A<5>
+.latch n34 A<5> re CLK 0 n487 HR
+.loc banco.vhdl 70 A<4>
+.latch n35 A<4> re CLK 0 n487 HR
+.loc banco.vhdl 70 A<3>
+.latch n36 A<3> re CLK 0 n487 HR
+.loc banco.vhdl 70 A<2>
+.latch n37 A<2> re CLK 0 n487 HR
+.loc banco.vhdl 70 A<1>
+.latch n38 A<1> re CLK 0 n487 HR
+.loc banco.vhdl 70 A<0>
+.latch n39 A<0> re CLK 0 n487 HR
+.loc banco.vhdl 70 AVI<7>
+.latch n1 AVI<7> re CLK 2 n487
+.names BUSA<1> SB<0> CTE1<1> n559
+11- 1
+-01 1
+.subckt MUXF6 i598 I0=-i598/I0 I1=-i598/I1 S=-i598/S O=+BUSB<5>
+.names n532 i598/I0
+1 1
+.names n533 i598/I1
+1 1
+.names SB<2> i598/S
+1 1
+.loc banco.vhdl 70 TEMP<7>
+.latch n40 TEMP<7> re CLK 0 n487 HR
+.loc banco.vhdl 70 TEMP<6>
+.latch n41 TEMP<6> re CLK 0 n487 HR
+.loc banco.vhdl 70 TEMP<5>
+.latch n42 TEMP<5> re CLK 0 n487 HR
+.loc banco.vhdl 70 TEMP<4>
+.latch n43 TEMP<4> re CLK 0 n487 HR
+.loc banco.vhdl 70 TEMP<3>
+.latch n44 TEMP<3> re CLK 0 n487 HR
+.loc banco.vhdl 70 TEMP<2>
+.latch n45 TEMP<2> re CLK 0 n487 HR
+.loc banco.vhdl 70 TEMP<1>
+.latch n46 TEMP<1> re CLK 0 n487 HR
+.loc banco.vhdl 70 TEMP<0>
+.latch n47 TEMP<0> re CLK 0 n487 HR
+.loc banco.vhdl 70 CTE1<7>
+.latch n56 CTE1<7> re CLK 1 n487 HR
+.loc banco.vhdl 70 CTE1<6>
+.latch n57 CTE1<6> re CLK 1 n487 HR
+.loc banco.vhdl 70 CTE1<5>
+.latch n58 CTE1<5> re CLK 1 n487 HR
+.loc banco.vhdl 70 CTE1<4>
+.latch n59 CTE1<4> re CLK 1 n487 HR
+.loc banco.vhdl 70 CTE1<3>
+.latch n60 CTE1<3> re CLK 1 n487 HR
+.loc banco.vhdl 70 CTE1<2>
+.latch n61 CTE1<2> re CLK 1 n487 HR
+.loc banco.vhdl 70 CTE1<1>
+.latch n62 CTE1<1> re CLK 1 n487 HR
+.loc banco.vhdl 70 CTE1<0>
+.latch n63 CTE1<0> re CLK 1 n487 HR
+.loc banco.vhdl 70 BUSA<7>
+.latch n48 BUSA<7> re CLK 0 n487 HR
+.loc banco.vhdl 70 BUSA<6>
+.latch n49 BUSA<6> re CLK 0 n487 HR
+.loc banco.vhdl 70 BUSA<5>
+.latch n50 BUSA<5> re CLK 0 n487 HR
+.loc banco.vhdl 70 BUSA<4>
+.latch n51 BUSA<4> re CLK 0 n487 HR
+.loc banco.vhdl 70 BUSA<3>
+.latch n52 BUSA<3> re CLK 1 n487 HR
+.loc banco.vhdl 70 BUSA<2>
+.latch n53 BUSA<2> re CLK 0 n487 HR
+.loc banco.vhdl 70 BUSA<1>
+.latch n54 BUSA<1> re CLK 0 n487 HR
+.loc banco.vhdl 70 BUSA<0>
+.latch n55 BUSA<0> re CLK 0 n487 HR
+.loc banco.vhdl 70 PC<7>
+.latch n8 PC<7> re CLK 0 n487 HR

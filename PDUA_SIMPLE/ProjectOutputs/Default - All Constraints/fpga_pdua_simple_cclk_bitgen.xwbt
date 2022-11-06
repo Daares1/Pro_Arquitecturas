@@ -1,0 +1,7 @@
+INFILE=C:\Users\Daares1\Documents\Dropbox\Pro_Arquitecturas\PDUA_SIMPLE\ProjectOutputs\Default - All Constraints\fpga_pdua_simple.ncd
+OUTFILE=C:\Users\Daares1\Documents\Dropbox\Pro_Arquitecturas\PDUA_SIMPLE\ProjectOutputs\Default - All Constraints\fpga_pdua_simple_cclk.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s1400an-4fgg676
+WORKINGDIR=C:\Users\Daares1\Documents\Dropbox\Pro_Arquitecturas\PDUA_SIMPLE\ProjectOutputs\Default - All Constraints
+LICENSE=WebPack
+USER_INFO=210289330_0_0_073

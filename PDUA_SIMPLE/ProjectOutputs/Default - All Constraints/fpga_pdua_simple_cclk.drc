@@ -1,0 +1,13 @@
+Release 12.1 Drc M.53d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Wed May 28 23:53:19 2014
+
+drc -z fpga_pdua_simple.ncd C:\Users\Daares1\Documents\Dropbox\Pro_Arquitecturas\PDUA_SIMPLE\ProjectOutputs\Default - All Constraints\FPGA_PDUA_SIMPLE_map.pcf
+
+WARNING:PhysDesignRules:367 - The signal <TEST_BUTTON_ibuf> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <CLK_BRD_ibuf> is incomplete. The
+   signal does not drive any load pins in the design.
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

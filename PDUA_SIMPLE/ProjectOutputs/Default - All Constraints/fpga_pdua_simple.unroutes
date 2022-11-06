@@ -1,0 +1,14 @@
+Release 12.1 - par M.53d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Wed May 28 23:53:09 2014
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   CLK_BRD_ibuf
+   TEST_BUTTON_ibuf
+
+

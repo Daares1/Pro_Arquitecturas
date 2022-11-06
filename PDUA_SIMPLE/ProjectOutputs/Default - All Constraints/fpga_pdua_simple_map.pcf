@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map M.53d on Wed May 28 23:52:42 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "TEST_BUTTON" LOCATE = SITE "AD12" LEVEL 1;
+COMP "CLK_BRD" LOCATE = SITE "AE13" LEVEL 1;
+SCHEMATIC END;
+

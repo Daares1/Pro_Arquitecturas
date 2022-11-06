@@ -1,0 +1,1735 @@
+Release 12.1 Map M.53d (nt64)
+Xilinx Mapping Report File for Design 'FPGA_PDUA_SIMPLE'
+
+Design Information
+------------------
+Command Line   : map -p XC3S1400AN-FGG676-4 -pr b -tx off -c 100 -t 1 -u
+-ignore_keep_hierarchy -o fpga_pdua_simple_map.ncd fpga_pdua_simple.ngd 
+Target Device  : xc3s1400an
+Target Package : fgg676
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.52 $
+Mapped Date    : Wed May 28 23:52:40 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   15
+Logic Utilization:
+Logic Distribution:
+    Number of Slices containing only related logic:       0 out of       0   0%
+    Number of Slices containing unrelated logic:          0 out of       0   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Number of bonded IOBs:                  2 out of     502    1%
+
+Average Fanout of Non-Clock Nets:                0.00
+
+Peak Memory Usage:  268 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Map:124 - The command line option -t can only be used when running in
+   timing mode (-timing option).  The option will be ignored.
+WARNING:Map:210 - The -tx switch is not supported for this architecture, and
+   will be ignored.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_9 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_1 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_9 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_1 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_9 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_1 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_9 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_1 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_9 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_1 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_9 detected.
+WARNING:PhysDesignRules:367 - The signal <TEST_BUTTON_ibuf> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <CLK_BRD_ibuf> is incomplete. The
+   signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc3s1400an' is a WebPack part.
+INFO:LIT:243 - Logical network PinSignal_U_rom_INST_9 has no load.
+INFO:LIT:395 - The above info message is repeated 1 more times for the following
+   (max. 5 shown):
+   U_ram/ram_151/B2/N0
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 775 block(s) removed
+   6 block(s) optimized away
+ 773 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "U_ctrl/insts_3" is sourceless and has been removed.
+ Sourceless block "U_ctrl/n1q" (OR) removed.
+  The signal "U_ctrl/n1q" is sourceless and has been removed.
+   Sourceless block "U_ctrl/n2a" (XOR) removed.
+    The signal "U_ctrl/n2a" is sourceless and has been removed.
+     Sourceless block "U_ctrl/UI_10" (AND) removed.
+      The signal "PinSignal_U_banco_SB_2" is sourceless and has been removed.
+       Sourceless block "U_ctrl/n2h" (OR) removed.
+        The signal "U_ctrl/n2h" is sourceless and has been removed.
+         Sourceless block "U_ctrl/n1u" (OR) removed.
+          The signal "U_ctrl/n1u" is sourceless and has been removed.
+           Sourceless block "U_ctrl/UI_11" (AND) removed.
+            The signal "PinSignal_U_banco_SC_0" is sourceless and has been removed.
+             Sourceless block "U_banco/n5r" (OR) removed.
+              The signal "U_banco/n5r" is sourceless and has been removed.
+               Sourceless block "U_banco/n11r" (AND) removed.
+                The signal "U_banco/n11r" is sourceless and has been removed.
+                 Sourceless block "U_banco/SP__in_5" (OR) removed.
+                  The signal "U_banco/SP__in_5" is sourceless and has been removed.
+                   Sourceless block "U_banco/SP<5>" (SFF) removed.
+                    The signal "U_banco/SP_5" is sourceless and has been removed.
+                     Sourceless block "U_banco/n11s" (AND) removed.
+                      The signal "U_banco/n11s" is sourceless and has been removed.
+                     Sourceless block "U_banco/n7a" (AND) removed.
+                      The signal "U_banco/n7a" is sourceless and has been removed.
+                       Sourceless block "U_banco/n527" (OR) removed.
+                        The signal "U_banco/n527" is sourceless and has been removed.
+                         Sourceless block "U_banco/i595" (MUX) removed.
+                          The signal "U_banco/n531" is sourceless and has been removed.
+                           Sourceless block "U_banco/i597" (MUX) removed.
+                            The signal "PinSignal_U_banco_BUSB_5" is sourceless and has been removed.
+                             Sourceless block "n5r" (AND) removed.
+                              The signal "n5r" is sourceless and has been removed.
+                               Sourceless block "n4x" (OR) removed.
+                                The signal "n4x" is sourceless and has been removed.
+                                 Sourceless block "U_alu/n123" (XOR) removed.
+                                  The signal "U_alu/n123" is sourceless and has been removed.
+                                   Sourceless block "U_alu/n126" (XOR) removed.
+                                    The signal "U_alu/n126" is sourceless and has been removed.
+                                     Sourceless block "U_alu/i68" (MUX) removed.
+                                      The signal "U_alu/n128" is sourceless and has been removed.
+                                       Sourceless block "U_alu/i69" (MUX) removed.
+                                        The signal "U_alu/RES_5" is sourceless and has been removed.
+                                         Sourceless block "U_alu/n4h" (OR) removed.
+                                          The signal "U_alu/n4h" is sourceless and has been removed.
+                                           Sourceless block "U_alu/Z_in" (AND) removed.
+                                            The signal "U_alu/Z_in" is sourceless and has been removed.
+                                             Sourceless block "U_alu/Z" (FF) removed.
+                                              The signal "PinSignal_U_alu_Z" is sourceless and has been removed.
+                                               Sourceless block "n6r" (AND) removed.
+                                                The signal "n6r" is sourceless and has been removed.
+                                                 Sourceless block "n5d" (OR) removed.
+*The signal "n5d" is sourceless and has been removed.
+* Sourceless block "n6o" (AND) removed.
+*  The signal "n6o" is sourceless and has been removed.
+*   Sourceless block "PinSignal_U3_Y" (OR) removed.
+*    The signal "PinSignal_U3_Y" is sourceless and has been removed.
+*     Sourceless block "U2/n0t" (AND) removed.
+*      The signal "U2/n0t" is sourceless and has been removed.
+*       Sourceless block "U2/Y__in_3" (OR) removed.
+*        The signal "U2/Y__in_3" is sourceless and has been removed.
+*         Sourceless block "U2/Y<3>" (FF) removed.
+*          The signal "PinSignal_U2_Y_3" is sourceless and has been removed.
+*           Sourceless block "U_mar/BUS_DIR<3>" (FF) removed.
+*            The signal "PinSignal_U_mar_BUS_DIR_3" is sourceless and has been removed.
+*             Sourceless block "i53" (XOR) removed.
+*              The signal "PinSignal_U1_S_3" is sourceless and has been removed.
+*             Sourceless block "i52" (MUX) removed.
+*              The signal "U1_add_15_n8" is sourceless and has been removed.
+*               Sourceless block "i50" (XOR) removed.
+*                The signal "PinSignal_U1_S_4" is sourceless and has been removed.
+*                 Sourceless block "U2/n0l" (AND) removed.
+*                  The signal "U2/n0l" is sourceless and has been removed.
+*                   Sourceless block "U2/Y__in_4" (OR) removed.
+*                    The signal "U2/Y__in_4" is sourceless and has been removed.
+*                     Sourceless block "U2/Y<4>" (FF) removed.
+*                      The signal "PinSignal_U2_Y_4" is sourceless and has been removed.
+*                       Sourceless block "U_mar/BUS_DIR<4>" (FF) removed.
+*                        The signal "PinSignal_U_mar_BUS_DIR_4" is sourceless and has been removed.
+*                         Sourceless block "U_rom/n1u" (AND) removed.
+*                          The signal "U_rom/n1u" is sourceless and has been removed.
+*                           Sourceless block "U_rom/n2l" (AND) removed.
+*                            The signal "U_rom/n2l" is sourceless and has been removed.
+*                             Sourceless block "U_rom/n1q" (OR) removed.
+*                              The signal "U_rom/n1q" is sourceless and has been removed.
+*                               Sourceless block "U_rom/INST_4" (TRI) removed.
+*                                The signal "PinSignal_U_rom_INST_4" is sourceless and has been removed.
+*                                 Sourceless block "U_ctrl/DATA<4>" (LATCH) removed.
+*                                  The signal "PinSignal_U_ctrl_DATA_4" is sourceless and has been removed.
+*                                   Sourceless block "n5q" (AND) removed.
+*                                    The signal "n5q" is sourceless and has been removed.
+*                                     Sourceless block "n4y" (OR) removed.
+*                                      The signal "n4y" is sourceless and has been removed.
+*                                       Sourceless block "U_alu/n130" (XOR) removed.
+*                                        The signal "U_alu/n130" is sourceless and has been removed.
+*                                         Sourceless block "U_alu/n133" (XOR) removed.
+*                                          The signal "U_alu/n133" is sourceless and has been removed.
+*                                           Sourceless block "U_alu/i75" (MUX) removed.
+*                                            The signal "U_alu/n135" is sourceless and has been removed.
+*                                             Sourceless block "U_alu/i76" (MUX) removed.
+*                                              The signal "U_alu/RES_4" is sourceless and has been removed.
+*                                               Sourceless block "U_alu/n9i" (AND) removed.
+*                                                The signal "U_alu/n9i" is sourceless and has been removed.
+*                                                 Sourceless block "U_alu/n5x" (OR) removed.
+**The signal "U_alu/n5x" is sourceless and has been removed.
+** Sourceless block "U_alu/n5y" (OR) removed.
+**  The signal "U_alu/n5y" is sourceless and has been removed.
+**   Sourceless block "U_alu/n6c" (OR) removed.
+**    The signal "U_alu/n6c" is sourceless and has been removed.
+**     Sourceless block "U_alu/n4q" (XOR) removed.
+**      The signal "U_alu/n4q" is sourceless and has been removed.
+**       Sourceless block "U_alu/n4p" (OR) removed.
+**        The signal "U_alu/n4p" is sourceless and has been removed.
+**         Sourceless block "U_alu/n5z" (OR) removed.
+**          The signal "U_alu/n5z" is sourceless and has been removed.
+**           Sourceless block "U_alu/P_in" (XOR) removed.
+**            The signal "U_alu/P_in" is sourceless and has been removed.
+**             Sourceless block "U_alu/P" (FF) removed.
+**              The signal "PinSignal_U_alu_P" is sourceless and has been removed.
+**               Sourceless block "n6q" (AND) removed.
+**                The signal "n6q" is sourceless and has been removed.
+**                 Sourceless block "n5e" (OR) removed.
+**                  The signal "n5e" is sourceless and has been removed.
+**                   Sourceless block "n6n" (AND) removed.
+**                    The signal "n6n" is sourceless and has been removed.
+**       Sourceless block "U_alu/n6a" (AND) removed.
+**        The signal "U_alu/n6a" is sourceless and has been removed.
+** Sourceless block "U_alu/n6d" (AND) removed.
+**  The signal "U_alu/n6d" is sourceless and has been removed.
+*                                               Sourceless block "U_alu/n6s" (AND) removed.
+*                                                The signal "U_alu/n6s" is sourceless and has been removed.
+*                                                 Sourceless block "U_alu/S_5" (OR) removed.
+**The signal "NamedSignal_S_5" is sourceless and has been removed.
+** Sourceless block "n6h" (AND) removed.
+**  The signal "n6h" is sourceless and has been removed.
+**   Sourceless block "n4p" (OR) removed.
+**    The signal "n4p" is sourceless and has been removed.
+**     Sourceless block "U_banco/n10z" (AND) removed.
+**      The signal "U_banco/n10z" is sourceless and has been removed.
+**       Sourceless block "U_banco/PC__in_5" (OR) removed.
+**        The signal "U_banco/PC__in_5" is sourceless and has been removed.
+**         Sourceless block "U_banco/PC<5>" (SFF) removed.
+**          The signal "U_banco/PC_5" is sourceless and has been removed.
+**           Sourceless block "U_banco/n11a" (AND) removed.
+**            The signal "U_banco/n11a" is sourceless and has been removed.
+**           Sourceless block "U_banco/n6z" (AND) removed.
+**            The signal "U_banco/n6z" is sourceless and has been removed.
+**     Sourceless block "U_banco/n10j" (AND) removed.
+**      The signal "U_banco/n10j" is sourceless and has been removed.
+**       Sourceless block "U_banco/DPTR__in_5" (OR) removed.
+**        The signal "U_banco/DPTR__in_5" is sourceless and has been removed.
+**         Sourceless block "U_banco/DPTR<5>" (SFF) removed.
+**          The signal "U_banco/DPTR_5" is sourceless and has been removed.
+**           Sourceless block "U_banco/n10k" (AND) removed.
+**            The signal "U_banco/n10k" is sourceless and has been removed.
+**           Sourceless block "U_banco/n6x" (AND) removed.
+**            The signal "U_banco/n6x" is sourceless and has been removed.
+**             Sourceless block "U_banco/n528" (OR) removed.
+**              The signal "U_banco/n528" is sourceless and has been removed.
+**     Sourceless block "U_banco/n9t" (AND) removed.
+**      The signal "U_banco/n9t" is sourceless and has been removed.
+**       Sourceless block "U_banco/A__in_5" (OR) removed.
+**        The signal "U_banco/A__in_5" is sourceless and has been removed.
+**         Sourceless block "U_banco/A<5>" (SFF) removed.
+**          The signal "U_banco/A_5" is sourceless and has been removed.
+**           Sourceless block "U_banco/n9u" (AND) removed.
+**            The signal "U_banco/n9u" is sourceless and has been removed.
+**           Sourceless block "U_banco/n6y" (AND) removed.
+**            The signal "U_banco/n6y" is sourceless and has been removed.
+**     Sourceless block "U_banco/n9d" (AND) removed.
+**      The signal "U_banco/n9d" is sourceless and has been removed.
+**       Sourceless block "U_banco/TEMP__in_5" (OR) removed.
+**        The signal "U_banco/TEMP__in_5" is sourceless and has been removed.
+**         Sourceless block "U_banco/TEMP<5>" (SFF) removed.
+**          The signal "U_banco/TEMP_5" is sourceless and has been removed.
+**           Sourceless block "U_banco/n9e" (AND) removed.
+**            The signal "U_banco/n9e" is sourceless and has been removed.
+**           Sourceless block "U_banco/n529" (AND) removed.
+**            The signal "U_banco/n529" is sourceless and has been removed.
+**             Sourceless block "U_banco/i596" (MUX) removed.
+**              The signal "U_banco/n532" is sourceless and has been removed.
+**     Sourceless block "U_banco/n8f" (AND) removed.
+**      The signal "U_banco/n8f" is sourceless and has been removed.
+**       Sourceless block "U_banco/BUSA__in_5" (OR) removed.
+**        The signal "U_banco/BUSA__in_5" is sourceless and has been removed.
+**         Sourceless block "U_banco/BUSA<5>" (SFF) removed.
+**          The signal "PinSignal_U_banco_BUSA_5" is sourceless and has been removed.
+**           Sourceless block "U_banco/n8g" (AND) removed.
+**            The signal "U_banco/n8g" is sourceless and has been removed.
+**           Sourceless block "U_banco/n6w" (AND) removed.
+**            The signal "U_banco/n6w" is sourceless and has been removed.
+**             Sourceless block "U_banco/n530" (OR) removed.
+**              The signal "U_banco/n530" is sourceless and has been removed.
+**           Sourceless block "U_alu/n6e" (XOR) removed.
+**            The signal "U_alu/n6e" is sourceless and has been removed.
+**             Sourceless block "U_alu/n5l" (AND) removed.
+**              The signal "U_alu/n5l" is sourceless and has been removed.
+**               Sourceless block "U_alu/n125" (OR) removed.
+**                The signal "U_alu/n125" is sourceless and has been removed.
+**           Sourceless block "U_alu/n8z" (AND) removed.
+**            The signal "U_alu/n8z" is sourceless and has been removed.
+**             Sourceless block "U_alu/n124" (OR) removed.
+**              The signal "U_alu/n124" is sourceless and has been removed.
+**               Sourceless block "U_alu/i67" (MUX) removed.
+**                The signal "U_alu/n127" is sourceless and has been removed.
+**               Sourceless block "U_alu/n8w" (AND) removed.
+**                The signal "U_alu/n8w" is sourceless and has been removed.
+**                 Sourceless block "U_alu/n4t" (OR) removed.
+**                  The signal "U_alu/n4t" is sourceless and has been removed.
+**                   Sourceless block "U_alu/n7w" (AND) removed.
+**                    The signal "U_alu/n7w" is sourceless and has been removed.
+**                     Sourceless block "U_alu/n4e" (OR) removed.
+**                      The signal "U_alu/n4e" is sourceless and has been removed.
+**                       Sourceless block "U_alu/n119" (XOR) removed.
+**                        The signal "U_alu/n119" is sourceless and has been removed.
+**                         Sourceless block "U_alu/i61" (MUX) removed.
+**                          The signal "U_alu/n121" is sourceless and has been removed.
+**                           Sourceless block "U_alu/i62" (MUX) removed.
+**                            The signal "U_alu/RES_6" is sourceless and has been removed.
+**                             Sourceless block "U_alu/n4g" (OR) removed.
+**                              The signal "U_alu/n4g" is sourceless and has been removed.
+**                               Sourceless block "U_alu/n5w" (OR) removed.
+**                                The signal "U_alu/n5w" is sourceless and has been removed.
+**                             Sourceless block "U_alu/n9j" (AND) removed.
+**                              The signal "U_alu/n9j" is sourceless and has been removed.
+**                             Sourceless block "U_alu/n6u" (AND) removed.
+**                              The signal "U_alu/n6u" is sourceless and has been removed.
+**                               Sourceless block "U_alu/S_7" (OR) removed.
+**                                The signal "NamedSignal_S_7" is sourceless and has been removed.
+**                                 Sourceless block "n6l" (AND) removed.
+**                                  The signal "n6l" is sourceless and has been removed.
+**                                   Sourceless block "n4n" (OR) removed.
+**                                    The signal "n4n" is sourceless and has been removed.
+**                                     Sourceless block "U_banco/n11n" (AND) removed.
+**                                      The signal "U_banco/n11n" is sourceless and has been removed.
+**                                       Sourceless block "U_banco/SP__in_7" (OR) removed.
+**                                        The signal "U_banco/SP__in_7" is sourceless and has been removed.
+**                                         Sourceless block "U_banco/SP<7>" (SFF) removed.
+**                                          The signal "U_banco/SP_7" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/n11o" (AND) removed.
+**                                            The signal "U_banco/n11o" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/n6e" (AND) removed.
+**                                            The signal "U_banco/n6e" is sourceless and has been removed.
+**                                             Sourceless block "U_banco/n513" (OR) removed.
+**                                              The signal "U_banco/n513" is sourceless and has been removed.
+**                                               Sourceless block "U_banco/i581" (MUX) removed.
+**                                                The signal "U_banco/n517" is sourceless and has been removed.
+**                                                 Sourceless block "U_banco/i583" (MUX) removed.
+***The signal "PinSignal_U_banco_BUSB_7" is sourceless and has been removed.
+*** Sourceless block "n5v" (AND) removed.
+***  The signal "n5v" is sourceless and has been removed.
+***   Sourceless block "n4v" (OR) removed.
+***    The signal "n4v" is sourceless and has been removed.
+***     Sourceless block "U_alu/n109" (XOR) removed.
+***      The signal "U_alu/n109" is sourceless and has been removed.
+***       Sourceless block "U_alu/n112" (XOR) removed.
+***        The signal "U_alu/n112" is sourceless and has been removed.
+***         Sourceless block "U_alu/i54" (MUX) removed.
+***          The signal "U_alu/n114" is sourceless and has been removed.
+***           Sourceless block "U_alu/i55" (MUX) removed.
+***            The signal "U_alu/RES_7" is sourceless and has been removed.
+***             Sourceless block "U_alu/N" (FF) removed.
+***              The signal "PinSignal_U_alu_N" is sourceless and has been removed.
+***               Sourceless block "n5g" (OR) removed.
+***                The signal "n5g" is sourceless and has been removed.
+***                 Sourceless block "n6s" (AND) removed.
+***                  The signal "n6s" is sourceless and has been removed.
+***             Sourceless block "U_alu/n6v" (AND) removed.
+***              The signal "U_alu/n6v" is sourceless and has been removed.
+***             Sourceless block "U_alu/n3p" (AND) removed.
+***              The signal "U_alu/n3p" is sourceless and has been removed.
+***               Sourceless block "U_alu/S_6" (OR) removed.
+***                The signal "NamedSignal_S_6" is sourceless and has been removed.
+***                 Sourceless block "n6j" (AND) removed.
+***                  The signal "n6j" is sourceless and has been removed.
+***                   Sourceless block "n4o" (OR) removed.
+***                    The signal "n4o" is sourceless and has been removed.
+***                     Sourceless block "U_banco/n11p" (AND) removed.
+***                      The signal "U_banco/n11p" is sourceless and has been removed.
+***                       Sourceless block "U_banco/SP__in_6" (OR) removed.
+***                        The signal "U_banco/SP__in_6" is sourceless and has been removed.
+***                         Sourceless block "U_banco/SP<6>" (SFF) removed.
+***                          The signal "U_banco/SP_6" is sourceless and has been removed.
+***                           Sourceless block "U_banco/n11q" (AND) removed.
+***                            The signal "U_banco/n11q" is sourceless and has been removed.
+***                           Sourceless block "U_banco/n7m" (AND) removed.
+***                            The signal "U_banco/n7m" is sourceless and has been removed.
+***                             Sourceless block "U_banco/n520" (OR) removed.
+***                              The signal "U_banco/n520" is sourceless and has been removed.
+***                               Sourceless block "U_banco/i588" (MUX) removed.
+***                                The signal "U_banco/n524" is sourceless and has been removed.
+***                                 Sourceless block "U_banco/i590" (MUX) removed.
+***                                  The signal "PinSignal_U_banco_BUSB_6" is sourceless and has been removed.
+***                                   Sourceless block "n5t" (AND) removed.
+***                                    The signal "n5t" is sourceless and has been removed.
+***                                     Sourceless block "n4w" (OR) removed.
+***                                      The signal "n4w" is sourceless and has been removed.
+***                                       Sourceless block "U_alu/n116" (XOR) removed.
+***                                        The signal "U_alu/n116" is sourceless and has been removed.
+***                                         Sourceless block "U_alu/i60" (MUX) removed.
+***                                          The signal "U_alu/n120" is sourceless and has been removed.
+***                                         Sourceless block "U_alu/n9c" (AND) removed.
+***                                          The signal "U_alu/n9c" is sourceless and has been removed.
+***                                           Sourceless block "U_alu/n117" (OR) removed.
+***                                            The signal "U_alu/n117" is sourceless and has been removed.
+***                                             Sourceless block "U_alu/n9a" (AND) removed.
+***                                              The signal "U_alu/n9a" is sourceless and has been removed.
+***                                               Sourceless block "U_alu/n4c" (OR) removed.
+***                                                The signal "U_alu/n4c" is sourceless and has been removed.
+***                                                 Sourceless block "U_alu/n7v" (AND) removed.
+****The signal "U_alu/n7v" is sourceless and has been removed.
+**** Sourceless block "U_alu/n4f" (OR) removed.
+****  The signal "U_alu/n4f" is sourceless and has been removed.
+****   Sourceless block "U_alu/n7u" (AND) removed.
+****    The signal "U_alu/n7u" is sourceless and has been removed.
+****     Sourceless block "U_alu/C_in" (OR) removed.
+****      The signal "U_alu/C_in" is sourceless and has been removed.
+****       Sourceless block "U_alu/C" (FF) removed.
+****        The signal "PinSignal_U_alu_C" is sourceless and has been removed.
+****         Sourceless block "n6p" (AND) removed.
+****          The signal "n6p" is sourceless and has been removed.
+****   Sourceless block "U_alu/n7r" (AND) removed.
+****    The signal "U_alu/n7r" is sourceless and has been removed.
+****     Sourceless block "U_alu/n111" (OR) removed.
+****      The signal "U_alu/n111" is sourceless and has been removed.
+***                                             Sourceless block "U_alu/n7q" (AND) removed.
+***                                              The signal "U_alu/n7q" is sourceless and has been removed.
+***                                               Sourceless block "U_alu/n4k" (OR) removed.
+***                                                The signal "U_alu/n4k" is sourceless and has been removed.
+***                                                 Sourceless block "U_alu/n7o" (AND) removed.
+****The signal "U_alu/n7o" is sourceless and has been removed.
+**** Sourceless block "U_alu/n118" (OR) removed.
+****  The signal "U_alu/n118" is sourceless and has been removed.
+***                                         Sourceless block "U_alu/n9d" (AND) removed.
+***                                          The signal "U_alu/n9d" is sourceless and has been removed.
+***                                         Sourceless block "U_alu/n9b" (AND) removed.
+***                                          The signal "U_alu/n9b" is sourceless and has been removed.
+***                                         Sourceless block "U_alu/n7p" (AND) removed.
+***                                          The signal "U_alu/n7p" is sourceless and has been removed.
+***                                       Sourceless block "U_alu/n6b" (XOR) removed.
+***                                        The signal "U_alu/n6b" is sourceless and has been removed.
+***                                         Sourceless block "U_alu/n4l" (AND) removed.
+***                                          The signal "U_alu/n4l" is sourceless and has been removed.
+***                                       Sourceless block "U_alu/n4d" (AND) removed.
+***                                        The signal "U_alu/n4d" is sourceless and has been removed.
+***                     Sourceless block "U_banco/n10x" (AND) removed.
+***                      The signal "U_banco/n10x" is sourceless and has been removed.
+***                       Sourceless block "U_banco/PC__in_6" (OR) removed.
+***                        The signal "U_banco/PC__in_6" is sourceless and has been removed.
+***                         Sourceless block "U_banco/PC<6>" (SFF) removed.
+***                          The signal "U_banco/PC_6" is sourceless and has been removed.
+***                           Sourceless block "U_banco/n10y" (AND) removed.
+***                            The signal "U_banco/n10y" is sourceless and has been removed.
+***                           Sourceless block "U_banco/n7l" (AND) removed.
+***                            The signal "U_banco/n7l" is sourceless and has been removed.
+***                     Sourceless block "U_banco/n10l" (AND) removed.
+***                      The signal "U_banco/n10l" is sourceless and has been removed.
+***                       Sourceless block "U_banco/DPTR__in_6" (OR) removed.
+***                        The signal "U_banco/DPTR__in_6" is sourceless and has been removed.
+***                         Sourceless block "U_banco/DPTR<6>" (SFF) removed.
+***                          The signal "U_banco/DPTR_6" is sourceless and has been removed.
+***                           Sourceless block "U_banco/n10m" (AND) removed.
+***                            The signal "U_banco/n10m" is sourceless and has been removed.
+***                           Sourceless block "U_banco/n7j" (AND) removed.
+***                            The signal "U_banco/n7j" is sourceless and has been removed.
+***                             Sourceless block "U_banco/n521" (OR) removed.
+***                              The signal "U_banco/n521" is sourceless and has been removed.
+***                     Sourceless block "U_banco/n9v" (AND) removed.
+***                      The signal "U_banco/n9v" is sourceless and has been removed.
+***                       Sourceless block "U_banco/A__in_6" (OR) removed.
+***                        The signal "U_banco/A__in_6" is sourceless and has been removed.
+***                         Sourceless block "U_banco/A<6>" (SFF) removed.
+***                          The signal "U_banco/A_6" is sourceless and has been removed.
+***                           Sourceless block "U_banco/n9w" (AND) removed.
+***                            The signal "U_banco/n9w" is sourceless and has been removed.
+***                           Sourceless block "U_banco/n7k" (AND) removed.
+***                            The signal "U_banco/n7k" is sourceless and has been removed.
+***                     Sourceless block "U_banco/n9f" (AND) removed.
+***                      The signal "U_banco/n9f" is sourceless and has been removed.
+***                       Sourceless block "U_banco/TEMP__in_6" (OR) removed.
+***                        The signal "U_banco/TEMP__in_6" is sourceless and has been removed.
+***                         Sourceless block "U_banco/TEMP<6>" (SFF) removed.
+***                          The signal "U_banco/TEMP_6" is sourceless and has been removed.
+***                           Sourceless block "U_banco/n9g" (AND) removed.
+***                            The signal "U_banco/n9g" is sourceless and has been removed.
+***                           Sourceless block "U_banco/n522" (AND) removed.
+***                            The signal "U_banco/n522" is sourceless and has been removed.
+***                             Sourceless block "U_banco/i589" (MUX) removed.
+***                              The signal "U_banco/n525" is sourceless and has been removed.
+***                     Sourceless block "U_banco/n8h" (AND) removed.
+***                      The signal "U_banco/n8h" is sourceless and has been removed.
+***                       Sourceless block "U_banco/BUSA__in_6" (OR) removed.
+***                        The signal "U_banco/BUSA__in_6" is sourceless and has been removed.
+***                         Sourceless block "U_banco/BUSA<6>" (SFF) removed.
+***                          The signal "PinSignal_U_banco_BUSA_6" is sourceless and has been removed.
+***                           Sourceless block "U_banco/n8i" (AND) removed.
+***                            The signal "U_banco/n8i" is sourceless and has been removed.
+***                           Sourceless block "U_banco/n7i" (AND) removed.
+***                            The signal "U_banco/n7i" is sourceless and has been removed.
+***                             Sourceless block "U_banco/n523" (OR) removed.
+***                              The signal "U_banco/n523" is sourceless and has been removed.
+***                           Sourceless block "U_ram/ram_151/B2/U2/RAM16X2S3/RAM16X1S0" (RAMS) removed.
+***                            The signal "U_ram/ram_151/B2/N27" is sourceless and has been removed.
+***                             Sourceless block "U_ram/ram_151/B2/BU5" (FF) removed.
+***                              The signal "U_ram/n50" is sourceless and has been removed.
+***                               Sourceless block "U_ram/DATA_OUT_6" (TRI) removed.
+***                                The signal "PinSignal_U_ram_DATA_OUT_6" is sourceless and has been removed.
+***                                 Sourceless block "n6k" (AND) removed.
+***                                  The signal "n6k" is sourceless and has been removed.
+***         Sourceless block "U_alu/n7s" (AND) removed.
+***          The signal "U_alu/n7s" is sourceless and has been removed.
+***           Sourceless block "U_alu/n4n" (OR) removed.
+***            The signal "U_alu/n4n" is sourceless and has been removed.
+***         Sourceless block "U_alu/n7t" (AND) removed.
+***          The signal "U_alu/n7t" is sourceless and has been removed.
+***       Sourceless block "U_alu/i53" (MUX) removed.
+***        The signal "U_alu/n113" is sourceless and has been removed.
+***       Sourceless block "U_alu/n9g" (AND) removed.
+***        The signal "U_alu/n9g" is sourceless and has been removed.
+***         Sourceless block "U_alu/n110" (OR) removed.
+***          The signal "U_alu/n110" is sourceless and has been removed.
+***           Sourceless block "U_alu/n9e" (AND) removed.
+***            The signal "U_alu/n9e" is sourceless and has been removed.
+***             Sourceless block "U_alu/n4r" (OR) removed.
+***              The signal "U_alu/n4r" is sourceless and has been removed.
+***       Sourceless block "U_alu/n9h" (AND) removed.
+***        The signal "U_alu/n9h" is sourceless and has been removed.
+***       Sourceless block "U_alu/n9f" (AND) removed.
+***        The signal "U_alu/n9f" is sourceless and has been removed.
+***     Sourceless block "U_alu/n4m" (XOR) removed.
+***      The signal "U_alu/n4m" is sourceless and has been removed.
+***     Sourceless block "U_alu/n4s" (AND) removed.
+***      The signal "U_alu/n4s" is sourceless and has been removed.
+**                                     Sourceless block "U_banco/n10n" (AND) removed.
+**                                      The signal "U_banco/n10n" is sourceless and has been removed.
+**                                       Sourceless block "U_banco/DPTR__in_7" (OR) removed.
+**                                        The signal "U_banco/DPTR__in_7" is sourceless and has been removed.
+**                                         Sourceless block "U_banco/DPTR<7>" (SFF) removed.
+**                                          The signal "U_banco/DPTR_7" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/n10o" (AND) removed.
+**                                            The signal "U_banco/n10o" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/n6b" (AND) removed.
+**                                            The signal "U_banco/n6b" is sourceless and has been removed.
+**                                             Sourceless block "U_banco/n514" (OR) removed.
+**                                              The signal "U_banco/n514" is sourceless and has been removed.
+**                                     Sourceless block "U_banco/n9x" (AND) removed.
+**                                      The signal "U_banco/n9x" is sourceless and has been removed.
+**                                       Sourceless block "U_banco/A__in_7" (OR) removed.
+**                                        The signal "U_banco/A__in_7" is sourceless and has been removed.
+**                                         Sourceless block "U_banco/A<7>" (SFF) removed.
+**                                          The signal "U_banco/A_7" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/n9y" (AND) removed.
+**                                            The signal "U_banco/n9y" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/n6c" (AND) removed.
+**                                            The signal "U_banco/n6c" is sourceless and has been removed.
+**                                     Sourceless block "U_banco/n9h" (AND) removed.
+**                                      The signal "U_banco/n9h" is sourceless and has been removed.
+**                                       Sourceless block "U_banco/TEMP__in_7" (OR) removed.
+**                                        The signal "U_banco/TEMP__in_7" is sourceless and has been removed.
+**                                         Sourceless block "U_banco/TEMP<7>" (SFF) removed.
+**                                          The signal "U_banco/TEMP_7" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/n9i" (AND) removed.
+**                                            The signal "U_banco/n9i" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/n515" (AND) removed.
+**                                            The signal "U_banco/n515" is sourceless and has been removed.
+**                                             Sourceless block "U_banco/i582" (MUX) removed.
+**                                              The signal "U_banco/n518" is sourceless and has been removed.
+**                                     Sourceless block "U_banco/n8j" (AND) removed.
+**                                      The signal "U_banco/n8j" is sourceless and has been removed.
+**                                       Sourceless block "U_banco/BUSA__in_7" (OR) removed.
+**                                        The signal "U_banco/BUSA__in_7" is sourceless and has been removed.
+**                                         Sourceless block "U_banco/BUSA<7>" (SFF) removed.
+**                                          The signal "PinSignal_U_banco_BUSA_7" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/n8k" (AND) removed.
+**                                            The signal "U_banco/n8k" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/n6g" (AND) removed.
+**                                            The signal "U_banco/n6g" is sourceless and has been removed.
+**                                             Sourceless block "U_banco/n516" (OR) removed.
+**                                              The signal "U_banco/n516" is sourceless and has been removed.
+**                                           Sourceless block "U_ram/ram_151/B2/U2/RAM16X2S3/RAM16X1S1" (RAMS) removed.
+**                                            The signal "U_ram/ram_151/B2/N26" is sourceless and has been removed.
+**                                             Sourceless block "U_ram/ram_151/B2/BU4" (FF) removed.
+**                                              The signal "U_ram/n49" is sourceless and has been removed.
+**                                               Sourceless block "U_ram/DATA_OUT_7" (TRI) removed.
+**                                                The signal "PinSignal_U_ram_DATA_OUT_7" is sourceless and has been removed.
+**                                                 Sourceless block "n6m" (AND) removed.
+***The signal "n6m" is sourceless and has been removed.
+**                                     Sourceless block "U_banco/n7t" (AND) removed.
+**                                      The signal "U_banco/n7t" is sourceless and has been removed.
+**                                       Sourceless block "U_banco/PC__in_7" (OR) removed.
+**                                        The signal "U_banco/PC__in_7" is sourceless and has been removed.
+**                                         Sourceless block "U_banco/PC<7>" (SFF) removed.
+**                                          The signal "U_banco/PC_7" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/n7u" (AND) removed.
+**                                            The signal "U_banco/n7u" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/n6d" (AND) removed.
+**                                            The signal "U_banco/n6d" is sourceless and has been removed.
+**                             Sourceless block "U_alu/n3q" (AND) removed.
+**                              The signal "U_alu/n3q" is sourceless and has been removed.
+**                             Sourceless block "U_alu/n3r" (AND) removed.
+**                              The signal "U_alu/n3r" is sourceless and has been removed.
+**               Sourceless block "U_alu/n7m" (OR) removed.
+**                The signal "U_alu/n7m" is sourceless and has been removed.
+**                 Sourceless block "U_alu/n5k" (OR) removed.
+**                  The signal "U_alu/n5k" is sourceless and has been removed.
+**                   Sourceless block "U_alu/n7l" (AND) removed.
+**                    The signal "U_alu/n7l" is sourceless and has been removed.
+**           Sourceless block "U_alu/n4u" (AND) removed.
+**            The signal "U_alu/n4u" is sourceless and has been removed.
+**           Sourceless block "U_alu/n7n" (AND) removed.
+**            The signal "U_alu/n7n" is sourceless and has been removed.
+**           Sourceless block "U_ram/ram_151/B2/U2/RAM16X2S2/RAM16X1S1" (RAMS) removed.
+**            The signal "U_ram/ram_151/B2/N28" is sourceless and has been removed.
+**             Sourceless block "U_ram/ram_151/B2/BU6" (FF) removed.
+**              The signal "U_ram/n51" is sourceless and has been removed.
+**               Sourceless block "U_ram/DATA_OUT_5" (TRI) removed.
+**                The signal "PinSignal_U_ram_DATA_OUT_5" is sourceless and has been removed.
+**                 Sourceless block "n6i" (AND) removed.
+**                  The signal "n6i" is sourceless and has been removed.
+*                                               Sourceless block "U_alu/n3u" (AND) removed.
+*                                                The signal "U_alu/n3u" is sourceless and has been removed.
+*                                                 Sourceless block "U_alu/S_4" (OR) removed.
+**The signal "NamedSignal_S_4" is sourceless and has been removed.
+** Sourceless block "n6f" (AND) removed.
+**  The signal "n6f" is sourceless and has been removed.
+**   Sourceless block "n4q" (OR) removed.
+**    The signal "n4q" is sourceless and has been removed.
+**     Sourceless block "U_banco/n11j" (AND) removed.
+**      The signal "U_banco/n11j" is sourceless and has been removed.
+**       Sourceless block "U_banco/SP__in_4" (OR) removed.
+**        The signal "U_banco/SP__in_4" is sourceless and has been removed.
+**         Sourceless block "U_banco/SP<4>" (SFF) removed.
+**          The signal "U_banco/SP_4" is sourceless and has been removed.
+**           Sourceless block "U_banco/n11k" (AND) removed.
+**            The signal "U_banco/n11k" is sourceless and has been removed.
+**           Sourceless block "U_banco/n6s" (AND) removed.
+**            The signal "U_banco/n6s" is sourceless and has been removed.
+**             Sourceless block "U_banco/n534" (OR) removed.
+**              The signal "U_banco/n534" is sourceless and has been removed.
+**               Sourceless block "U_banco/i602" (MUX) removed.
+**                The signal "U_banco/n538" is sourceless and has been removed.
+**                 Sourceless block "U_banco/i604" (MUX) removed.
+**                  The signal "PinSignal_U_banco_BUSB_4" is sourceless and has been removed.
+**                   Sourceless block "n5p" (AND) removed.
+**                    The signal "n5p" is sourceless and has been removed.
+**     Sourceless block "U_banco/n11b" (AND) removed.
+**      The signal "U_banco/n11b" is sourceless and has been removed.
+**       Sourceless block "U_banco/PC__in_4" (OR) removed.
+**        The signal "U_banco/PC__in_4" is sourceless and has been removed.
+**         Sourceless block "U_banco/PC<4>" (SFF) removed.
+**          The signal "U_banco/PC_4" is sourceless and has been removed.
+**           Sourceless block "U_banco/n11c" (AND) removed.
+**            The signal "U_banco/n11c" is sourceless and has been removed.
+**           Sourceless block "U_banco/n6r" (AND) removed.
+**            The signal "U_banco/n6r" is sourceless and has been removed.
+**     Sourceless block "U_banco/n10h" (AND) removed.
+**      The signal "U_banco/n10h" is sourceless and has been removed.
+**       Sourceless block "U_banco/DPTR__in_4" (OR) removed.
+**        The signal "U_banco/DPTR__in_4" is sourceless and has been removed.
+**         Sourceless block "U_banco/DPTR<4>" (SFF) removed.
+**          The signal "U_banco/DPTR_4" is sourceless and has been removed.
+**           Sourceless block "U_banco/n10i" (AND) removed.
+**            The signal "U_banco/n10i" is sourceless and has been removed.
+**           Sourceless block "U_banco/n6p" (AND) removed.
+**            The signal "U_banco/n6p" is sourceless and has been removed.
+**             Sourceless block "U_banco/n535" (OR) removed.
+**              The signal "U_banco/n535" is sourceless and has been removed.
+**     Sourceless block "U_banco/n9r" (AND) removed.
+**      The signal "U_banco/n9r" is sourceless and has been removed.
+**       Sourceless block "U_banco/A__in_4" (OR) removed.
+**        The signal "U_banco/A__in_4" is sourceless and has been removed.
+**         Sourceless block "U_banco/A<4>" (SFF) removed.
+**          The signal "U_banco/A_4" is sourceless and has been removed.
+**           Sourceless block "U_banco/n9s" (AND) removed.
+**            The signal "U_banco/n9s" is sourceless and has been removed.
+**           Sourceless block "U_banco/n6q" (AND) removed.
+**            The signal "U_banco/n6q" is sourceless and has been removed.
+**     Sourceless block "U_banco/n9b" (AND) removed.
+**      The signal "U_banco/n9b" is sourceless and has been removed.
+**       Sourceless block "U_banco/TEMP__in_4" (OR) removed.
+**        The signal "U_banco/TEMP__in_4" is sourceless and has been removed.
+**         Sourceless block "U_banco/TEMP<4>" (SFF) removed.
+**          The signal "U_banco/TEMP_4" is sourceless and has been removed.
+**           Sourceless block "U_banco/n9c" (AND) removed.
+**            The signal "U_banco/n9c" is sourceless and has been removed.
+**           Sourceless block "U_banco/n536" (AND) removed.
+**            The signal "U_banco/n536" is sourceless and has been removed.
+**             Sourceless block "U_banco/i603" (MUX) removed.
+**              The signal "U_banco/n539" is sourceless and has been removed.
+**     Sourceless block "U_banco/n8d" (AND) removed.
+**      The signal "U_banco/n8d" is sourceless and has been removed.
+**       Sourceless block "U_banco/BUSA__in_4" (OR) removed.
+**        The signal "U_banco/BUSA__in_4" is sourceless and has been removed.
+**         Sourceless block "U_banco/BUSA<4>" (SFF) removed.
+**          The signal "PinSignal_U_banco_BUSA_4" is sourceless and has been removed.
+**           Sourceless block "U_banco/n8e" (AND) removed.
+**            The signal "U_banco/n8e" is sourceless and has been removed.
+**           Sourceless block "U_banco/n6o" (AND) removed.
+**            The signal "U_banco/n6o" is sourceless and has been removed.
+**             Sourceless block "U_banco/n537" (OR) removed.
+**              The signal "U_banco/n537" is sourceless and has been removed.
+**           Sourceless block "U_alu/n6f" (XOR) removed.
+**            The signal "U_alu/n6f" is sourceless and has been removed.
+**             Sourceless block "U_alu/n5n" (AND) removed.
+**              The signal "U_alu/n5n" is sourceless and has been removed.
+**               Sourceless block "U_alu/n132" (OR) removed.
+**                The signal "U_alu/n132" is sourceless and has been removed.
+**           Sourceless block "U_alu/n8v" (AND) removed.
+**            The signal "U_alu/n8v" is sourceless and has been removed.
+**             Sourceless block "U_alu/n131" (OR) removed.
+**              The signal "U_alu/n131" is sourceless and has been removed.
+**               Sourceless block "U_alu/i74" (MUX) removed.
+**                The signal "U_alu/n134" is sourceless and has been removed.
+**               Sourceless block "U_alu/n8s" (AND) removed.
+**                The signal "U_alu/n8s" is sourceless and has been removed.
+**                 Sourceless block "U_alu/n4w" (OR) removed.
+**                  The signal "U_alu/n4w" is sourceless and has been removed.
+**                   Sourceless block "U_alu/n7x" (AND) removed.
+**                    The signal "U_alu/n7x" is sourceless and has been removed.
+**                     Sourceless block "U_alu/n4v" (OR) removed.
+**                      The signal "U_alu/n4v" is sourceless and has been removed.
+**               Sourceless block "U_alu/n7j" (OR) removed.
+**                The signal "U_alu/n7j" is sourceless and has been removed.
+**                 Sourceless block "U_alu/n5m" (OR) removed.
+**                  The signal "U_alu/n5m" is sourceless and has been removed.
+**                   Sourceless block "U_alu/n7i" (AND) removed.
+**                    The signal "U_alu/n7i" is sourceless and has been removed.
+**           Sourceless block "U_alu/n4x" (AND) removed.
+**            The signal "U_alu/n4x" is sourceless and has been removed.
+**           Sourceless block "U_alu/n7k" (AND) removed.
+**            The signal "U_alu/n7k" is sourceless and has been removed.
+**           Sourceless block "U_ram/ram_151/B2/U2/RAM16X2S2/RAM16X1S0" (RAMS) removed.
+**            The signal "U_ram/ram_151/B2/N29" is sourceless and has been removed.
+**             Sourceless block "U_ram/ram_151/B2/BU7" (FF) removed.
+**              The signal "U_ram/n52" is sourceless and has been removed.
+**               Sourceless block "U_ram/DATA_OUT_4" (TRI) removed.
+**                The signal "PinSignal_U_ram_DATA_OUT_4" is sourceless and has been removed.
+**                 Sourceless block "n6g" (AND) removed.
+**                  The signal "n6g" is sourceless and has been removed.
+** Sourceless block "U2/n0m" (AND) removed.
+**  The signal "U2/n0m" is sourceless and has been removed.
+*                                               Sourceless block "U_alu/n3v" (AND) removed.
+*                                                The signal "U_alu/n3v" is sourceless and has been removed.
+*                                                 Sourceless block "U_alu/S_3" (OR) removed.
+**The signal "NamedSignal_S_3" is sourceless and has been removed.
+** Sourceless block "n6d" (AND) removed.
+**  The signal "n6d" is sourceless and has been removed.
+**   Sourceless block "n4r" (OR) removed.
+**    The signal "n4r" is sourceless and has been removed.
+**     Sourceless block "U_banco/n11d" (AND) removed.
+**      The signal "U_banco/n11d" is sourceless and has been removed.
+**       Sourceless block "U_banco/PC__in_3" (OR) removed.
+**        The signal "U_banco/PC__in_3" is sourceless and has been removed.
+**         Sourceless block "U_banco/PC<3>" (SFF) removed.
+**          The signal "U_banco/PC_3" is sourceless and has been removed.
+**           Sourceless block "U_banco/n11e" (AND) removed.
+**            The signal "U_banco/n11e" is sourceless and has been removed.
+**           Sourceless block "U_banco/n7r" (AND) removed.
+**            The signal "U_banco/n7r" is sourceless and has been removed.
+**             Sourceless block "U_banco/n541" (OR) removed.
+**              The signal "U_banco/n541" is sourceless and has been removed.
+**               Sourceless block "U_banco/i609" (MUX) removed.
+**                The signal "U_banco/n545" is sourceless and has been removed.
+**                 Sourceless block "U_banco/i611" (MUX) removed.
+**                  The signal "PinSignal_U_banco_BUSB_3" is sourceless and has been removed.
+**                   Sourceless block "n5n" (AND) removed.
+**                    The signal "n5n" is sourceless and has been removed.
+**                     Sourceless block "n4z" (OR) removed.
+**                      The signal "n4z" is sourceless and has been removed.
+**                       Sourceless block "U_alu/n137" (XOR) removed.
+**                        The signal "U_alu/n137" is sourceless and has been removed.
+**                         Sourceless block "U_alu/n140" (XOR) removed.
+**                          The signal "U_alu/n140" is sourceless and has been removed.
+**                           Sourceless block "U_alu/i82" (MUX) removed.
+**                            The signal "U_alu/n142" is sourceless and has been removed.
+**                             Sourceless block "U_alu/i83" (MUX) removed.
+**                              The signal "U_alu/RES_3" is sourceless and has been removed.
+**                               Sourceless block "U_alu/n4i" (OR) removed.
+**                                The signal "U_alu/n4i" is sourceless and has been removed.
+**                                 Sourceless block "U_alu/n4o" (OR) removed.
+**                                  The signal "U_alu/n4o" is sourceless and has been removed.
+**                               Sourceless block "U_alu/n9k" (AND) removed.
+**                                The signal "U_alu/n9k" is sourceless and has been removed.
+**                               Sourceless block "U_alu/n6r" (AND) removed.
+**                                The signal "U_alu/n6r" is sourceless and has been removed.
+**                               Sourceless block "U_alu/n3w" (AND) removed.
+**                                The signal "U_alu/n3w" is sourceless and has been removed.
+**                               Sourceless block "U_alu/n3x" (AND) removed.
+**                                The signal "U_alu/n3x" is sourceless and has been removed.
+**                                 Sourceless block "U_alu/S_2" (OR) removed.
+**                                  The signal "NamedSignal_S_2" is sourceless and has been removed.
+**                                   Sourceless block "n6b" (AND) removed.
+**                                    The signal "n6b" is sourceless and has been removed.
+**                                     Sourceless block "n4s" (OR) removed.
+**                                      The signal "n4s" is sourceless and has been removed.
+**                                       Sourceless block "U_banco/n11f" (AND) removed.
+**                                        The signal "U_banco/n11f" is sourceless and has been removed.
+**                                         Sourceless block "U_banco/PC__in_2" (OR) removed.
+**                                          The signal "U_banco/PC__in_2" is sourceless and has been removed.
+**                                           Sourceless block "U_banco/PC<2>" (SFF) removed.
+**                                            The signal "U_banco/PC_2" is sourceless and has been removed.
+**                                             Sourceless block "U_banco/n11g" (AND) removed.
+**                                              The signal "U_banco/n11g" is sourceless and has been removed.
+**                                             Sourceless block "U_banco/n7f" (AND) removed.
+**                                              The signal "U_banco/n7f" is sourceless and has been removed.
+**                                               Sourceless block "U_banco/n548" (OR) removed.
+**                                                The signal "U_banco/n548" is sourceless and has been removed.
+**                                                 Sourceless block "U_banco/i616" (MUX) removed.
+***The signal "U_banco/n552" is sourceless and has been removed.
+*** Sourceless block "U_banco/i618" (MUX) removed.
+***  The signal "PinSignal_U_banco_BUSB_2" is sourceless and has been removed.
+***   Sourceless block "n5l" (AND) removed.
+***    The signal "n5l" is sourceless and has been removed.
+***     Sourceless block "n5a" (OR) removed.
+***      The signal "n5a" is sourceless and has been removed.
+***       Sourceless block "U_alu/n144" (XOR) removed.
+***        The signal "U_alu/n144" is sourceless and has been removed.
+***         Sourceless block "U_alu/n147" (XOR) removed.
+***          The signal "U_alu/n147" is sourceless and has been removed.
+***           Sourceless block "U_alu/i89" (MUX) removed.
+***            The signal "U_alu/n149" is sourceless and has been removed.
+***             Sourceless block "U_alu/i90" (MUX) removed.
+***              The signal "U_alu/RES_2" is sourceless and has been removed.
+***               Sourceless block "U_alu/n6q" (AND) removed.
+***                The signal "U_alu/n6q" is sourceless and has been removed.
+***               Sourceless block "U_alu/n3y" (AND) removed.
+***                The signal "U_alu/n3y" is sourceless and has been removed.
+***               Sourceless block "U_alu/n3z" (AND) removed.
+***                The signal "U_alu/n3z" is sourceless and has been removed.
+***                 Sourceless block "U_alu/S_1" (OR) removed.
+***                  The signal "NamedSignal_S_1" is sourceless and has been removed.
+***                   Sourceless block "n5z" (AND) removed.
+***                    The signal "n5z" is sourceless and has been removed.
+***                     Sourceless block "n4t" (OR) removed.
+***                      The signal "n4t" is sourceless and has been removed.
+***                       Sourceless block "U_banco/n11h" (AND) removed.
+***                        The signal "U_banco/n11h" is sourceless and has been removed.
+***                         Sourceless block "U_banco/PC__in_1" (OR) removed.
+***                          The signal "U_banco/PC__in_1" is sourceless and has been removed.
+***                           Sourceless block "U_banco/PC<1>" (SFF) removed.
+***                            The signal "U_banco/PC_1" is sourceless and has been removed.
+***                             Sourceless block "U_banco/n11i" (AND) removed.
+***                              The signal "U_banco/n11i" is sourceless and has been removed.
+***                             Sourceless block "U_banco/n5z" (AND) removed.
+***                              The signal "U_banco/n5z" is sourceless and has been removed.
+***                               Sourceless block "U_banco/n555" (OR) removed.
+***                                The signal "U_banco/n555" is sourceless and has been removed.
+***                                 Sourceless block "U_banco/i623" (MUX) removed.
+***                                  The signal "U_banco/n559" is sourceless and has been removed.
+***                                   Sourceless block "U_banco/i625" (MUX) removed.
+***                                    The signal "PinSignal_U_banco_BUSB_1" is sourceless and has been removed.
+***                                     Sourceless block "n5j" (AND) removed.
+***                                      The signal "n5j" is sourceless and has been removed.
+***                                       Sourceless block "n5b" (OR) removed.
+***                                        The signal "n5b" is sourceless and has been removed.
+***                                         Sourceless block "U_alu/n151" (XOR) removed.
+***                                          The signal "U_alu/n151" is sourceless and has been removed.
+***                                           Sourceless block "U_alu/n154" (XOR) removed.
+***                                            The signal "U_alu/n154" is sourceless and has been removed.
+***                                             Sourceless block "U_alu/i96" (MUX) removed.
+***                                              The signal "U_alu/n156" is sourceless and has been removed.
+***                                               Sourceless block "U_alu/i97" (MUX) removed.
+***                                                The signal "U_alu/RES_1" is sourceless and has been removed.
+***                                                 Sourceless block "U_alu/n4j" (OR) removed.
+****The signal "U_alu/n4j" is sourceless and has been removed.
+***                                                 Sourceless block "U_alu/n6p" (AND) removed.
+****The signal "U_alu/n6p" is sourceless and has been removed.
+***                                                 Sourceless block "U_alu/n4a" (AND) removed.
+****The signal "U_alu/n4a" is sourceless and has been removed.
+***                                                 Sourceless block "U_alu/n6m" (AND) removed.
+****The signal "U_alu/n6m" is sourceless and has been removed.
+**** Sourceless block "U_alu/S_0" (OR) removed.
+****  The signal "NamedSignal_S_0" is sourceless and has been removed.
+****   Sourceless block "n5x" (AND) removed.
+****    The signal "n5x" is sourceless and has been removed.
+****     Sourceless block "n4u" (OR) removed.
+****      The signal "n4u" is sourceless and has been removed.
+****       Sourceless block "U_banco/n11l" (AND) removed.
+****        The signal "U_banco/n11l" is sourceless and has been removed.
+****         Sourceless block "U_banco/PC__in_0" (OR) removed.
+****          The signal "U_banco/PC__in_0" is sourceless and has been removed.
+****           Sourceless block "U_banco/PC<0>" (SFF) removed.
+****            The signal "U_banco/PC_0" is sourceless and has been removed.
+****             Sourceless block "U_banco/n11m" (AND) removed.
+****              The signal "U_banco/n11m" is sourceless and has been removed.
+****             Sourceless block "U_banco/n6l" (AND) removed.
+****              The signal "U_banco/n6l" is sourceless and has been removed.
+****               Sourceless block "U_banco/n562" (OR) removed.
+****                The signal "U_banco/n562" is sourceless and has been removed.
+****                 Sourceless block "U_banco/i630" (MUX) removed.
+****                  The signal "U_banco/n566" is sourceless and has been removed.
+****                   Sourceless block "U_banco/i632" (MUX) removed.
+****                    The signal "PinSignal_U_banco_BUSB_0" is sourceless and has been removed.
+****                     Sourceless block "n5h" (AND) removed.
+****                      The signal "n5h" is sourceless and has been removed.
+****                       Sourceless block "n5c" (OR) removed.
+****                        The signal "n5c" is sourceless and has been removed.
+****                         Sourceless block "U_alu/n158" (XOR) removed.
+****                          The signal "U_alu/n158" is sourceless and has been removed.
+****                           Sourceless block "U_alu/i102" (MUX) removed.
+****                            The signal "U_alu/n162" is sourceless and has been removed.
+****                             Sourceless block "U_alu/i104" (MUX) removed.
+****                              The signal "U_alu/RES_0" is sourceless and has been removed.
+****                               Sourceless block "U_alu/n6o" (AND) removed.
+****                                The signal "U_alu/n6o" is sourceless and has been removed.
+****                               Sourceless block "U_alu/n6n" (AND) removed.
+****                                The signal "U_alu/n6n" is sourceless and has been removed.
+****                           Sourceless block "U_alu/n161" (XOR) removed.
+****                            The signal "U_alu/n161" is sourceless and has been removed.
+****                             Sourceless block "U_alu/i103" (MUX) removed.
+****                              The signal "U_alu/n163" is sourceless and has been removed.
+****                           Sourceless block "U_alu/n8e" (AND) removed.
+****                            The signal "U_alu/n8e" is sourceless and has been removed.
+****                             Sourceless block "U_alu/n159" (OR) removed.
+****                              The signal "U_alu/n159" is sourceless and has been removed.
+****                               Sourceless block "U_alu/n8c" (AND) removed.
+****                                The signal "U_alu/n8c" is sourceless and has been removed.
+****                                 Sourceless block "U_alu/n5i" (OR) removed.
+****                                  The signal "U_alu/n5i" is sourceless and has been removed.
+****                                   Sourceless block "U_alu/n8b" (AND) removed.
+****                                    The signal "U_alu/n8b" is sourceless and has been removed.
+****                                     Sourceless block "U_alu/n5h" (OR) removed.
+****                                      The signal "U_alu/n5h" is sourceless and has been removed.
+****                                       Sourceless block "U_alu/n8a" (AND) removed.
+****                                        The signal "U_alu/n8a" is sourceless and has been removed.
+****                                         Sourceless block "U_alu/n5e" (OR) removed.
+****                                          The signal "U_alu/n5e" is sourceless and has been removed.
+****                                           Sourceless block "U_alu/n7z" (AND) removed.
+****                                            The signal "U_alu/n7z" is sourceless and has been removed.
+****                                             Sourceless block "U_alu/n5b" (OR) removed.
+****                                              The signal "U_alu/n5b" is sourceless and has been removed.
+****                                               Sourceless block "U_alu/n7y" (AND) removed.
+****                                                The signal "U_alu/n7y" is sourceless and has been removed.
+****                                                 Sourceless block "U_alu/n4y" (OR) removed.
+*****The signal "U_alu/n4y" is sourceless and has been removed.
+****                                               Sourceless block "U_alu/n7f" (AND) removed.
+****                                                The signal "U_alu/n7f" is sourceless and has been removed.
+****                                                 Sourceless block "U_alu/n139" (OR) removed.
+*****The signal "U_alu/n139" is sourceless and has been removed.
+****                                               Sourceless block "U_alu/n5p" (AND) removed.
+****                                                The signal "U_alu/n5p" is sourceless and has been removed.
+****                                           Sourceless block "U_alu/n7c" (AND) removed.
+****                                            The signal "U_alu/n7c" is sourceless and has been removed.
+****                                             Sourceless block "U_alu/n146" (OR) removed.
+****                                              The signal "U_alu/n146" is sourceless and has been removed.
+****                                           Sourceless block "U_alu/n5r" (AND) removed.
+****                                            The signal "U_alu/n5r" is sourceless and has been removed.
+****                                       Sourceless block "U_alu/n6z" (AND) removed.
+****                                        The signal "U_alu/n6z" is sourceless and has been removed.
+****                                         Sourceless block "U_alu/n153" (OR) removed.
+****                                          The signal "U_alu/n153" is sourceless and has been removed.
+****                                       Sourceless block "U_alu/n5t" (AND) removed.
+****                                        The signal "U_alu/n5t" is sourceless and has been removed.
+****                               Sourceless block "U_alu/n6x" (AND) removed.
+****                                The signal "U_alu/n6x" is sourceless and has been removed.
+****                                 Sourceless block "U_alu/n5u" (OR) removed.
+****                                  The signal "U_alu/n5u" is sourceless and has been removed.
+****                                   Sourceless block "U_alu/n6w" (AND) removed.
+****                                    The signal "U_alu/n6w" is sourceless and has been removed.
+****                                     Sourceless block "U_alu/n160" (OR) removed.
+****                                      The signal "U_alu/n160" is sourceless and has been removed.
+****                           Sourceless block "U_alu/n8f" (AND) removed.
+****                            The signal "U_alu/n8f" is sourceless and has been removed.
+****                           Sourceless block "U_alu/n8d" (AND) removed.
+****                            The signal "U_alu/n8d" is sourceless and has been removed.
+****                           Sourceless block "U_alu/n6y" (AND) removed.
+****                            The signal "U_alu/n6y" is sourceless and has been removed.
+****                         Sourceless block "U_alu/n6k" (XOR) removed.
+****                          The signal "U_alu/n6k" is sourceless and has been removed.
+****                           Sourceless block "U_alu/n5v" (AND) removed.
+****                            The signal "U_alu/n5v" is sourceless and has been removed.
+****                         Sourceless block "U_alu/n5j" (AND) removed.
+****                          The signal "U_alu/n5j" is sourceless and has been removed.
+****       Sourceless block "U_banco/n10p" (AND) removed.
+****        The signal "U_banco/n10p" is sourceless and has been removed.
+****         Sourceless block "U_banco/SP__in_0" (OR) removed.
+****          The signal "U_banco/SP__in_0" is sourceless and has been removed.
+****           Sourceless block "U_banco/SP<0>" (SFF) removed.
+****            The signal "U_banco/SP_0" is sourceless and has been removed.
+****             Sourceless block "U_banco/n10q" (AND) removed.
+****              The signal "U_banco/n10q" is sourceless and has been removed.
+****             Sourceless block "U_banco/n6m" (AND) removed.
+****              The signal "U_banco/n6m" is sourceless and has been removed.
+****       Sourceless block "U_banco/n9z" (AND) removed.
+****        The signal "U_banco/n9z" is sourceless and has been removed.
+****         Sourceless block "U_banco/DPTR__in_0" (OR) removed.
+****          The signal "U_banco/DPTR__in_0" is sourceless and has been removed.
+****           Sourceless block "U_banco/DPTR<0>" (SFF) removed.
+****            The signal "U_banco/DPTR_0" is sourceless and has been removed.
+****             Sourceless block "U_banco/n10a" (AND) removed.
+****              The signal "U_banco/n10a" is sourceless and has been removed.
+****             Sourceless block "U_banco/n6j" (AND) removed.
+****              The signal "U_banco/n6j" is sourceless and has been removed.
+****               Sourceless block "U_banco/n563" (OR) removed.
+****                The signal "U_banco/n563" is sourceless and has been removed.
+****       Sourceless block "U_banco/n9j" (AND) removed.
+****        The signal "U_banco/n9j" is sourceless and has been removed.
+****         Sourceless block "U_banco/A__in_0" (OR) removed.
+****          The signal "U_banco/A__in_0" is sourceless and has been removed.
+****           Sourceless block "U_banco/A<0>" (SFF) removed.
+****            The signal "U_banco/A_0" is sourceless and has been removed.
+****             Sourceless block "U_banco/n9k" (AND) removed.
+****              The signal "U_banco/n9k" is sourceless and has been removed.
+****             Sourceless block "U_banco/n6k" (AND) removed.
+****              The signal "U_banco/n6k" is sourceless and has been removed.
+****       Sourceless block "U_banco/n8t" (AND) removed.
+****        The signal "U_banco/n8t" is sourceless and has been removed.
+****         Sourceless block "U_banco/TEMP__in_0" (OR) removed.
+****          The signal "U_banco/TEMP__in_0" is sourceless and has been removed.
+****           Sourceless block "U_banco/TEMP<0>" (SFF) removed.
+****            The signal "U_banco/TEMP_0" is sourceless and has been removed.
+****             Sourceless block "U_banco/n8u" (AND) removed.
+****              The signal "U_banco/n8u" is sourceless and has been removed.
+****             Sourceless block "U_banco/n564" (AND) removed.
+****              The signal "U_banco/n564" is sourceless and has been removed.
+****               Sourceless block "U_banco/i631" (MUX) removed.
+****                The signal "U_banco/n567" is sourceless and has been removed.
+****       Sourceless block "U_banco/n7v" (AND) removed.
+****        The signal "U_banco/n7v" is sourceless and has been removed.
+****         Sourceless block "U_banco/BUSA__in_0" (OR) removed.
+****          The signal "U_banco/BUSA__in_0" is sourceless and has been removed.
+****           Sourceless block "U_banco/BUSA<0>" (SFF) removed.
+****            The signal "PinSignal_U_banco_BUSA_0" is sourceless and has been removed.
+****             Sourceless block "U_banco/n7w" (AND) removed.
+****              The signal "U_banco/n7w" is sourceless and has been removed.
+****             Sourceless block "U_banco/n6i" (AND) removed.
+****              The signal "U_banco/n6i" is sourceless and has been removed.
+****               Sourceless block "U_banco/n565" (OR) removed.
+****                The signal "U_banco/n565" is sourceless and has been removed.
+****             Sourceless block "U_ram/ram_151/B2/U2/RAM16X2S0/RAM16X1S0" (RAMS) removed.
+****              The signal "U_ram/ram_151/B2/N33" is sourceless and has been removed.
+****               Sourceless block "U_ram/ram_151/B2/BU11" (FF) removed.
+****                The signal "U_ram/n56" is sourceless and has been removed.
+****                 Sourceless block "U_ram/DATA_OUT_0" (TRI) removed.
+****                  The signal "PinSignal_U_ram_DATA_OUT_0" is sourceless and has been removed.
+****                   Sourceless block "n5y" (AND) removed.
+****                    The signal "n5y" is sourceless and has been removed.
+****   Sourceless block "U2/n0o" (AND) removed.
+****    The signal "U2/n0o" is sourceless and has been removed.
+****     Sourceless block "U2/Y__in_0" (OR) removed.
+****      The signal "U2/Y__in_0" is sourceless and has been removed.
+****       Sourceless block "U2/Y<0>" (FF) removed.
+****        The signal "PinSignal_U2_Y_0" is sourceless and has been removed.
+****         Sourceless block "U_mar/BUS_DIR<0>" (FF) removed.
+****          The signal "PinSignal_U_mar_BUS_DIR_0" is sourceless and has been removed.
+****           Sourceless block "PinSignal_U_mar_BUS_DIR__not_0" (BUF) removed.
+****            The signal "PinSignal_U_mar_BUS_DIR__not_0" is sourceless and has been removed.
+****             Sourceless block "U2/n0n" (AND) removed.
+****              The signal "U2/n0n" is sourceless and has been removed.
+****           Sourceless block "i59" (XOR) removed.
+****            The signal "PinSignal_U1_S_1" is sourceless and has been removed.
+****             Sourceless block "U2/n0p" (AND) removed.
+****              The signal "U2/n0p" is sourceless and has been removed.
+****               Sourceless block "U2/Y__in_1" (OR) removed.
+****                The signal "U2/Y__in_1" is sourceless and has been removed.
+****                 Sourceless block "U2/Y<1>" (FF) removed.
+****                  The signal "PinSignal_U2_Y_1" is sourceless and has been removed.
+****                   Sourceless block "U_mar/BUS_DIR<1>" (FF) removed.
+****                    The signal "PinSignal_U_mar_BUS_DIR_1" is sourceless and has been removed.
+****                     Sourceless block "i58" (MUX) removed.
+****                      The signal "U1_add_15_n4" is sourceless and has been removed.
+****                       Sourceless block "i56" (XOR) removed.
+****                        The signal "PinSignal_U1_S_2" is sourceless and has been removed.
+****                         Sourceless block "U2/n0r" (AND) removed.
+****                          The signal "U2/n0r" is sourceless and has been removed.
+****                           Sourceless block "U2/Y__in_2" (OR) removed.
+****                            The signal "U2/Y__in_2" is sourceless and has been removed.
+****                             Sourceless block "U2/Y<2>" (FF) removed.
+****                              The signal "PinSignal_U2_Y_2" is sourceless and has been removed.
+****                               Sourceless block "U_mar/BUS_DIR<2>" (FF) removed.
+****                                The signal "PinSignal_U_mar_BUS_DIR_2" is sourceless and has been removed.
+****                                 Sourceless block "i55" (MUX) removed.
+****                                  The signal "U1_add_15_n6" is sourceless and has been removed.
+****                                 Sourceless block "U_rom/n1w" (AND) removed.
+****                                  The signal "U_rom/n1w" is sourceless and has been removed.
+****                                   Sourceless block "U_rom/n2d" (OR) removed.
+****                                    The signal "U_rom/n2d" is sourceless and has been removed.
+****                                     Sourceless block "U_rom/n2m" (AND) removed.
+****                                      The signal "U_rom/n2m" is sourceless and has been removed.
+****                                       Sourceless block "U_rom/n1r" (OR) removed.
+****                                        The signal "U_rom/n1r" is sourceless and has been removed.
+****                                         Sourceless block "U_rom/INST_3" (TRI) removed.
+****                                          The signal "PinSignal_U_rom_INST_3" is sourceless and has been removed.
+****                                           Sourceless block "U_ctrl/DATA<3>" (LATCH) removed.
+****                                            The signal "PinSignal_U_ctrl_DATA_3" is sourceless and has been removed.
+****                                             Sourceless block "n5o" (AND) removed.
+****                                              The signal "n5o" is sourceless and has been removed.
+****                                         Sourceless block "U_rom/INST__in_2" (OR) removed.
+****                                          The signal "U_rom/INST__in_2" is sourceless and has been removed.
+****                                           Sourceless block "U_rom/INST_2" (TRI) removed.
+****                                            The signal "PinSignal_U_rom_INST_2" is sourceless and has been removed.
+****                                             Sourceless block "U_ctrl/DATA<2>" (LATCH) removed.
+****                                              The signal "PinSignal_U_ctrl_DATA_2" is sourceless and has been removed.
+****                                               Sourceless block "n5m" (AND) removed.
+****                                                The signal "n5m" is sourceless and has been removed.
+****                                   Sourceless block "U_rom/INST__in_14" (OR) removed.
+****                                    The signal "U_rom/INST__in_14" is sourceless and has been removed.
+****                                     Sourceless block "U_rom/INST_14" (TRI) removed.
+****                                      The signal "PinSignal_U_rom_INST_14" is sourceless and has been removed.
+****                                       Sourceless block "U_ctrl/insts<3>" (LATCH) removed.
+****                                   Sourceless block "U_rom/n2h" (AND) removed.
+****                                    The signal "U_rom/n2h" is sourceless and has been removed.
+****                                     Sourceless block "U_rom/INST__in_13" (OR) removed.
+****                                      The signal "U_rom/INST__in_13" is sourceless and has been removed.
+****                                       Sourceless block "U_rom/INST_13" (TRI) removed.
+****                                        The signal "PinSignal_U_rom_INST_13" is sourceless and has been removed.
+****                                         Sourceless block "U_ctrl/insts<2>" (LATCH) removed.
+****                                          The signal "U_ctrl/insts_2" is sourceless and has been removed.
+****                                           Sourceless block "U_ctrl/n2b" (XOR) removed.
+****                                            The signal "U_ctrl/n2b" is sourceless and has been removed.
+****                                             Sourceless block "U_ctrl/UI_0" (AND) removed.
+****                                              The signal "NamedSignal_UI_0" is sourceless and has been removed.
+****                                               Sourceless block "U_ctrl/n2e" (AND) removed.
+****                                                The signal "U_ctrl/n2e" is sourceless and has been removed.
+****                                                 Sourceless block "U_ctrl/UI_1" (OR) removed.
+*****The signal "NamedSignal_UI_1" is sourceless and has been removed.
+****                                           Sourceless block "U_ctrl/n2c" (XOR) removed.
+****                                            The signal "U_ctrl/n2c" is sourceless and has been removed.
+****                                             Sourceless block "U_ctrl/n1r" (AND) removed.
+****                                              The signal "U_ctrl/n1r" is sourceless and has been removed.
+****                                               Sourceless block "U_ctrl/UI_14" (AND) removed.
+****                                                The signal "NamedSignal_UI_14" is sourceless and has been removed.
+****                                                 Sourceless block "U_ram/n_in_64" (AND) removed.
+*****The signal "U_ram/n_in_64" is sourceless and has been removed.
+***** Sourceless block "U_ram/n64" (FF) removed.
+*****  The signal "U_ram/n64" is sourceless and has been removed.
+*****   Sourceless block "U_ram/n_not_64" (BUF) removed.
+*****    The signal "U_ram/n_not_64" is sourceless and has been removed.
+*****     Sourceless block "U_ram/DATA_OUT_3" (TRI) removed.
+*****      The signal "PinSignal_U_ram_DATA_OUT_3" is sourceless and has been removed.
+*****       Sourceless block "n6e" (AND) removed.
+*****        The signal "n6e" is sourceless and has been removed.
+*****     Sourceless block "U_ram/DATA_OUT_2" (TRI) removed.
+*****      The signal "PinSignal_U_ram_DATA_OUT_2" is sourceless and has been removed.
+*****       Sourceless block "n6c" (AND) removed.
+*****        The signal "n6c" is sourceless and has been removed.
+*****     Sourceless block "U_ram/DATA_OUT_1" (TRI) removed.
+*****      The signal "PinSignal_U_ram_DATA_OUT_1" is sourceless and has been removed.
+*****       Sourceless block "n6a" (AND) removed.
+*****        The signal "n6a" is sourceless and has been removed.
+****                                                 Sourceless block "U_ram/n23" (AND) removed.
+*****The signal "U_ram/n23" is sourceless and has been removed.
+***** Sourceless block "U_ram/ram_151/B2/U3" (AND) removed.
+*****  The signal "U_ram/ram_151/B2/N25" is sourceless and has been removed.
+*****   Sourceless block "U_ram/ram_151/B2/U2/RAM16X2S0/RAM16X1S1" (RAMS) removed.
+*****    The signal "U_ram/ram_151/B2/N32" is sourceless and has been removed.
+*****     Sourceless block "U_ram/ram_151/B2/BU10" (FF) removed.
+*****      The signal "U_ram/n55" is sourceless and has been removed.
+*****   Sourceless block "U_ram/ram_151/B2/U2/RAM16X2S1/RAM16X1S0" (RAMS) removed.
+*****    The signal "U_ram/ram_151/B2/N31" is sourceless and has been removed.
+*****     Sourceless block "U_ram/ram_151/B2/BU9" (FF) removed.
+*****      The signal "U_ram/n54" is sourceless and has been removed.
+*****   Sourceless block "U_ram/ram_151/B2/U2/RAM16X2S1/RAM16X1S1" (RAMS) removed.
+*****    The signal "U_ram/ram_151/B2/N30" is sourceless and has been removed.
+*****     Sourceless block "U_ram/ram_151/B2/BU8" (FF) removed.
+*****      The signal "U_ram/n53" is sourceless and has been removed.
+****                                               Sourceless block "U_ctrl/UI_13" (OR) removed.
+****                                                The signal "PinSignal_U_banco_SC_2" is sourceless and has been removed.
+****                                                 Sourceless block "U_ctrl/n2f" (AND) removed.
+*****The signal "U_ctrl/n2f" is sourceless and has been removed.
+***** Sourceless block "U_ctrl/UI_5" (OR) removed.
+*****  The signal "PinSignal_U_alu_SELOP_0" is sourceless and has been removed.
+*****   Sourceless block "U_alu/n8y" (AND) removed.
+*****    The signal "U_alu/n8y" is sourceless and has been removed.
+*****   Sourceless block "U_alu/n8u" (AND) removed.
+*****    The signal "U_alu/n8u" is sourceless and has been removed.
+*****   Sourceless block "U_alu/n8q" (AND) removed.
+*****    The signal "U_alu/n8q" is sourceless and has been removed.
+*****     Sourceless block "U_alu/n138" (OR) removed.
+*****      The signal "U_alu/n138" is sourceless and has been removed.
+*****       Sourceless block "U_alu/i81" (MUX) removed.
+*****        The signal "U_alu/n141" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n8o" (AND) removed.
+*****        The signal "U_alu/n8o" is sourceless and has been removed.
+*****         Sourceless block "U_alu/n4z" (OR) removed.
+*****          The signal "U_alu/n4z" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n7g" (OR) removed.
+*****        The signal "U_alu/n7g" is sourceless and has been removed.
+*****         Sourceless block "U_alu/n5o" (OR) removed.
+*****          The signal "U_alu/n5o" is sourceless and has been removed.
+*****   Sourceless block "U_alu/n8m" (AND) removed.
+*****    The signal "U_alu/n8m" is sourceless and has been removed.
+*****     Sourceless block "U_alu/n145" (OR) removed.
+*****      The signal "U_alu/n145" is sourceless and has been removed.
+*****       Sourceless block "U_alu/i88" (MUX) removed.
+*****        The signal "U_alu/n148" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n8k" (AND) removed.
+*****        The signal "U_alu/n8k" is sourceless and has been removed.
+*****         Sourceless block "U_alu/n5c" (OR) removed.
+*****          The signal "U_alu/n5c" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n7d" (OR) removed.
+*****        The signal "U_alu/n7d" is sourceless and has been removed.
+*****         Sourceless block "U_alu/n5q" (OR) removed.
+*****          The signal "U_alu/n5q" is sourceless and has been removed.
+*****   Sourceless block "U_alu/n8i" (AND) removed.
+*****    The signal "U_alu/n8i" is sourceless and has been removed.
+*****     Sourceless block "U_alu/n152" (OR) removed.
+*****      The signal "U_alu/n152" is sourceless and has been removed.
+*****       Sourceless block "U_alu/i95" (MUX) removed.
+*****        The signal "U_alu/n155" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n8g" (AND) removed.
+*****        The signal "U_alu/n8g" is sourceless and has been removed.
+*****         Sourceless block "U_alu/n5f" (OR) removed.
+*****          The signal "U_alu/n5f" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n7a" (OR) removed.
+*****        The signal "U_alu/n7a" is sourceless and has been removed.
+*****         Sourceless block "U_alu/n5s" (OR) removed.
+*****          The signal "U_alu/n5s" is sourceless and has been removed.
+*****   Sourceless block "U_alu/n5g" (AND) removed.
+*****    The signal "U_alu/n5g" is sourceless and has been removed.
+*****   Sourceless block "U_alu/n5d" (AND) removed.
+*****    The signal "U_alu/n5d" is sourceless and has been removed.
+*****   Sourceless block "U_alu/n5a" (AND) removed.
+*****    The signal "U_alu/n5a" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n5s" (OR) removed.
+*****The signal "U_banco/n5s" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n5t" (OR) removed.
+*****The signal "U_banco/n5t" is sourceless and has been removed.
+***** Sourceless block "U_banco/n10f" (AND) removed.
+*****  The signal "U_banco/n10f" is sourceless and has been removed.
+*****   Sourceless block "U_banco/DPTR__in_3" (OR) removed.
+*****    The signal "U_banco/DPTR__in_3" is sourceless and has been removed.
+*****     Sourceless block "U_banco/DPTR<3>" (SFF) removed.
+*****      The signal "U_banco/DPTR_3" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n10g" (AND) removed.
+*****        The signal "U_banco/n10g" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n7p" (AND) removed.
+*****        The signal "U_banco/n7p" is sourceless and has been removed.
+*****         Sourceless block "U_banco/n542" (OR) removed.
+*****          The signal "U_banco/n542" is sourceless and has been removed.
+***** Sourceless block "U_banco/n10d" (AND) removed.
+*****  The signal "U_banco/n10d" is sourceless and has been removed.
+*****   Sourceless block "U_banco/DPTR__in_2" (OR) removed.
+*****    The signal "U_banco/DPTR__in_2" is sourceless and has been removed.
+*****     Sourceless block "U_banco/DPTR<2>" (SFF) removed.
+*****      The signal "U_banco/DPTR_2" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n10e" (AND) removed.
+*****        The signal "U_banco/n10e" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n7d" (AND) removed.
+*****        The signal "U_banco/n7d" is sourceless and has been removed.
+*****         Sourceless block "U_banco/n549" (OR) removed.
+*****          The signal "U_banco/n549" is sourceless and has been removed.
+***** Sourceless block "U_banco/n10b" (AND) removed.
+*****  The signal "U_banco/n10b" is sourceless and has been removed.
+*****   Sourceless block "U_banco/DPTR__in_1" (OR) removed.
+*****    The signal "U_banco/DPTR__in_1" is sourceless and has been removed.
+*****     Sourceless block "U_banco/DPTR<1>" (SFF) removed.
+*****      The signal "U_banco/DPTR_1" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n10c" (AND) removed.
+*****        The signal "U_banco/n10c" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n5x" (AND) removed.
+*****        The signal "U_banco/n5x" is sourceless and has been removed.
+*****         Sourceless block "U_banco/n556" (OR) removed.
+*****          The signal "U_banco/n556" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n5u" (OR) removed.
+*****The signal "U_banco/n5u" is sourceless and has been removed.
+***** Sourceless block "U_banco/n9p" (AND) removed.
+*****  The signal "U_banco/n9p" is sourceless and has been removed.
+*****   Sourceless block "U_banco/A__in_3" (OR) removed.
+*****    The signal "U_banco/A__in_3" is sourceless and has been removed.
+*****     Sourceless block "U_banco/A<3>" (SFF) removed.
+*****      The signal "U_banco/A_3" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n9q" (AND) removed.
+*****        The signal "U_banco/n9q" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n7q" (AND) removed.
+*****        The signal "U_banco/n7q" is sourceless and has been removed.
+***** Sourceless block "U_banco/n9n" (AND) removed.
+*****  The signal "U_banco/n9n" is sourceless and has been removed.
+*****   Sourceless block "U_banco/A__in_2" (OR) removed.
+*****    The signal "U_banco/A__in_2" is sourceless and has been removed.
+*****     Sourceless block "U_banco/A<2>" (SFF) removed.
+*****      The signal "U_banco/A_2" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n9o" (AND) removed.
+*****        The signal "U_banco/n9o" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n7e" (AND) removed.
+*****        The signal "U_banco/n7e" is sourceless and has been removed.
+***** Sourceless block "U_banco/n9l" (AND) removed.
+*****  The signal "U_banco/n9l" is sourceless and has been removed.
+*****   Sourceless block "U_banco/A__in_1" (OR) removed.
+*****    The signal "U_banco/A__in_1" is sourceless and has been removed.
+*****     Sourceless block "U_banco/A<1>" (SFF) removed.
+*****      The signal "U_banco/A_1" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n9m" (AND) removed.
+*****        The signal "U_banco/n9m" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n5y" (AND) removed.
+*****        The signal "U_banco/n5y" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n5v" (OR) removed.
+*****The signal "U_banco/n5v" is sourceless and has been removed.
+***** Sourceless block "U_banco/n8z" (AND) removed.
+*****  The signal "U_banco/n8z" is sourceless and has been removed.
+*****   Sourceless block "U_banco/TEMP__in_3" (OR) removed.
+*****    The signal "U_banco/TEMP__in_3" is sourceless and has been removed.
+*****     Sourceless block "U_banco/TEMP<3>" (SFF) removed.
+*****      The signal "U_banco/TEMP_3" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n9a" (AND) removed.
+*****        The signal "U_banco/n9a" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n543" (AND) removed.
+*****        The signal "U_banco/n543" is sourceless and has been removed.
+*****         Sourceless block "U_banco/i610" (MUX) removed.
+*****          The signal "U_banco/n546" is sourceless and has been removed.
+***** Sourceless block "U_banco/n8x" (AND) removed.
+*****  The signal "U_banco/n8x" is sourceless and has been removed.
+*****   Sourceless block "U_banco/TEMP__in_2" (OR) removed.
+*****    The signal "U_banco/TEMP__in_2" is sourceless and has been removed.
+*****     Sourceless block "U_banco/TEMP<2>" (SFF) removed.
+*****      The signal "U_banco/TEMP_2" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n8y" (AND) removed.
+*****        The signal "U_banco/n8y" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n550" (AND) removed.
+*****        The signal "U_banco/n550" is sourceless and has been removed.
+*****         Sourceless block "U_banco/i617" (MUX) removed.
+*****          The signal "U_banco/n553" is sourceless and has been removed.
+***** Sourceless block "U_banco/n8v" (AND) removed.
+*****  The signal "U_banco/n8v" is sourceless and has been removed.
+*****   Sourceless block "U_banco/TEMP__in_1" (OR) removed.
+*****    The signal "U_banco/TEMP__in_1" is sourceless and has been removed.
+*****     Sourceless block "U_banco/TEMP<1>" (SFF) removed.
+*****      The signal "U_banco/TEMP_1" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n8w" (AND) removed.
+*****        The signal "U_banco/n8w" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n557" (AND) removed.
+*****        The signal "U_banco/n557" is sourceless and has been removed.
+*****         Sourceless block "U_banco/i624" (MUX) removed.
+*****          The signal "U_banco/n560" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n8s" (AND) removed.
+*****The signal "U_banco/n8s" is sourceless and has been removed.
+***** Sourceless block "U_banco/CTE1__in_7" (OR) removed.
+*****  The signal "U_banco/CTE1__in_7" is sourceless and has been removed.
+*****   Sourceless block "U_banco/CTE1<7>" (SFF) removed.
+*****    The signal "U_banco/CTE1_7" is sourceless and has been removed.
+*****     Sourceless block "U_banco/n6f" (AND) removed.
+*****      The signal "U_banco/n6f" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n8r" (AND) removed.
+*****The signal "U_banco/n8r" is sourceless and has been removed.
+***** Sourceless block "U_banco/CTE1__in_6" (OR) removed.
+*****  The signal "U_banco/CTE1__in_6" is sourceless and has been removed.
+*****   Sourceless block "U_banco/CTE1<6>" (SFF) removed.
+*****    The signal "U_banco/CTE1_6" is sourceless and has been removed.
+*****     Sourceless block "U_banco/n7h" (AND) removed.
+*****      The signal "U_banco/n7h" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n8q" (AND) removed.
+*****The signal "U_banco/n8q" is sourceless and has been removed.
+***** Sourceless block "U_banco/CTE1__in_5" (OR) removed.
+*****  The signal "U_banco/CTE1__in_5" is sourceless and has been removed.
+*****   Sourceless block "U_banco/CTE1<5>" (SFF) removed.
+*****    The signal "U_banco/CTE1_5" is sourceless and has been removed.
+*****     Sourceless block "U_banco/n6v" (AND) removed.
+*****      The signal "U_banco/n6v" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n8p" (AND) removed.
+*****The signal "U_banco/n8p" is sourceless and has been removed.
+***** Sourceless block "U_banco/CTE1__in_4" (OR) removed.
+*****  The signal "U_banco/CTE1__in_4" is sourceless and has been removed.
+*****   Sourceless block "U_banco/CTE1<4>" (SFF) removed.
+*****    The signal "U_banco/CTE1_4" is sourceless and has been removed.
+*****     Sourceless block "U_banco/n6n" (AND) removed.
+*****      The signal "U_banco/n6n" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n8o" (AND) removed.
+*****The signal "U_banco/n8o" is sourceless and has been removed.
+***** Sourceless block "U_banco/CTE1__in_3" (OR) removed.
+*****  The signal "U_banco/CTE1__in_3" is sourceless and has been removed.
+*****   Sourceless block "U_banco/CTE1<3>" (SFF) removed.
+*****    The signal "U_banco/CTE1_3" is sourceless and has been removed.
+*****     Sourceless block "U_banco/n7n" (AND) removed.
+*****      The signal "U_banco/n7n" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n544" (OR) removed.
+*****        The signal "U_banco/n544" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n8n" (AND) removed.
+*****The signal "U_banco/n8n" is sourceless and has been removed.
+***** Sourceless block "U_banco/CTE1__in_2" (OR) removed.
+*****  The signal "U_banco/CTE1__in_2" is sourceless and has been removed.
+*****   Sourceless block "U_banco/CTE1<2>" (SFF) removed.
+*****    The signal "U_banco/CTE1_2" is sourceless and has been removed.
+*****     Sourceless block "U_banco/n7b" (AND) removed.
+*****      The signal "U_banco/n7b" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n551" (OR) removed.
+*****        The signal "U_banco/n551" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n8m" (AND) removed.
+*****The signal "U_banco/n8m" is sourceless and has been removed.
+***** Sourceless block "U_banco/CTE1__in_1" (OR) removed.
+*****  The signal "U_banco/CTE1__in_1" is sourceless and has been removed.
+*****   Sourceless block "U_banco/CTE1<1>" (SFF) removed.
+*****    The signal "U_banco/CTE1_1" is sourceless and has been removed.
+*****     Sourceless block "U_banco/n6t" (AND) removed.
+*****      The signal "U_banco/n6t" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n558" (OR) removed.
+*****        The signal "U_banco/n558" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n8l" (AND) removed.
+*****The signal "U_banco/n8l" is sourceless and has been removed.
+***** Sourceless block "U_banco/CTE1__in_0" (OR) removed.
+*****  The signal "U_banco/CTE1__in_0" is sourceless and has been removed.
+*****   Sourceless block "U_banco/CTE1<0>" (SFF) removed.
+*****    The signal "U_banco/CTE1_0" is sourceless and has been removed.
+*****     Sourceless block "U_banco/n6h" (AND) removed.
+*****      The signal "U_banco/n6h" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/n5w" (OR) removed.
+*****The signal "U_banco/n5w" is sourceless and has been removed.
+***** Sourceless block "U_banco/n8b" (AND) removed.
+*****  The signal "U_banco/n8b" is sourceless and has been removed.
+*****   Sourceless block "U_banco/BUSA__in_3" (OR) removed.
+*****    The signal "U_banco/BUSA__in_3" is sourceless and has been removed.
+*****     Sourceless block "U_banco/BUSA<3>" (SFF) removed.
+*****      The signal "PinSignal_U_banco_BUSA_3" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n8c" (AND) removed.
+*****        The signal "U_banco/n8c" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n7o" (AND) removed.
+*****        The signal "U_banco/n7o" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n6g" (XOR) removed.
+*****        The signal "U_alu/n6g" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n8r" (AND) removed.
+*****        The signal "U_alu/n8r" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n7h" (AND) removed.
+*****        The signal "U_alu/n7h" is sourceless and has been removed.
+***** Sourceless block "U_banco/n7z" (AND) removed.
+*****  The signal "U_banco/n7z" is sourceless and has been removed.
+*****   Sourceless block "U_banco/BUSA__in_2" (OR) removed.
+*****    The signal "U_banco/BUSA__in_2" is sourceless and has been removed.
+*****     Sourceless block "U_banco/BUSA<2>" (SFF) removed.
+*****      The signal "PinSignal_U_banco_BUSA_2" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n8a" (AND) removed.
+*****        The signal "U_banco/n8a" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n7c" (AND) removed.
+*****        The signal "U_banco/n7c" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n6h" (XOR) removed.
+*****        The signal "U_alu/n6h" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n8n" (AND) removed.
+*****        The signal "U_alu/n8n" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n7e" (AND) removed.
+*****        The signal "U_alu/n7e" is sourceless and has been removed.
+***** Sourceless block "U_banco/n7x" (AND) removed.
+*****  The signal "U_banco/n7x" is sourceless and has been removed.
+*****   Sourceless block "U_banco/BUSA__in_1" (OR) removed.
+*****    The signal "U_banco/BUSA__in_1" is sourceless and has been removed.
+*****     Sourceless block "U_banco/BUSA<1>" (SFF) removed.
+*****      The signal "PinSignal_U_banco_BUSA_1" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n7y" (AND) removed.
+*****        The signal "U_banco/n7y" is sourceless and has been removed.
+*****       Sourceless block "U_banco/n6u" (AND) removed.
+*****        The signal "U_banco/n6u" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n6i" (XOR) removed.
+*****        The signal "U_alu/n6i" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n8j" (AND) removed.
+*****        The signal "U_alu/n8j" is sourceless and has been removed.
+*****       Sourceless block "U_alu/n7b" (AND) removed.
+*****        The signal "U_alu/n7b" is sourceless and has been removed.
+****                                               Sourceless block "U_ctrl/UI_12" (OR) removed.
+****                                                The signal "PinSignal_U_banco_SC_1" is sourceless and has been removed.
+****                                               Sourceless block "U_ctrl/n1w" (AND) removed.
+****                                                The signal "U_ctrl/n1w" is sourceless and has been removed.
+****                                                 Sourceless block "U_ctrl/UI_8" (OR) removed.
+*****The signal "PinSignal_U_banco_SB_0" is sourceless and has been removed.
+***** Sourceless block "U_banco/n7s" (AND) removed.
+*****  The signal "U_banco/n7s" is sourceless and has been removed.
+***** Sourceless block "U_banco/n7g" (AND) removed.
+*****  The signal "U_banco/n7g" is sourceless and has been removed.
+***** Sourceless block "U_banco/n6a" (AND) removed.
+*****  The signal "U_banco/n6a" is sourceless and has been removed.
+****                                               Sourceless block "U_ctrl/n1x" (AND) removed.
+****                                                The signal "U_ctrl/n1x" is sourceless and has been removed.
+****                                           Sourceless block "U_ctrl/UI_15" (AND) removed.
+****                                            The signal "NamedSignal_UI_15" is sourceless and has been removed.
+****                                             Sourceless block "U_ctrl/n2g" (AND) removed.
+****                                              The signal "U_ctrl/n2g" is sourceless and has been removed.
+****                                           Sourceless block "U_ctrl/n1v" (AND) removed.
+****                                            The signal "U_ctrl/n1v" is sourceless and has been removed.
+****                                           Sourceless block "U_ctrl/UI_7" (AND) removed.
+****                                            The signal "PinSignal_U_alu_SELOP_2" is sourceless and has been removed.
+****                                             Sourceless block "U_alu/n6j" (AND) removed.
+****                                              The signal "U_alu/n6j" is sourceless and has been removed.
+****                                             Sourceless block "U_alu/n6l" (AND) removed.
+****                                              The signal "U_alu/n6l" is sourceless and has been removed.
+****                                           Sourceless block "U_ctrl/UI_6" (AND) removed.
+****                                            The signal "PinSignal_U_alu_SELOP_1" is sourceless and has been removed.
+****                                             Sourceless block "U_alu/n8x" (AND) removed.
+****                                              The signal "U_alu/n8x" is sourceless and has been removed.
+****                                             Sourceless block "U_alu/n8t" (AND) removed.
+****                                              The signal "U_alu/n8t" is sourceless and has been removed.
+****                                             Sourceless block "U_alu/n8p" (AND) removed.
+****                                              The signal "U_alu/n8p" is sourceless and has been removed.
+****                                             Sourceless block "U_alu/n8l" (AND) removed.
+****                                              The signal "U_alu/n8l" is sourceless and has been removed.
+****                                             Sourceless block "U_alu/n8h" (AND) removed.
+****                                              The signal "U_alu/n8h" is sourceless and has been removed.
+****                                           Sourceless block "U_ctrl/UI_2" (AND) removed.
+****                                            The signal "NamedSignal_UI_2" is sourceless and has been removed.
+****                                           Sourceless block "U_ctrl/n2d" (AND) removed.
+****                                            The signal "U_ctrl/n2d" is sourceless and has been removed.
+****                                   Sourceless block "U_rom/INST__in_11" (OR) removed.
+****                                    The signal "U_rom/INST__in_11" is sourceless and has been removed.
+****                                     Sourceless block "U_rom/INST_11" (TRI) removed.
+****                                      The signal "PinSignal_U_rom_INST_11" is sourceless and has been removed.
+****                                       Sourceless block "U_ctrl/insts<0>" (LATCH) removed.
+****                                        The signal "U_ctrl/insts_0" is sourceless and has been removed.
+****                                         Sourceless block "U_ctrl/n1s" (AND) removed.
+****                                          The signal "U_ctrl/n1s" is sourceless and has been removed.
+****                                         Sourceless block "U_ctrl/n1y" (AND) removed.
+****                                          The signal "U_ctrl/n1y" is sourceless and has been removed.
+****                                         Sourceless block "U_ctrl/n1z" (AND) removed.
+****                                          The signal "U_ctrl/n1z" is sourceless and has been removed.
+****                                   Sourceless block "U_rom/n2c" (OR) removed.
+****                                    The signal "U_rom/n2c" is sourceless and has been removed.
+****                                     Sourceless block "U_rom/n1o" (AND) removed.
+****                                      The signal "U_rom/n1o" is sourceless and has been removed.
+****                                       Sourceless block "U_rom/INST_8" (TRI) removed.
+****                                        The signal "PinSignal_U_rom_INST_8" is sourceless and has been removed.
+****                                         Sourceless block "U_ctrl/FLAG" (LATCH) removed.
+****                                          The signal "PinSignal_U_ctrl_FLAG" is sourceless and has been removed.
+****                                       Sourceless block "U_rom/INST__in_10" (OR) removed.
+****                                        The signal "U_rom/INST__in_10" is sourceless and has been removed.
+****                                         Sourceless block "U_rom/INST_10" (TRI) removed.
+****                                          The signal "PinSignal_U_rom_INST_10" is sourceless and has been removed.
+****                                           Sourceless block "U_ctrl/HR" (LATCH) removed.
+****                                            The signal "PinSignal_U_ctrl_HR" is sourceless and has been removed.
+****                                             Sourceless block "U_banco/SP<3>" (SFF) removed.
+****                                              The signal "U_banco/SP_3" is sourceless and has been removed.
+****                                               Sourceless block "U_banco/n10w" (AND) removed.
+****                                                The signal "U_banco/n10w" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/SP__in_3" (OR) removed.
+*****The signal "U_banco/SP__in_3" is sourceless and has been removed.
+****                                             Sourceless block "U_banco/SP<2>" (SFF) removed.
+****                                              The signal "U_banco/SP_2" is sourceless and has been removed.
+****                                               Sourceless block "U_banco/n10u" (AND) removed.
+****                                                The signal "U_banco/n10u" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/SP__in_2" (OR) removed.
+*****The signal "U_banco/SP__in_2" is sourceless and has been removed.
+****                                             Sourceless block "U_banco/SP<1>" (SFF) removed.
+****                                              The signal "U_banco/SP_1" is sourceless and has been removed.
+****                                               Sourceless block "U_banco/n10s" (AND) removed.
+****                                                The signal "U_banco/n10s" is sourceless and has been removed.
+****                                                 Sourceless block "U_banco/SP__in_1" (OR) removed.
+*****The signal "U_banco/SP__in_1" is sourceless and has been removed.
+****                                 Sourceless block "U_rom/n1z" (AND) removed.
+****                                  The signal "U_rom/n1z" is sourceless and has been removed.
+****                                   Sourceless block "U_rom/INST__in_12" (OR) removed.
+****                                    The signal "U_rom/INST__in_12" is sourceless and has been removed.
+****                                     Sourceless block "U_rom/INST_12" (TRI) removed.
+****                                      The signal "PinSignal_U_rom_INST_12" is sourceless and has been removed.
+****                                       Sourceless block "U_ctrl/insts<1>" (LATCH) removed.
+****                                        The signal "U_ctrl/insts_1" is sourceless and has been removed.
+****                                         Sourceless block "U_ctrl/n1t" (AND) removed.
+****                                          The signal "U_ctrl/n1t" is sourceless and has been removed.
+****                                   Sourceless block "U_rom/n1p" (AND) removed.
+****                                    The signal "U_rom/n1p" is sourceless and has been removed.
+****                                     Sourceless block "U_rom/INST_7" (TRI) removed.
+****                                      The signal "PinSignal_U_rom_INST_7" is sourceless and has been removed.
+****                                       Sourceless block "U_ctrl/DATA<7>" (LATCH) removed.
+****                                        The signal "PinSignal_U_ctrl_DATA_7" is sourceless and has been removed.
+****                                         Sourceless block "n5w" (AND) removed.
+****                                          The signal "n5w" is sourceless and has been removed.
+****                                     Sourceless block "U_rom/INST_6" (TRI) removed.
+****                                      The signal "PinSignal_U_rom_INST_6" is sourceless and has been removed.
+****                                       Sourceless block "U_ctrl/DATA<6>" (LATCH) removed.
+****                                        The signal "PinSignal_U_ctrl_DATA_6" is sourceless and has been removed.
+****                                         Sourceless block "n5u" (AND) removed.
+****                                          The signal "n5u" is sourceless and has been removed.
+****                                     Sourceless block "U_rom/INST_5" (TRI) removed.
+****                                      The signal "PinSignal_U_rom_INST_5" is sourceless and has been removed.
+****                                       Sourceless block "U_ctrl/DATA<5>" (LATCH) removed.
+****                                        The signal "PinSignal_U_ctrl_DATA_5" is sourceless and has been removed.
+****                                         Sourceless block "n5s" (AND) removed.
+****                                          The signal "n5s" is sourceless and has been removed.
+****                                 Sourceless block "U_rom/n2a" (AND) removed.
+****                                  The signal "U_rom/n2a" is sourceless and has been removed.
+****                                   Sourceless block "U_rom/n2j" (AND) removed.
+****                                    The signal "U_rom/n2j" is sourceless and has been removed.
+****                                     Sourceless block "U_rom/n1t" (OR) removed.
+****                                      The signal "U_rom/n1t" is sourceless and has been removed.
+****                                       Sourceless block "U_rom/INST_0" (TRI) removed.
+****                                        The signal "PinSignal_U_rom_INST_0" is sourceless and has been removed.
+****                                         Sourceless block "U_ctrl/DATA<0>" (LATCH) removed.
+****                                          The signal "PinSignal_U_ctrl_DATA_0" is sourceless and has been removed.
+****                                           Sourceless block "n5i" (AND) removed.
+****                                            The signal "n5i" is sourceless and has been removed.
+****                                       Sourceless block "U_rom/INST__in_15" (OR) removed.
+****                                        The signal "U_rom/INST__in_15" is sourceless and has been removed.
+****                                         Sourceless block "U_rom/INST_15" (TRI) removed.
+****                                          The signal "PinSignal_U_rom_INST_15" is sourceless and has been removed.
+****                                           Sourceless block "U_ctrl/SD" (LATCH) removed.
+****                                            The signal "PinSignal_U_ctrl_SD" is sourceless and has been removed.
+****                                             Sourceless block "n5k" (AND) removed.
+****                                              The signal "n5k" is sourceless and has been removed.
+****                                   Sourceless block "U_rom/n2f" (AND) removed.
+****                                    The signal "U_rom/n2f" is sourceless and has been removed.
+****                                 Sourceless block "U_rom/n1x" (AND) removed.
+****                                  The signal "U_rom/n1x" is sourceless and has been removed.
+****                                   Sourceless block "U_rom/n2k" (AND) removed.
+****                                    The signal "U_rom/n2k" is sourceless and has been removed.
+****                                   Sourceless block "U_rom/n2e" (AND) removed.
+****                                    The signal "U_rom/n2e" is sourceless and has been removed.
+****                     Sourceless block "U_rom/n1v" (OR) removed.
+****                      The signal "U_rom/n1v" is sourceless and has been removed.
+****                       Sourceless block "U_rom/n2i" (AND) removed.
+****                        The signal "U_rom/n2i" is sourceless and has been removed.
+****                       Sourceless block "U_rom/n2g" (AND) removed.
+****                        The signal "U_rom/n2g" is sourceless and has been removed.
+****                     Sourceless block "U_rom/n2b" (AND) removed.
+****                      The signal "U_rom/n2b" is sourceless and has been removed.
+****                     Sourceless block "U_rom/n1y" (AND) removed.
+****                      The signal "U_rom/n1y" is sourceless and has been removed.
+***                       Sourceless block "U_banco/n10r" (AND) removed.
+***                        The signal "U_banco/n10r" is sourceless and has been removed.
+***                   Sourceless block "U2/n0q" (AND) removed.
+***                    The signal "U2/n0q" is sourceless and has been removed.
+**                                       Sourceless block "U_banco/n10t" (AND) removed.
+**                                        The signal "U_banco/n10t" is sourceless and has been removed.
+**                                   Sourceless block "U2/n0s" (AND) removed.
+**                                    The signal "U2/n0s" is sourceless and has been removed.
+**     Sourceless block "U_banco/n10v" (AND) removed.
+**      The signal "U_banco/n10v" is sourceless and has been removed.
+** Sourceless block "U2/n0u" (AND) removed.
+**  The signal "U2/n0u" is sourceless and has been removed.
+                                         Sourceless block "U_alu/n6t" (AND) removed.
+                                          The signal "U_alu/n6t" is sourceless and has been removed.
+                                         Sourceless block "U_alu/n3s" (AND) removed.
+                                          The signal "U_alu/n3s" is sourceless and has been removed.
+                                         Sourceless block "U_alu/n3t" (AND) removed.
+                                          The signal "U_alu/n3t" is sourceless and has been removed.
+ Sourceless block "U_ctrl/n2i" (OR) removed.
+  The signal "U_ctrl/n2i" is sourceless and has been removed.
+The signal "U_rom/n1i" is sourceless and has been removed.
+ Sourceless block "U_rom/INST_1" (TRI) removed.
+  The signal "PinSignal_U_rom_INST_1" is sourceless and has been removed.
+   Sourceless block "U_ctrl/DATA<1>" (LATCH) removed.
+    The signal "PinSignal_U_ctrl_DATA_1" is sourceless and has been removed.
+The signal "U_rom/n1" is sourceless and has been removed.
+The signal "U_ram/n1i" is sourceless and has been removed.
+The signal "U_ram/ram_151/N0" is sourceless and has been removed.
+The signal "U_alu/CLK_not" is sourceless and has been removed.
+The signal "U_alu/n3n" is sourceless and has been removed.
+The signal "U_alu/n3o" is sourceless and has been removed.
+The signal "U_alu/n4b" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "TEST_BUTTON_not" is unused and has been removed.
+ Unused block "TEST_BUTTON_not" (BUF) removed.
+The signal "PinSignal_U_banco_SB_1" is unused and has been removed.
+ Unused block "U_ctrl/UI_9" (BUF) removed.
+The signal "PinSignal_U_alu_DESP_0" is unused and has been removed.
+ Unused block "U_ctrl/n1m" (ZERO) removed.
+The signal "n6t" is unused and has been removed.
+ Unused block "n6t" (CKBUF) removed.
+Unused block "PinSignal_U_rom_INST_1.PULLUP" (PULLUP) removed.
+Unused block "PinSignal_U_rom_INST_9.PULLUP" (PULLUP) removed.
+Unused block "U_alu/CLK_not" (BUF) removed.
+Unused block "U_alu/n3n" (OR) removed.
+Unused block "U_alu/n3o" (AND) removed.
+Unused block "U_alu/n4b" (AND) removed.
+Unused block "U_ram/n1i" (ONE) removed.
+Unused block "U_ram/ram_151/B2/VCC" (ONE) removed.
+Unused block "U_ram/ram_151/GND" (ZERO) removed.
+Unused block "U_ram/ram_151/VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		U_ram/ram_151/B2/GND
+BUFT 		U_rom/INST_9
+GND 		U_rom/n1
+OR2B1 		U_rom/n1i
+VCC 		n4k
+GND 		n4l
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK_BRD                            | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
+| TEST_BUTTON                        | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

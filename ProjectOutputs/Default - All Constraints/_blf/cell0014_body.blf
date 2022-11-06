@@ -1,0 +1,32 @@
+.model Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR_1_
+.inputs Rst
+.inputs ResetValue<0>
+.inputs clk
+.inputs clken
+.inputs enable
+.inputs enable_write
+.inputs si
+.inputs shift
+.inputs update
+.inputs regin<0>
+.outputs regout<0>
+.outputs so
+.names enable clken n4
+11 1
+.names regin<0> shift si n6
+11- 1
+-01 1
+.names Rst ResetValue<0> n19
+11 1
+.loc Configurable_U50.VHD 620 regout<0>
+.latch so regout<0> re clk 6 n19 n21 n13
+.names update enable n12
+11 1
+.names n12 enable_write n13
+11 1
+.loc Configurable_U50.VHD 603 so
+.latch n6 so re clk 2 n4
+.names ResetValue<0> n20
+0 1
+.names Rst n20 n21
+11 1

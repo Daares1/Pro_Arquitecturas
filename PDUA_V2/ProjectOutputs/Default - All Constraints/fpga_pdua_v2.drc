@@ -1,0 +1,43 @@
+Release 12.1 Drc M.53d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Wed May 28 23:19:56 2014
+
+drc -z fpga_pdua_v2.ncd C:\Users\Daares1\Documents\Dropbox\Pro_Arquitecturas\PDUA_V2\ProjectOutputs\Default - All Constraints\FPGA_PDUA_V2_map.pcf
+
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_6> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_5> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_8> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_7> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_10> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_9> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_12> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_11> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_13> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_3> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_2> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_5> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_4> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_7> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_6> is
+   incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 17 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

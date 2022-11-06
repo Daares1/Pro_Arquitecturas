@@ -1,0 +1,153 @@
+.model ROM
+.inputs CS
+.inputs RD
+.inputs DIR<4>
+.inputs DIR<3>
+.inputs DIR<2>
+.inputs DIR<1>
+.inputs DIR<0>
+.outputs INST<15>
+.outputs INST<14>
+.outputs INST<13>
+.outputs INST<12>
+.outputs INST<11>
+.outputs INST<10>
+.outputs INST<9>
+.outputs INST<8>
+.outputs INST<7>
+.outputs INST<6>
+.outputs INST<5>
+.outputs INST<4>
+.outputs INST<3>
+.outputs INST<2>
+.outputs INST<1>
+.outputs INST<0>
+.names n1
+.names n2
+1
+.names RD n4
+0 1
+.names CS n4 n5
+11 1
+.names DIR<4> DIR<3> DIR<2> DIR<1> DIR<0> Mux_5/muxtemp0
+01000 1
+00111 1
+00110 1
+00100 1
+00010 1
+00000 1
+.names Mux_5/muxtemp0 n6
+1 1
+.names DIR<4> DIR<3> DIR<2> DIR<1> DIR<0> Mux_6/muxtemp0
+01101 1
+01010 1
+01000 1
+00111 1
+00110 1
+00101 1
+00000 1
+.names Mux_6/muxtemp0 n7
+1 1
+.names DIR<4> DIR<3> DIR<2> DIR<1> DIR<0> Mux_7/muxtemp0
+01010 1
+00110 1
+.names Mux_7/muxtemp0 n8
+1 1
+.names DIR<4> DIR<3> DIR<2> DIR<1> DIR<0> Mux_8/muxtemp0
+01101 1
+01010 1
+01000 1
+00111 1
+00100 1
+00011 1
+00010 1
+00000 1
+.names Mux_8/muxtemp0 n9
+1 1
+.names DIR<4> DIR<3> DIR<2> DIR<1> DIR<0> Mux_9/muxtemp0
+01100 1
+01010 1
+00110 1
+00101 1
+00100 1
+00010 1
+00001 1
+.names Mux_9/muxtemp0 n10
+1 1
+.names DIR<4> DIR<3> DIR<2> DIR<1> Mux_10/muxtemp0
+0010 1
+0001 1
+.names Mux_10/muxtemp0 n11
+1 1
+.names DIR<4> DIR<3> DIR<2> DIR<1> DIR<0> Mux_11/muxtemp0
+00100 1
+.names Mux_11/muxtemp0 n12
+1 1
+.names DIR<4> DIR<3> DIR<2> DIR<1> DIR<0> Mux_15/muxtemp0
+01000 1
+00110 1
+00100 1
+.names Mux_15/muxtemp0 n16
+1 1
+.names DIR<4> DIR<3> DIR<2> DIR<1> DIR<0> Mux_16/muxtemp0
+00111 1
+00100 1
+.names Mux_16/muxtemp0 n17
+1 1
+.names DIR<4> DIR<3> DIR<2> DIR<1> DIR<0> Mux_17/muxtemp0
+00000 1
+.names Mux_17/muxtemp0 n18
+1 1
+.names DIR<4> DIR<3> DIR<2> DIR<1> DIR<0> Mux_18/muxtemp0
+00111 1
+00010 1
+.names Mux_18/muxtemp0 n19
+1 1
+.latch n6 INST<15> th _N0 2
+.names n5 _N0
+0 1
+.latch n7 INST<14> th _N1 2
+.names n5 _N1
+0 1
+.latch n8 INST<13> th _N2 2
+.names n5 _N2
+0 1
+.latch n9 INST<12> th _N3 2
+.names n5 _N3
+0 1
+.latch n10 INST<11> th _N4 2
+.names n5 _N4
+0 1
+.latch n11 INST<10> th _N5 2
+.names n5 _N5
+0 1
+.latch n1 INST<9> th _N6 2
+.names n5 _N6
+0 1
+.latch n1 INST<8> th _N7 2
+.names n5 _N7
+0 1
+.latch n12 INST<7> th _N8 2
+.names n5 _N8
+0 1
+.latch n12 INST<6> th _N9 2
+.names n5 _N9
+0 1
+.latch n12 INST<5> th _N10 2
+.names n5 _N10
+0 1
+.latch n12 INST<4> th _N11 2
+.names n5 _N11
+0 1
+.latch n16 INST<3> th _N12 2
+.names n5 _N12
+0 1
+.latch n17 INST<2> th _N13 2
+.names n5 _N13
+0 1
+.latch n18 INST<1> th _N14 2
+.names n5 _N14
+0 1
+.latch n19 INST<0> th _N15 2
+.names n5 _N15
+0 1

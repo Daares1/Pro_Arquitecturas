@@ -1,0 +1,70 @@
+.model Configurable_U10
+.inputs D_B<15>
+.inputs D_B<14>
+.inputs D_B<13>
+.inputs D_B<12>
+.inputs D_B<11>
+.inputs D_B<10>
+.inputs D_B<9>
+.inputs D_B<8>
+.inputs D_B<7>
+.inputs D_B<6>
+.inputs D_B<5>
+.inputs D_B<4>
+.inputs D_B<3>
+.inputs D_B<2>
+.inputs D_B<1>
+.inputs D_B<0>
+.outputs Q_B<15>
+.outputs Q_B<14>
+.outputs Q_B<13>
+.outputs Q_B<12>
+.outputs Q_B<11>
+.outputs Q_B<10>
+.outputs Q_B<9>
+.outputs Q_B<8>
+.outputs Q_B<7>
+.outputs Q_B<6>
+.outputs Q_B<5>
+.outputs Q_B<4>
+.outputs Q_B<3>
+.outputs Q_B<2>
+.outputs Q_B<1>
+.outputs Q_B<0>
+.inputs R
+.inputs C
+.names n1
+.names R n52
+0 1
+.loc Configurable_U10.VHD 28 Q_B<15>
+.latch D_B<15> Q_B<15> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<14>
+.latch D_B<14> Q_B<14> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<13>
+.latch D_B<13> Q_B<13> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<12>
+.latch D_B<12> Q_B<12> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<11>
+.latch D_B<11> Q_B<11> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<10>
+.latch D_B<10> Q_B<10> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<9>
+.latch D_B<9> Q_B<9> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<8>
+.latch D_B<8> Q_B<8> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<7>
+.latch D_B<7> Q_B<7> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<6>
+.latch D_B<6> Q_B<6> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<5>
+.latch D_B<5> Q_B<5> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<4>
+.latch D_B<4> Q_B<4> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<3>
+.latch D_B<3> Q_B<3> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<2>
+.latch D_B<2> Q_B<2> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<1>
+.latch D_B<1> Q_B<1> re C 0 R
+.loc Configurable_U10.VHD 28 Q_B<0>
+.latch D_B<0> Q_B<0> re C 0 R

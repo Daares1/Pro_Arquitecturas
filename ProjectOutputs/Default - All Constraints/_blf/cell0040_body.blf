@@ -1,0 +1,66 @@
+.model Configurable_U100UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR_3_
+.inputs Rst
+.inputs ResetValue<2>
+.inputs ResetValue<1>
+.inputs ResetValue<0>
+.inputs clk
+.inputs clken
+.inputs enable
+.inputs enable_write
+.inputs si
+.inputs shift
+.inputs update
+.inputs regin<2>
+.inputs regin<1>
+.inputs regin<0>
+.outputs regout<2>
+.outputs regout<1>
+.outputs regout<0>
+.outputs so
+.loc Configurable_U100.VHD 620 regout<0>
+.latch so regout<0> re clk 6 n41 n43 n54
+.loc Configurable_U100.VHD 620 regout<1>
+.latch sh_reg<1> regout<1> re clk 6 n37 n39 n54
+.names enable clken n51
+11 1
+.names shift n5
+0 1
+.names si n5 regin<2> n6
+11- 1
+-01 1
+.names sh_reg<2> n5 regin<1> n7
+11- 1
+-01 1
+.names sh_reg<1> n5 regin<0> n8
+11- 1
+-01 1
+.names Rst ResetValue<2> n33
+11 1
+.loc Configurable_U100.VHD 620 regout<2>
+.latch sh_reg<2> regout<2> re clk 6 n33 n35 n54
+.names update enable n18
+11 1
+.names n18 enable_write n54
+11 1
+.names Rst ResetValue<1> n37
+11 1
+.names Rst ResetValue<0> n41
+11 1
+.loc Configurable_U100.VHD 603 sh_reg<2>
+.latch n6 sh_reg<2> re clk 2 n51
+.loc Configurable_U100.VHD 603 so
+.latch n8 so re clk 2 n51
+.loc Configurable_U100.VHD 603 sh_reg<1>
+.latch n7 sh_reg<1> re clk 2 n51
+.names ResetValue<2> n34
+0 1
+.names Rst n34 n35
+11 1
+.names ResetValue<1> n38
+0 1
+.names Rst n38 n39
+11 1
+.names ResetValue<0> n42
+0 1
+.names Rst n42 n43
+11 1

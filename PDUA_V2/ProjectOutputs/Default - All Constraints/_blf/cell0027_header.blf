@@ -1,0 +1,13 @@
+.model Configurable_U2UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR_1_
+.inputs Rst
+.inputs ResetValue<0>
+.inputs clk
+.inputs clken
+.inputs enable
+.inputs enable_write
+.inputs si
+.inputs shift
+.inputs update
+.inputs regin<0>
+.outputs regout<0>
+.outputs so

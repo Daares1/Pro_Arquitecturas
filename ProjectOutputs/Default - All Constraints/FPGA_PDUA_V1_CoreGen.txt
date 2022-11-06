@@ -1,0 +1,1 @@
+Record=NEXUS_CORE|ModuleType=RAM_SinglePortBlock|InferRam=AUTO|ComponentName=RAMS_3_8|ClockEdgeIsRising=Rising|Depth=8|Width=8|RWBehavior=READ_FIRST|EnablePin=True|

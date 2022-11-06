@@ -1,0 +1,16 @@
+Release 12.1 - WebTalk (M.53d)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=d7fe68dce1d6454aa2fa1992fd8f68d4
+ProjectIteration=54
+
+WebTalk Summary
+----------------
+INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:5 - C:/Users/Daares1/Documents/Dropbox/Pro_Arquitecturas/ProjectOutputs/Default - All Constraints/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/12.1/ISE_DS/ISE/data/reports/webtalk_introduction.html

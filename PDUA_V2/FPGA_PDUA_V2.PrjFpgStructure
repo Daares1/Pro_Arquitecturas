@@ -1,0 +1,19 @@
+Record=SheetSymbol|SourceDocument=TOP_PDUA_V2.SchDoc|Designator=U_alu|SchDesignator=U_alu|FileName=ALU.vhdl|SymbolType=Normal|RawFileName=ALU.vhdl|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TOP_PDUA_V2.SchDoc|Designator=U_banco|SchDesignator=U_banco|FileName=banco.vhdl|SymbolType=Normal|RawFileName=banco.vhdl|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TOP_PDUA_V2.SchDoc|Designator=U_ctrl|SchDesignator=U_ctrl|FileName=CTRL.vhdl|SymbolType=Normal|RawFileName=CTRL.vhdl|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TOP_PDUA_V2.SchDoc|Designator=U_ex_reg|SchDesignator=U_ex_reg|FileName=EX_REG.vhd|SymbolType=Normal|RawFileName=EX_REG.vhd|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TOP_PDUA_V2.SchDoc|Designator=U_id_reg|SchDesignator=U_id_reg|FileName=ID_REG.vhd|SymbolType=Normal|RawFileName=ID_REG.vhd|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TOP_PDUA_V2.SchDoc|Designator=U_mar|SchDesignator=U_mar|FileName=MAR.vhdl|SymbolType=Normal|RawFileName=MAR.vhdl|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TOP_PDUA_V2.SchDoc|Designator=U_mem_reg|SchDesignator=U_mem_reg|FileName=MEM_REG.vhd|SymbolType=Normal|RawFileName=MEM_REG.vhd|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TOP_PDUA_V2.SchDoc|Designator=U_ram|SchDesignator=U_ram|FileName=RAM.vhdl|SymbolType=Normal|RawFileName=RAM.vhdl|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TOP_PDUA_V2.SchDoc|Designator=U_rom|SchDesignator=U_rom|FileName=ROM.vhdl|SymbolType=Normal|RawFileName=ROM.vhdl|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetComp|SourceDocument=ALU.vhdl|Designator=Slices:7:BITN:BN|ParentDesignator=Slices:7:BITN:BN|FileName=ALU_BIT.vhdl
+Record=SheetComp|SourceDocument=ALU.vhdl|Designator=Slices:6:BITN:BN|ParentDesignator=Slices:6:BITN:BN|FileName=ALU_BIT.vhdl
+Record=SheetComp|SourceDocument=ALU.vhdl|Designator=Slices:5:BITN:BN|ParentDesignator=Slices:5:BITN:BN|FileName=ALU_BIT.vhdl
+Record=SheetComp|SourceDocument=ALU.vhdl|Designator=Slices:4:BITN:BN|ParentDesignator=Slices:4:BITN:BN|FileName=ALU_BIT.vhdl
+Record=SheetComp|SourceDocument=ALU.vhdl|Designator=Slices:3:BITN:BN|ParentDesignator=Slices:3:BITN:BN|FileName=ALU_BIT.vhdl
+Record=SheetComp|SourceDocument=ALU.vhdl|Designator=Slices:2:BITN:BN|ParentDesignator=Slices:2:BITN:BN|FileName=ALU_BIT.vhdl
+Record=SheetComp|SourceDocument=ALU.vhdl|Designator=Slices:1:BITN:BN|ParentDesignator=Slices:1:BITN:BN|FileName=ALU_BIT.vhdl
+Record=SheetComp|SourceDocument=ALU.vhdl|Designator=Slices:0:BIT0:B0|ParentDesignator=Slices:0:BIT0:B0|FileName=ALU_BIT.vhdl
+Record=TopLevelDocument|FileName=TOP_PDUA_V2.SchDoc
+Record=Configuration|Name=Default - All Constraints|DeviceName=XC3S1400AN-4FG676C

@@ -1,0 +1,46 @@
+.model Configurable_U2
+.inputs C
+.inputs DA<4>
+.inputs DA<3>
+.inputs DA<2>
+.inputs DA<1>
+.inputs DA<0>
+.inputs DB<4>
+.inputs DB<3>
+.inputs DB<2>
+.inputs DB<1>
+.inputs DB<0>
+.outputs Y<4>
+.outputs Y<3>
+.outputs Y<2>
+.outputs Y<1>
+.outputs Y<0>
+.inputs S
+.names n1
+.loc Configurable_U2.VHD 32 Y<3>
+.latch n6 Y<3> re C 2
+.names S n4
+0 1
+.names DA<4> n4 DB<4> n5
+11- 1
+-01 1
+.names DA<3> n4 DB<3> n6
+11- 1
+-01 1
+.names DA<2> n4 DB<2> n7
+11- 1
+-01 1
+.names DA<1> n4 DB<1> n8
+11- 1
+-01 1
+.names DA<0> n4 DB<0> n9
+11- 1
+-01 1
+.loc Configurable_U2.VHD 32 Y<2>
+.latch n7 Y<2> re C 2
+.loc Configurable_U2.VHD 32 Y<1>
+.latch n8 Y<1> re C 2
+.loc Configurable_U2.VHD 32 Y<0>
+.latch n9 Y<0> re C 2
+.loc Configurable_U2.VHD 32 Y<4>
+.latch n5 Y<4> re C 2

@@ -1,0 +1,29 @@
+Release 12.1 - par M.53d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Wed May 28 23:19:41 2014
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 17 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   PinSignal_U_ram_DATA_OUT_0
+   PinSignal_U_ram_DATA_OUT_1
+   PinSignal_U_ram_DATA_OUT_2
+   PinSignal_U_ram_DATA_OUT_3
+   PinSignal_U_ram_DATA_OUT_4
+   PinSignal_U_ram_DATA_OUT_5
+   PinSignal_U_ram_DATA_OUT_6
+   PinSignal_U_ram_DATA_OUT_7
+   U_ex_reg/UI_O_10
+   U_ex_reg/UI_O_11
+   U_ex_reg/UI_O_12
+   U_ex_reg/UI_O_13
+   U_ex_reg/UI_O_5
+   U_ex_reg/UI_O_6
+   U_ex_reg/UI_O_7
+   U_ex_reg/UI_O_8
+   U_ex_reg/UI_O_9
+
+

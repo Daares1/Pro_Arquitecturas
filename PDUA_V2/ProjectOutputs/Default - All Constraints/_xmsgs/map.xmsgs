@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Map" num="124" delta="old" >The command line option -t can only be used when running in timing mode (-timing option).  The option will be ignored.
+</msg>
+
+<msg type="warning" file="Map" num="210" delta="old" >The -tx switch is not supported for this architecture, and will be ignored.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_7</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">20</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">PinSignal_U_ram_DATA_OUT_6,
+PinSignal_U_ram_DATA_OUT_5,
+PinSignal_U_ram_DATA_OUT_4,
+PinSignal_U_ram_DATA_OUT_3,
+PinSignal_U_ram_DATA_OUT_2</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_9</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_9</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_9</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_9</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_9</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_15</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_14</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_13</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_12</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_11</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_10</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_8</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_7</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_6</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_5</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_4</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_3</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_2</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_rom_INST_0</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_7</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_6</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_5</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_4</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_3</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_2</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_1</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="MapLib" num="163" delta="old" >Bus <arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_0</arg> driven by tbufs will be transformed to use combinational drivers.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">U_ex_reg/UI_O_6</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">U_ex_reg/UI_O_5</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">U_ex_reg/UI_O_8</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">U_ex_reg/UI_O_7</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">U_ex_reg/UI_O_10</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">U_ex_reg/UI_O_9</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">U_ex_reg/UI_O_12</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">U_ex_reg/UI_O_11</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">U_ex_reg/UI_O_13</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_1</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_0</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_3</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_2</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_5</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_4</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_7</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">PinSignal_U_ram_DATA_OUT_6</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+</messages>
+

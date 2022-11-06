@@ -1,0 +1,339 @@
+Release 12.1 Map M.53d (nt64)
+Xilinx Mapping Report File for Design 'FPGA_PDUA_V2'
+
+Design Information
+------------------
+Command Line   : map -p XC3S1400AN-FGG676-4 -pr b -tx off -c 100 -t 1 -u
+-ignore_keep_hierarchy -o fpga_pdua_v2_map.ncd fpga_pdua_v2.ngd 
+Target Device  : xc3s1400an
+Target Package : fgg676
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.52 $
+Mapped Date    : Wed May 28 23:17:57 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   51
+Logic Utilization:
+  Total Number Slice Registers:         206 out of  22,528    1%
+    Number used as Flip Flops:          192
+    Number used as Latches:              14
+  Number of 4 input LUTs:               250 out of  22,528    1%
+Logic Distribution:
+  Number of occupied Slices:            185 out of  11,264    1%
+    Number of Slices containing only related logic:     185 out of     185 100%
+    Number of Slices containing unrelated logic:          0 out of     185   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         254 out of  22,528    1%
+    Number used as logic:               242
+    Number used as a route-thru:          4
+    Number used as 16x1 RAMs:             8
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  2 out of     502    1%
+    IOB Flip Flops:                       1
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                3.01
+
+Peak Memory Usage:  270 MB
+Total REAL time to MAP completion:  27 secs 
+Total CPU time to MAP completion:   10 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Map:124 - The command line option -t can only be used when running in
+   timing mode (-timing option).  The option will be ignored.
+WARNING:Map:210 - The -tx switch is not supported for this architecture, and
+   will be ignored.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_9 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_1 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_9 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_1 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_9 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_1 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_9 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_1 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_9 detected.
+WARNING:MapLib:23 - Short on signal PinSignal_U_rom_INST_1 detected.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_15 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_14 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_13 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_12 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_11 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_10 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_8 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_7 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_6 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_5 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_4 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_3 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_2 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_rom_INST_0 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_ram_DATA_OUT_7 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_ram_DATA_OUT_6 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_ram_DATA_OUT_5 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_ram_DATA_OUT_4 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_ram_DATA_OUT_3 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_ram_DATA_OUT_2 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_ram_DATA_OUT_1 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:MapLib:163 - Bus PinSignal_U_ram_DATA_OUT_0 driven by tbufs will be
+   transformed to use combinational drivers.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_6> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_5> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_8> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_7> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_10> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_9> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_12> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_11> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_ex_reg/UI_O_13> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_3> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_2> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_5> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_4> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_7> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PinSignal_U_ram_DATA_OUT_6> is
+   incomplete. The signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc3s1400an' is a WebPack part.
+INFO:LIT:243 - Logical network PinSignal_U_ram_DATA_OUT_7 has no load.
+INFO:LIT:395 - The above info message is repeated 20 more times for the
+   following (max. 5 shown):
+   PinSignal_U_ram_DATA_OUT_6,
+   PinSignal_U_ram_DATA_OUT_5,
+   PinSignal_U_ram_DATA_OUT_4,
+   PinSignal_U_ram_DATA_OUT_3,
+   PinSignal_U_ram_DATA_OUT_2
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   6 block(s) removed
+  43 block(s) optimized away
+   6 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "U_rom/n1" is sourceless and has been removed.
+ Sourceless block "U_rom/INST_9" (TRI) removed.
+  The signal "PinSignal_U_rom_INST_9" is sourceless and has been removed.
+ Sourceless block "U_rom/INST_1" (TRI) removed.
+  The signal "PinSignal_U_rom_INST_1" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "PinSignal_U_ctrl_DATA_1" is unused and has been removed.
+The signal "NamedSignal_UI_3" is unused and has been removed.
+The signal "PinSignal_U5_Q_B_1" is unused and has been removed.
+Unused block "PinSignal_U_rom_INST_1.PULLUP" (PULLUP) removed.
+Unused block "PinSignal_U_rom_INST_9.PULLUP" (PULLUP) removed.
+Unused block "U_ram/ram_151/B2/VCC" (ONE) removed.
+Unused block "U_ram/ram_151/VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+FDR 		U5/Q_B<1>
+   optimized to 0
+FDR 		U5/Q_B<9>
+   optimized to 0
+NOR2 		U_alu/n3n
+AND2B1 		U_alu/n3o
+AND2 		U_alu/n3p
+AND2 		U_alu/n3r
+AND2 		U_alu/n3t
+AND2 		U_alu/n3v
+AND2 		U_alu/n3x
+AND2 		U_alu/n3z
+AND2B1 		U_alu/n4b
+AND2 		U_alu/n6m
+AND2 		U_alu/n6o
+AND2 		U_alu/n6p
+AND2 		U_alu/n6q
+AND2 		U_alu/n6r
+AND2 		U_alu/n6s
+AND2 		U_alu/n6t
+AND2 		U_alu/n6u
+LD 		U_ctrl/DATA<1>
+   optimized to 0
+GND 		U_ctrl/n1m
+FDR 		U_ex_reg/UI_O<3>
+   optimized to 0
+FDR 		U_ex_reg/UI_O<4>
+   optimized to 0
+FDR 		U_id_reg/DATA_O<1>
+   optimized to 0
+FDR 		U_id_reg/UI_O<3>
+   optimized to 0
+FDR 		U_id_reg/UI_O<4>
+   optimized to 0
+GND 		U_mem_reg/n1o
+VCC 		U_ram/n1i
+GND 		U_ram/ram_151/B2/GND
+GND 		U_ram/ram_151/GND
+GND 		U_rom/n1
+OR2B1 		U_rom/n1i
+VCC 		n10c
+GND 		n10d
+AND2 		n11b
+AND2 		n11w
+AND2 		n11y
+AND2 		n12a
+AND2 		n12c
+AND2 		n12e
+AND2 		n12g
+AND2 		n12i
+AND2 		n12k
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK_BRD                            | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
+| TEST_BUTTON                        | IBUF             | INPUT     | LVCMOS25             |       |          |         | IFF1         |          | 0 / 5    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

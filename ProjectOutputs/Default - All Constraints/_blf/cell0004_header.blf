@@ -1,0 +1,13 @@
+.model MAR
+.inputs CLK
+.inputs RESET
+.outputs BUS_DIR<4>
+.outputs BUS_DIR<3>
+.outputs BUS_DIR<2>
+.outputs BUS_DIR<1>
+.outputs BUS_DIR<0>
+.inputs BUS_C<4>
+.inputs BUS_C<3>
+.inputs BUS_C<2>
+.inputs BUS_C<1>
+.inputs BUS_C<0>

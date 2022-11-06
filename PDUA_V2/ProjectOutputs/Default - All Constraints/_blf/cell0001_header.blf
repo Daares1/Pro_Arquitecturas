@@ -1,0 +1,3 @@
+.model FPGA_PDUA_V2
+.inputs CLK_BRD
+.inputs TEST_BUTTON

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Map" num="124" delta="old" >The command line option -t can only be used when running in timing mode (-timing option).  The option will be ignored.
+</msg>
+
+<msg type="warning" file="Map" num="210" delta="old" >The -tx switch is not supported for this architecture, and will be ignored.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">PinSignal_U_rom_INST_9</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">1</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">U_ram/ram_151/B2/N0</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_9</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_9</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_9</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_9</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_9</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">PinSignal_U_rom_INST_9</arg> detected.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">TEST_BUTTON_ibuf</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">CLK_BRD_ibuf</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+</messages>
+

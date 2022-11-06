@@ -1,0 +1,6 @@
+.model Configurable_U1
+.inputs TCK
+.inputs TMS
+.inputs TDI
+.inputs TRST
+.outputs TDO

@@ -1,0 +1,255 @@
+###############################################################################
+### Altium HDL Synthesizer 1.1.0.1
+### Copyright (C) 2005-2009, Altium Limited. All Rights Reserved
+###############################################################################
+### Timestamp: 22/05/2014 11:50:37 p.m.
+###############################################################################
+### Commandline: AltiumSynthesizer.exe "-o" "FPGA_PDUA_V1.mof" "-p" "FPGA_PDUA_V1.mpf"
+###
+### Options:
+###
+### Synthesizing FPGA_PDUA_V1 for Spartan3AN
+### Entity                  : FPGA_PDUA_V1
+### VerilogMode             : 1 (0=Verilog95, 1=Verilog2001, 2=VerilogSystem, 3=Ams)
+### VHDL87                  : False
+### Insert Toplevel Buffers : True
+### Combinational Logic Opt : 3 (1=Low, 3=Normal, 5=High)
+###############################################################################
+### Compilation Report
+###############################################################################
+
+analyzing package configurable_u1tap_utils
+analyzing package body configurable_u1tap_utils
+analyzing entity configurable_u1universal_digital_io_drnoout
+analyzing architecture rtl
+analyzing entity configurable_u1universal_digital_io_tapcontroller
+analyzing architecture rtl
+analyzing entity configurable_u1universal_digital_io_datareg_inout_wr
+analyzing architecture rtl
+analyzing entity configurable_u1
+analyzing architecture rtl
+analyzing package configurable_u2tap_utils
+analyzing package body configurable_u2tap_utils
+analyzing entity configurable_u2universal_digital_io_drnoout
+analyzing architecture rtl
+analyzing entity configurable_u2universal_digital_io_tapcontroller
+analyzing architecture rtl
+analyzing entity configurable_u2universal_digital_io_datareg_inout_wr
+analyzing architecture rtl
+analyzing entity configurable_u2
+analyzing architecture rtl
+analyzing entity configurable_u3
+analyzing architecture structure
+analyzing entity configurable_u4
+analyzing architecture structure
+analyzing package configurable_u50tap_utils
+analyzing package body configurable_u50tap_utils
+analyzing entity configurable_u50universal_digital_io_drnoout
+analyzing architecture rtl
+analyzing entity configurable_u50universal_digital_io_tapcontroller
+analyzing architecture rtl
+analyzing entity configurable_u50universal_digital_io_datareg_inout_wr
+analyzing architecture rtl
+analyzing entity configurable_u50
+analyzing architecture rtl
+analyzing entity configurable_u6
+analyzing architecture structure
+analyzing entity configurable_u7
+analyzing architecture structure
+analyzing entity configurable_u8
+analyzing architecture structure
+analyzing entity alu_bit
+analyzing architecture behavioral
+analyzing entity banco
+analyzing architecture behavioral
+analyzing entity ctrl
+analyzing architecture behavioral
+analyzing entity rom
+analyzing architecture behavioral
+analyzing entity mar
+analyzing architecture behavioral
+analyzing entity alu
+analyzing architecture bit_slice
+analyzing entity ram
+analyzing architecture behavioral
+analyzing entity fpga_pdua_v1
+analyzing architecture structure
+###############################################################################
+### Elaboration Report
+###############################################################################
+
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_DRNOOUT(RTL)
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_TAPCONTROLLER(rtl)
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_DRNOOUT(32)(RTL)
+##N|Configurable_U1.VHD|279|others clause is never selected
+##I|Configurable_U1.VHD|279|-- possible Multiplexer: 16-1 for tapstate_nxt
+##N|Configurable_U1.VHD|299|others clause is never selected
+##I|Configurable_U1.VHD|299|-- possible Multiplexer: 16-1 for tapstate_nxt
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(RTL)
+executing Configurable_U1(RTL)
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(8)(RTL)
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(32)(RTL)
+##I|syn_unsi.vhd|118|-- found Adder: 3+3
+executing Configurable_U2UNIVERSAL_DIGITAL_IO_DRNOOUT(RTL)
+executing Configurable_U2UNIVERSAL_DIGITAL_IO_TAPCONTROLLER(rtl)
+executing Configurable_U2UNIVERSAL_DIGITAL_IO_DRNOOUT(32)(RTL)
+##N|Configurable_U2.VHD|279|others clause is never selected
+##I|Configurable_U2.VHD|279|-- possible Multiplexer: 16-1 for tapstate_nxt
+##N|Configurable_U2.VHD|299|others clause is never selected
+##I|Configurable_U2.VHD|299|-- possible Multiplexer: 16-1 for tapstate_nxt
+executing Configurable_U2UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(RTL)
+executing Configurable_U2(RTL)
+executing Configurable_U2UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(8)(RTL)
+executing Configurable_U2UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(16)(RTL)
+executing Configurable_U2UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(21)(RTL)
+executing Configurable_U2UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(3)(RTL)
+executing Configurable_U2UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(32)(RTL)
+executing Configurable_U3(structure)
+##I|syn_arit.vhd|838|-- found Adder: 6+6
+executing Configurable_U4(structure)
+##N|Configurable_U4.VHD|29|others clause is never selected
+##I|Configurable_U4.VHD|29|-- possible Selector: 2-1 for y
+executing Configurable_U50UNIVERSAL_DIGITAL_IO_DRNOOUT(RTL)
+executing Configurable_U50UNIVERSAL_DIGITAL_IO_TAPCONTROLLER(rtl)
+executing Configurable_U50UNIVERSAL_DIGITAL_IO_DRNOOUT(32)(RTL)
+##N|Configurable_U50.VHD|279|others clause is never selected
+##I|Configurable_U50.VHD|279|-- possible Multiplexer: 16-1 for tapstate_nxt
+##N|Configurable_U50.VHD|299|others clause is never selected
+##I|Configurable_U50.VHD|299|-- possible Multiplexer: 16-1 for tapstate_nxt
+executing Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(RTL)
+executing Configurable_U50(RTL)
+executing Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(8)(RTL)
+executing Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(16)(RTL)
+executing Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(53)(RTL)
+executing Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(1)(RTL)
+executing Configurable_U50UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(32)(RTL)
+executing Configurable_U6(structure)
+##N|Configurable_U6.VHD|47|others clause is never selected
+##I|Configurable_U6.VHD|47|-- possible Multiplexer: 8-1 for y
+executing Configurable_U7(structure)
+##N|Configurable_U7.VHD|29|others clause is never selected
+##I|Configurable_U7.VHD|29|-- possible Selector: 2-1 for y
+executing Configurable_U8(structure)
+##N|Configurable_U8.VHD|29|others clause is never selected
+##I|Configurable_U8.VHD|29|-- possible Selector: 2-1 for y
+executing ALU_BIT(Behavioral)
+##N|ALU_BIT.vhdl|58|others clause is never selected
+##I|ALU_BIT.vhdl|58|-- possible Multiplexer: 8-1 for r
+executing banco(Behavioral)
+##I|banco.vhdl|68|-- possible Multiplexer: 8-1 for pc
+##N|banco.vhdl|85|others clause is never selected
+##I|banco.vhdl|85|-- possible Multiplexer: 8-1 for busb
+executing CTRL(Behavioral)
+##N|CTRL.vhdl|81|others clause is never selected
+##I|CTRL.vhdl|81|-- possible Multiplexer: 16-1 for ui
+executing ROM(Behavioral)
+##N|ROM.vhdl|72|others clause is never selected
+##I|ROM.vhdl|72|-- possible Multiplexer: 32-1 for inst
+executing MAR(Behavioral)
+executing ALU(Bit_Slice)
+##I|ALU.vhdl|93|-- possible Multiplexer: 4-1 for s
+executing RAM(Behavioral)
+##I|RAM.vhdl|34|-- found RAM: 3 by 8
+executing FPGA_PDUA_V1(structure)
+
+###############################################################################
+### Synthesis Report
+###############################################################################
+
+##O|ALU.vhdl|62|Dissolving instance Slices:7:BITN:BN(ALU_BIT)
+##O|ALU.vhdl|58|Dissolving instance Slices:0:BIT0:B0(ALU_BIT)
+##O|TOP_PDUA_V1.VHD|328|Dissolving instance U8(Configurable_U8)
+##O|TOP_PDUA_V1.VHD|337|Dissolving instance U7(Configurable_U7)
+##O|TOP_PDUA_V1.VHD|346|Dissolving instance U6(Configurable_U6)
+##O|TOP_PDUA_V1.VHD|361|Dissolving instance U4(Configurable_U4)
+##O|TOP_PDUA_V1.VHD|370|Dissolving instance U3(Configurable_U3)
+##I|RAM.vhdl|34|Found single port block RAM: address_size : 3, data_size 8
+##W|CTRL.vhdl|83|Found latch for signal hr1.  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal insts[3].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal insts[2].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal insts[1].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal insts[0].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal data_s[7].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal data_s[6].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal data_s[5].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal data_s[4].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal data_s[3].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal data_s[2].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal data_s[1].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal data_s[0].  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+##W|CTRL.vhdl|83|Found latch for signal hs.  Use of latches may lead to unexpected circuit behavior.  Check for an if or case statement which is not completely specified.
+###############################################################################
+### Optimization Report
+###  command: mmHDLtoEDIF -f xilinx -n spartan3an -p spartan3 -z 3 -o "C:\Users\Daares1\Documents\Dropbox\Pro_Arquitecturas\ProjectOutputs\Default - All Constraints\FPGA_PDUA_V1.edf" -b "C:\Users\Daares1\Documents\Dropbox\Pro_Arquitecturas\ProjectOutputs\Default - All Constraints\FPGA_PDUA_V1.bfl" -e FPGA_PDUA_V1 -L "C:\Users\Public\Documents\Altium\AD14\Library/" 
+
+INFO LibDir:  "C:\Users\Public\Documents\Altium\AD14\Library/"
+
+INFO ConstraintsMap:  "C:\Users\Public\Documents\Altium\AD14\Library/vhdl_lib/VendorConstraints.map"
+
+optimizing "_blf/cell0001"
+optimizing "_blf/cell0002"
+optimizing "_blf/cell0003"
+optimizing "_blf/cell0004"
+optimizing "_blf/cell0005"
+optimizing "_blf/cell0006"
+optimizing "_blf/cell0007"
+optimizing "_blf/cell0008"
+optimizing "_blf/cell0009"
+optimizing "_blf/cell0010"
+optimizing "_blf/cell0011"
+optimizing "_blf/cell0012"
+optimizing "_blf/cell0013"
+optimizing "_blf/cell0014"
+optimizing "_blf/cell0015"
+optimizing "_blf/cell0016"
+optimizing "_blf/cell0017"
+optimizing "_blf/cell0018"
+optimizing "_blf/cell0019"
+optimizing "_blf/cell0020"
+optimizing "_blf/cell0021"
+optimizing "_blf/cell0022"
+optimizing "_blf/cell0023"
+optimizing "_blf/cell0024"
+optimizing "_blf/cell0025"
+optimizing "_blf/cell0026"
+optimizing "_blf/cell0027"
+optimizing "_blf/cell0028"
+ 
+###############################################################################
+### Design Statistics
+###############################################################################
+ 
+Tristates                                                  : 24
+                                                           
+Flipflops:                                                 : 812
+    Flipflops with RESET                    (Asynchronous) : 14
+    Flipflops with PRESET                   (Asynchronous) : 12
+    Flipflops                                              : 1
+    Flipflops with RESET and ENABLE         (Synchronous)  : 46
+    Flipflops with PRESET and ENABLE        (Synchronous)  : 10
+    Flipflops with RESET and ENABLE         (Synchronous)  : 21
+    Flipflops with PRESET and ENABLE        (Asynchronous) : 5
+    Flipflops with PRESET, RESET and ENABLE (Asynchronous) : 294
+    Flipflops with ENABLE                                  : 409
+                                                           
+Latches:                                                   : 14
+    Latches                                                : 14
+                                                           
+MacroCells:                                                
+    XORCY                                                  : 13
+    RAMS_3_8                                               : 1
+    MUXF5                                                  : 44
+    MUXF6                                                  : 22
+    MUXCY                                                  : 9
+                                                           
+Area Estimates:                                            
+    Area Estimate (2 Input Gate Count)                     : 2115
+    Area Estimate (LUT Count)                              : 1408
+ 
+###############################################################################
+ 
+formating EDIF....                            
+
+###############################################################################
+Synthesis successful
+###############################################################################
